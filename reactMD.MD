@@ -1,5 +1,9 @@
 # React
 
+
+
+* git remote -v : check remot 
+
 ### install Node 
 - [Node](https://nodejs.org/en/download/)
 - check node version `node -v`

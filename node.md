@@ -14,3 +14,19 @@
 - run code 
 `node index.js`
 `npx nodemon index.js`
+
+
+- use postman to cheek 
+
+
+parmter type 
+- path parmter
+- body parmter
+- queriParmter
+
+render :can render
+-   file
+-  json
+- text
+- html
+- use ejs 

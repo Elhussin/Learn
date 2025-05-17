@@ -1,9 +1,4 @@
 # React
-
-
-
-* git remote -v : check remot 
-
 ### install Node 
 - [Node](https://nodejs.org/en/download/)
 - check node version `node -v`
@@ -81,3 +76,27 @@ let style = {
 ### State
 - it's a data that can change
 - it's a way to make component dynamic
+
+# react
+### add props 
+### add childern 
+### condinatl rendering : 
+rendering :convert elment to view
+### terniery oprtore
+
+- stats & stats mangment
+
+- dom : document opject module
+- react build vertical dom 
+- rerender : updte the compnent change          
+
+# react hook 
+- use 
+
+
+
+* install eslint
+```
+pnpm  install --save-dev eslint-plugin-react-dom
+pnpm  install --save-dev eslint-plugin-react-x
+```

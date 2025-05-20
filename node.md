@@ -25,8 +25,8 @@ parmter type
 - queriParmter
 
 render :can render
--   file
--  json
+- file
+- json
 - text
 - html
 - use ejs 

@@ -1,0 +1,34 @@
+@import url('https://fonts.googleapis.com/css2?family=Tagesschrift&display=swap');  /** to import font from google */
+@import "tailwindcss";
+
+@theme {
+  --font-display-100: "Tagesschrift"', 'sans-serif'
+  --color-primary: #1e3a8a;
+  --color-secondary: #f43f5e;
+  --color-mint-500: oklch(0.72 0.11 178);
+
+
+}
+
+/* @layer components {
+    .btn {
+      @apply bg-blue-500 text-white py-2 px-4 rounded;
+    } 
+    .card {
+      @apply bg-amber-400 shadow-md rounded-lg p-6;
+    }
+  }
+
+ */
+.btn {
+  @apply bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600 transition-all duration-300 m-5;
+} 
+.card {
+  @apply  font-display-100 bg-mint-500 shadow-md rounded-lg p-6 text-secondary text-lg font-bold;
+}
+.card img{
+  @apply w-100 h-70;
+}
+.card-container{
+  @apply lg:grid grid-cols-3 gap-4 md:grid-cols-2 ;
+}

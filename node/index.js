@@ -1,6 +1,12 @@
 const express= require("express")
 // import express from "express" ;
 
+//  import mongoose from "mongoose" ;
+const mongoose = require("mongoose")
+
+// import Artical from "./modles/Artical.js" ;
+const Artical = require("./modles/Artical") ;
+
 const app= express()
 app.use(express.json()) // llow app to expet json 
 app.get("/hello" ,(req,res)=>{
@@ -55,16 +61,40 @@ app.get("/send-file",(req,res)=>{
 
 // use ejs templeat
 app.get("/use-ejs",(req,res)=>{
-    // let view =`<h1>Hell hussain<h1>`
-    // res.send(view)
-    // const path =__dirname +"/views/index.html"
-    // res.sendFile(path)
+
     let data ={name:"hussan", age:10}
-    res.render(view.ejs,data=data)
+    res.render("view.ejs",{data:data})
 
 }) 
 
 
+
+
+
+// connent mangodb?
+// mongodb+srv://taha:<db_password>@cluster0.d5h0ddr.mongodb.net/
+const pas = "0108704401"
+mongoose.connect(`mongodb+srv://taha:${pas}@cluster0.d5h0ddr.mongodb.net/`).then(()=>{
+    console.log("MongoDB Connected")
+}
+).catch((err)=>{
+    console.log(err)
+}
+)
+
+app.post("/add-artical",async (req,res)=>{
+    const artical = new Artical({
+        title:req.body.title,
+        body:req.body.body
+    })
+    try{
+        const result = await artical.save()
+        res.json(result)
+    }catch(err){
+        res.status(500).json({message:err.message})
+    }
+}
+) 
 
 app.listen(3000,
 //     ()=>{

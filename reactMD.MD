@@ -39,6 +39,7 @@ export default config;
 ### Run App
 ```bash
 npm start
+pnpm run dev // vite
 ```
 
 

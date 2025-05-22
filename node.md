@@ -30,3 +30,7 @@ render :can render
 - text
 - html
 - use ejs 
+- use mangodb
+
+    * use mangoose : `pnpm install mongoose`
+    * bulid schem

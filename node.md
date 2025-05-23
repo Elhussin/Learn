@@ -21,7 +21,7 @@
 
 parmter type 
 - path parmter
-- body parmter
+- body parmter : mast populer
 - queriParmter
 
 render :can render

@@ -1,10 +1,25 @@
 # React
+## React Requirements
+
+- Node.js (version 14 or higher)
+- npm (Node package manager, typically installed with Node.js)
+
+## React Installation Steps
+
 ### install Node 
 - [Node](https://nodejs.org/en/download/)
 - check node version `node -v`
 
+### install npm or pnpm
+- [npm](https://www.npmjs.com/get-npm)
+- check npm version `npm -v`
+- [pnpm](https://pnpm.io/installation)
+- check pnpm version `pnpm -v`
 
-### install react
+
+
+##  Create a New React App
+
 
 ```bash
 npx create-react-app my-app
@@ -42,6 +57,37 @@ npm start
 pnpm run dev // vite
 ```
 
+### Access the React Application
+```
+http://localhost:3000/
+```
+
+### Project Structure
+
+The project structure should look like this:
+
+```
+my-app/
+├── node_modules/
+├── public/
+├── src/
+│   ├── App.css
+│   ├── App.js
+│   ├── App.test.js
+│   ├── index.css
+│   ├── index.js
+│   └── serviceWorker.js
+├── .gitignore
+├── package.json
+└── README.md
+```
+
+### install packages
+
+```bash
+npm install
+pnpm install // vite
+```
 
 ### Component 
 - it's a function that returns a html

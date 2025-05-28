@@ -1,0 +1,33 @@
+
+### install & activate virtual environment(venv)
+```bash
+sudo apt install python3.12-venv
+python3 -m venv venv
+source venv/bin/activate
+```
+
+```shell
+py -m venv venv
+venv\Scripts\activate
+```
+### If can not active
+```shell
+Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy Unrestricted
+```
+
+### deactivate virtual environment
+```shell
+deactivate
+```
+
+### delete virtual environment
+```shell
+rmdir /s /q venv
+```
+
+
+
+### install requirements
+```bash
+pip install -r requirements.txt
+```

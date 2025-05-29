@@ -1,7 +1,8 @@
 # 🧠 Git Cheat Sheet
 
 ## 📚 Index
-
+- [Introduction](#introduction)
+- [Installation](#installation)
 - [⚙️ Git Config](#git-config)
 - [🔐 SSH Authentication](#ssh-authentication)
 - [🆕 Create & Push New Repo](#create--push-new-repo)
@@ -26,6 +27,82 @@
 
 ---
 
+## Installation
+
+Step-by-step instructions on how to set up the project locally.
+
+### 1. Install Git
+
+#### Windows
+
+1. Download the Git installer from the official website: [Git for Windows](https://git-scm.com/download/win).
+2. Run the installer and follow the setup instructions.
+3. To confirm the installation, open Command Prompt and type:
+   ```sh
+   git --version
+   ```
+
+#### macOS
+
+1. Open Terminal.
+2. Install Git using Homebrew:
+   ```sh
+   brew install git
+   ```
+3. To confirm the installation, type:
+   ```sh
+   git --version
+   ```
+
+#### Linux
+
+1. Open Terminal.
+
+2. Install Git using the package manager specific to your distribution:
+   - Debian/Ubuntu:
+     ```sh
+     sudo apt-get update
+     sudo apt-get install git
+     ```
+   - Fedora:
+     ```sh
+     sudo dnf install git
+     ```
+   - Arch Linux:
+     ```sh
+     sudo pacman -S git
+     ```
+3. To confirm the installation, type:
+   ```sh
+   git --version
+   ```
+
+
+### 2. Create a GitHub Repository
+
+1. Sign in to [GitHub](https://github.com).
+2. Click on the `+` icon in the top right corner and select `New repository`.
+3. Fill in the repository name (e.g., `my-repo`).
+4. Optionally, add a description.
+5. Choose between Public or Private.
+6. Optionally, initialize with a README file.
+7. Click on `Create repository`.
+
+
+
+## Create & Push New Repo
+
+1. After create a new repo on GitHub
+2. Initialize locally:
+
+```bash
+git init
+git add .
+git commit -m "first commit"
+git remote add origin <url>
+git branch -M main
+git push -u origin main
+```
 ## Git Config
 
 ```bash
@@ -42,20 +119,6 @@ ssh -T git@github.com                           # Confirm it's working
 ```
 
 Add your SSH key to GitHub: [Add SSH Key](https://github.com/settings/ssh/new)
-
-## Create & Push New Repo
-
-1. Create a new repo on GitHub
-2. Initialize locally:
-
-```bash
-git init
-git add .
-git commit -m "first commit"
-git remote add origin <url>
-git branch -M main
-git push -u origin main
-```
 
 ## Clone Repository
 

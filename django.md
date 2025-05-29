@@ -58,10 +58,6 @@ python3 manage.py startapp <app_name>
 
 ### add uor abb name to setting in project root
 
-### createsuperuser 
-```shell
-python manage.py createsuperuser
-```
 
 ### makemigrations
 ```shell
@@ -69,6 +65,10 @@ python manage.py makemigrations <app_name>
 ```
 ```shell
 python manage.py migrate
+```
+### createsuperuser 
+```shell
+python manage.py createsuperuser
 ```
 
 ### To open python shell

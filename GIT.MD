@@ -1,4 +1,29 @@
-# Git Cheat Sheet
+
+# 🧠 Git Cheat Sheet
+## 📚 Index
+- [⚙️ Git Config](#git-config)
+- [🔐 SSH Authentication](#ssh-authentication)
+- [🆕 Create & Push New Repo](#create--push-new-repo)
+- [📥 Clone Repository](#clone-repository)
+- [📡 Fetching](#fetching)
+- [📋 Status & Staging](#status--staging)
+- [📝 Commit](#commit)
+- [🚀 Push to Remote](#push-to-remote)
+- [🌍 Remote Info](#remote-info)
+- [📤 Pull from Remote](#pull-from-remote)
+- [🌿 Branch Management](#branch-management)
+- [🔀 Merging](#merging)
+- [🕒 Logs & Reset](#logs--reset)
+- [📌 Reset to Remote](#reset-to-remote)
+- [🌱 Create Branch for Remote](#create-branch-for-remote)
+- [❌ Delete Remote Branch](#delete-remote-branch)
+- [🧳 Stash](#stash)
+- [🧠 Rebase](#rebase)
+- [🏷️ Tagging](#tagging)
+- [🧾 Commit Message Conventions](#commit-message-conventions)
+- [🛠️ Commit Message Editor & Template](#commit-message-editor-template)
+
+---
 
 ## Git Config
 ```bash
@@ -6,7 +31,9 @@ git config --global user.email "<email>"
 git config --global user.name "UserName"
 ```
 
+
 ## SSH Authentication
+
 ```bash
 ssh-keygen -t ed25519 -C "<email>"  # Create SSH key
 cat ~/.ssh/id_ed25519.pub                       # Copy key content
@@ -14,7 +41,7 @@ ssh -T git@github.com                           # Confirm it's working
 ```
 Add your SSH key to GitHub: [Add SSH Key](https://github.com/settings/ssh/new)
 
-## Create New Repo and Push to GitHub
+## Create & Push New Repo
 1. Create a new repo on GitHub
 2. Initialize locally:
 ```bash
@@ -38,7 +65,7 @@ git fetch origin <branch-name>     # Fetch specific branch
 git fetch origin --all             # Fetch all branches
 ```
 
-## Status and Staging
+## Status & Staging
 ```bash
 git status
 git add <file-name>
@@ -87,25 +114,26 @@ git checkout main
 git merge <branch-name>
 ```
 
-## Logs and Reset
+## Logs & Reset
 ```bash
 git log                              # Show history
 git log --oneline                    # Show history in one line
 git reflog                           # Show reflog
-git reset --hard <commit>           # Reset to specific commit
+
 ```
 
-## Reset to remote branch
+## Reset 
 ```bash
-git reset --hard origin/<branch-name>
+git reset --hard <commit>           # Reset to specific commit
+git reset --hard origin/<branch-name> # Reset to remote branch
 ```
-## Create new branch for remote branch
+## Create Branch for Remote
 ```bash
 git checkout -b <NEW-branch-name>  # create new branch
 git push -u origin <NEW-branch-name> # push new branch to remote
 ```
 
-## Delete Remote Branch
+##Delete Remote Branch
 ```bash
 git push origin --delete <branch-name>
 ```
@@ -120,7 +148,7 @@ git stash drop  # Drop stash
 git stash clear  # Clear all stashes
 ```
 
-## rebase
+## Rebase
 ```bash
 git rebase <branch-name> # rebase to branch
 git rebase --continue # continue rebase
@@ -135,7 +163,6 @@ git tag -a <tag-name> -m "message" # annotated tag
 git tag -d <tag-name> # delete tag
 git push origin <tag-name> # push tag
 git push origin --tags # push all tags
-git tag -d <tag-name> # delete tag
 git push origin --delete <tag-name> # delete tag from remote
 ```
 

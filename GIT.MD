@@ -1,16 +1,5 @@
 
 
-# try to creat branch in remote 
-### creat anoter branc in reomte  and push 
-```
-    git push --set-upstream origin <branch name>
-```
-
-### delate remote branch
-```
-git push origin --delete <branch name>
-```
-
 ### git merge to branch 
 ```shell
 git merge <branch name>

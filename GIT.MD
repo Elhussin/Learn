@@ -1,14 +1,5 @@
 
 
-### check commit history 
-```shell
-git log
-```
-### reset to older commit
-```bash
-git reset --hard <commit>
-# git reset --hard origin/master
-```
 
 ### creat anoter branc in reomte  and push 
 ```

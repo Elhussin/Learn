@@ -16,3 +16,7 @@
 
 ### to open new trmnanl VS 
 ``` crt + shift + ` ```
+
+### to remove pyc file and __pycache__
+```Get-ChildItem -Recurse -Include *.pyc | Remove-Item
+Get-ChildItem -Recurse -Directory -Include __pycache__ | Remove-Item -Recurse```

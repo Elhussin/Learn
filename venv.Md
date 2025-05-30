@@ -31,3 +31,8 @@ rmdir /s /q venv
 ```bash
 pip install -r requirements.txt
 ```
+
+### Create requirements file
+```bash
+pip freeze > requirements.txt
+```

@@ -1,244 +1,283 @@
-# git
-### git config
-- git config --global user.email "hasin3112@gmail.com"
-- git config --global user.name "Elhussin"
+# 🧠 Git Cheat Sheet
 
-### git auth ssh 
-```bash
-ssh-keygen -t ed25519 -C "hasin3112@gmail.com" : creat SSH
-~/.ssh/id_ed25519.pub 
-ssh -T git@github.com  : confiarm its work
+## 📚 Index
+- [Introduction](#introduction)
+- [Installation](#installation)
+- [⚙️ Git Config](#git-config)
+- [🔐 SSH Authentication](#ssh-authentication)
+- [🆕 Create & Push New Repo](#create--push-new-repo)
+- [📥 Clone Repository](#clone-repository)
+- [📡 Fetching](#fetching)
+- [📋 Status & Staging](#status--staging)
+- [📝 Commit](#commit)
+- [🚀 Push to Remote](#push-to-remote)
+- [🌍 Remote Info](#remote-info)
+- [📤 Pull from Remote](#pull-from-remote)
+- [🌿 Branch Management](#branch-management)
+- [🔀 Merging](#merging)
+- [🕒 Logs & Reset](#logs--reset)
+- [📌 Reset to Remote](#reset-to-remote)
+- [🌱 Create Branch for Remote](#create-branch-for-remote)
+- [❌ Delete Remote Branch](#delete-remote-branch)
+- [🧳 Stash](#stash)
+- [🧠 Rebase](#rebase)
+- [🏷️ Tagging](#tagging)
+- [🧾 Commit Message Conventions](#commit-message-conventions)
+- [🛠️ Commit Message Editor & Template](#commit-message-editor-template)
 
-cat ~/.ssh/id_ed25519.pub : capy it
-[git ssh](https://github.com/settings/ssh/new)
-```
-### Create new repo and remote it to github
-1. create new repo on github
-2. init repo l  ocal
+---
+
+## Installation
+
+Step-by-step instructions on how to set up the project locally.
+
+### 1. Install Git
+
+#### Windows
+
+1. Download the Git installer from the official website: [Git for Windows](https://git-scm.com/download/win).
+2. Run the installer and follow the setup instructions.
+3. To confirm the installation, open Command Prompt and type:
+   ```sh
+   git --version
+   ```
+
+#### macOS
+
+1. Open Terminal.
+2. Install Git using Homebrew:
+   ```sh
+   brew install git
+   ```
+3. To confirm the installation, type:
+   ```sh
+   git --version
+   ```
+
+#### Linux
+
+1. Open Terminal.
+
+2. Install Git using the package manager specific to your distribution:
+   - Debian/Ubuntu:
+     ```sh
+     sudo apt-get update
+     sudo apt-get install git
+     ```
+   - Fedora:
+     ```sh
+     sudo dnf install git
+     ```
+   - Arch Linux:
+     ```sh
+     sudo pacman -S git
+     ```
+3. To confirm the installation, type:
+   ```sh
+   git --version
+   ```
+
+
+### 2. Create a GitHub Repository
+
+1. Sign in to [GitHub](https://github.com).
+2. Click on the `+` icon in the top right corner and select `New repository`.
+3. Fill in the repository name (e.g., `my-repo`).
+4. Optionally, add a description.
+5. Choose between Public or Private.
+6. Optionally, initialize with a README file.
+7. Click on `Create repository`.
+
+
+
+## Create & Push New Repo
+
+1. After create a new repo on GitHub
+2. Initialize locally:
+
 ```bash
 git init
 git add .
 git commit -m "first commit"
-# remote it to github
 git remote add origin <url>
 git branch -M main
 git push -u origin main
 ```
+## Git Config
 
+```bash
+git config --global user.email "<email>"
+git config --global user.name "UserName"
+```
 
-### Clone repo
-```shell
+## SSH Authentication
+
+```bash
+ssh-keygen -t ed25519 -C "<email>"  # Create SSH key
+cat ~/.ssh/id_ed25519.pub                       # Copy key content
+ssh -T git@github.com                           # Confirm it's working
+```
+
+Add your SSH key to GitHub: [Add SSH Key](https://github.com/settings/ssh/new)
+
+## Clone Repository
+
+```bash
 git clone <url>
+git clone --mirror <url>  # Clone all branches
 ```
 
-### clone All Branch
-```shell
-git clone --mirror <url>
+## Fetching
+
+```bash
+git fetch origin <branch-name>     # Fetch specific branch
+git fetch origin --all             # Fetch all branches
 ```
 
-### Fetch current branch
-```shell
-git fetch origin <branch name>
-```
-### fetch All Branch
-```shell
-git fetch origin --all
-```
+## Status & Staging
 
-### check repo status
-```shell
+```bash
 git status
+git add <file-name>
+git add .                          # Add all files
 ```
 
-### add file
-```shell
-git add <file name>
-git add . # add all file
-```
+## Commit
 
-### commit
-```shell
+```bash
 git commit -m "message"
-git commit -am "message" # add and commit in one step
+git commit -am "message"           # Add & commit in one step
 ```
 
+## Push to Remote
 
-### Send to remote the first time 
-> after this no need to use ( --set-upstream origin main)
-```shell
-git push --set-upstream origin main
-```
-### Send to remote
-```shell
-git push origin <branch name>
-```
-### Send to remote All Branch
-```shell
+```bash
+git push --set-upstream origin main   # First time
+git push origin <branch-name>
 git push origin --all
 ```
 
+## Remote Info
 
-
-### get remote
-```shell
-git remote -v
-```
-### fetch remote branch without merge it 
-```shell
-git fetch origin <branch name>
-```
-### Get from remote
-```shell
-git pull origin <branch name>
-```
-
-## Branch
-
-### Check local branch 
-```shell
-git branch ""
-```
-### Check all branch local & remote
-```shell
-git branch -a
-```
-
-### checkout to another branch
-```shell
-git checkout <branch name>
-```
-### create new branch
-```shell
-git branch <branch name>
-```
-### checkout to another branch and create it
-```shell
-git checkout -b <branch name>
-```
-### change branch name
-git branch -m <old-name> <new-name>
-
-### rename current branch
-git branch -m <new-name>
-
-### git remot wit repo
 ```bash
-git remote add origin "https://github.com/Elhussin/react.git"
+git remote -v                        # Check remote
+git remote add origin <url>         # Add remote repo
 ```
 
-### Creat New Branch 
-```
- git branch  <branch name>
+## Pull from Remote
+
+```bash
+git pull origin <branch-name>
 ```
 
-### checkout to another branch 
-```
- git checkout  <branch name>
- ```
+## Branch Management
 
-### check all branch local 
-```
-git branch  # local
-git branch -a   # local & remote 
+```bash
+git branch                           # Local branches
+git branch -a                        # Local & remote branches
+git checkout <branch-name>           # Switch branch
+git branch <branch-name>             # Create branch
+git checkout -b <branch-name>        # Create and switch
+git branch -m <old> <new>            # Rename branch
+git branch -m <new>                  # Rename current branch
+git branch -d <branch-name>          # Delete branch
 ```
 
-### Merge branch
+## Merging
+
 ```bash
 git checkout main
-git merge <branch name>
+git merge <branch-name>
 ```
 
-### check commit history 
-```shell
-git log
-```
-### reset to older commit
+## Logs & Reset
+
 ```bash
-git reset --hard <commit>
-# git reset --hard origin/master
-```
-
-### creat anoter branc in reomte  and push 
-```
-    git push --set-upstream origin <branch name>
-```
-
-### delate remote branch
-```
-git push origin --delete <branch name>
-```
-
-### git merge to branch 
-```shell
-git merge <branch name>
+git log                              # Show history
+git log --oneline                    # Show history in one line
+git reflog                           # Show reflog
 
 ```
-### merge to remot branch 
 
+## Reset
 
-<!--  -->
-# ## git aut ssh
-* 
-* git config --global user.email "hasin3112@gmail.com"
-* git config --global user.name "Elhussin"
+```bash
+git reset --hard <commit>           # Reset to specific commit
+git reset --hard origin/<branch-name> # Reset to remote branch
+```
 
-* ssh-keygen -t ed25519 -C "hasin3112@gmail.com" : creat SSH
-* ~/.ssh/id_ed25519.pub 
-* ssh -T git@github.com  : confiarm its work
+## Create Branch for Remote
 
-* cat ~/.ssh/id_ed25519.pub : capy it
-* [git ssh](https://github.com/settings/ssh/new)
+```bash
+git checkout -b <NEW-branch-name>  # create new branch
+git push -u origin <NEW-branch-name> # push new branch to remote
+```
 
-* git remote -v : check remot 
+##Delete Remote Branch
 
-### send jsx as props childern'''
+```bash
+git push origin --delete <branch-name>
+```
 
-# Git Commit message
+## Stash
+
+```bash
+git stash  # Save changes
+git stash pop  # Apply changes
+git stash list  # List stashes
+git stash drop  # Drop stash
+git stash clear  # Clear all stashes
+```
+
+## Rebase
+
+```bash
+git rebase <branch-name> # rebase to branch
+git rebase --continue # continue rebase
+git rebase --abort # abort rebase
+git rebase -i <commit> # interactive rebase
+```
+
+## Tagging
+
+```bash
+git tag <tag-name> # tag commit
+git tag -a <tag-name> -m "message" # annotated tag
+git tag -d <tag-name> # delete tag
+git push origin <tag-name> # push tag
+git push origin --tags # push all tags
+git push origin --delete <tag-name> # delete tag from remote
+```
+
+## Commit Message Conventions
 
 ```
-<type>(optional scope): <short summary>
+<type>(scope): <short summary>
 
 (optional body)
 
 (optional footer)
 ```
-### must populer command
-```
-feat(auth): add JWT authentication
-fix(login): resolve crash when email is empty
-docs(readme): update installation steps
-refactor(api): simplify error handling
-chore: update dependencies
-test(user): add unit tests for user service
-```
 
-```feat	إضافة ميزة جديدة
-fix	إصلاح خلل
-docs	تحديث التوثيق فقط
-style	تغييرات تنسيق (مثل الفراغات، وليس الكود نفسه)
-refactor	تحسين الكود بدون تغيير السلوك
-test	إضافة أو تعديل اختبارات
-chore	أشياء أخرى (تحديث أدوات، إعدادات CI، إلخ)
-```
+### Common Types
 
-### notes
+- feat: إضافة ميزة جديدة
+- fix: إصلاح خلل
+- docs: توثيق فقط
+- style: تغييرات تنسيقية
+- refactor: تحسين الكود بدون تغيير السلوك
+- test: إضافة أو تعديل اختبارات
+- chore: أشياء أخرى (CI, أدوات)
 
-* استخدم المضارع (e.g. add, fix) وليس الماضي.
-* اجعل الرسالة قصيرة وواضحة (50 حرف كحد أقصى للعنوان).
-* استخدم سطرًا ثانيًا فارغًا، ثم وصف تفصيلي إن لزم.
-* لا تكتب "WIP" (work in progress) إلا مؤقتًا.
+### Guidelines
 
+- استخدم المضارع: (e.g., add, fix)
+- العنوان لا يتجاوز 50 حرفًا
+- سطر ثانٍ فارغ قبل التفاصيل
+- لا تكتب "WIP" إلا مؤقتًا
 
-### Exmpeale
-```
-<type>(<scope>): <short summary>
+### Commit Message Example
 
-# وصف تفصيلي (اختياري)
-# سطر واحد أو أكثر يشرح التعديل بشكل أوسع، ولماذا تم.
-
-# Tickets أو مراجع (اختياري)
-# Closes #123 أو Related to #456
-```
 ```
 feat(auth): add login with Google support
 
@@ -248,7 +287,16 @@ This helps improve user convenience and reduces login friction.
 Closes #42
 ```
 
-### tempalte 
+## Open Commit Message in Editor
+
+```bash
+git config --global core.editor "<editorName> --wait"
+```
+
+## Creat Commit Message Template
+
+### tempalte example
+
 ```
 type(scope): short summary
 
@@ -256,111 +304,10 @@ Optional detailed explanation of what and why.
 
 Related issues: #...
 ```
+
 ### creat template
-```
+
+```bash
 nano ~/.gitmessage.txt
-
 git config --global commit.template ~/.gitmessage.txt
-
 ```
-* Ctrl + O → O stands for Output (save)
-
-* Ctrl + X → eXit
-
-### open commit messag in editor
-git config --global core.editor "code --wait"
-
-
-<!--  -->
-# ## git aut ssh
-* 
-* git config --global user.email "hasin3112@gmail.com"
-* git config --global user.name "Elhussin"
-
-* ssh-keygen -t ed25519 -C "hasin3112@gmail.com" : creat SSH
-* ~/.ssh/id_ed25519.pub 
-* ssh -T git@github.com  : confiarm its work
-
-* cat ~/.ssh/id_ed25519.pub : capy it
-* [git ssh](https://github.com/settings/ssh/new)
-
-* git remote -v : check remot 
-
-### send jsx as props childern'''
-
-# Git Commit message
-
-```
-<type>(optional scope): <short summary>
-
-(optional body)
-
-(optional footer)
-```
-### must populer command
-```
-feat(auth): add JWT authentication
-fix(login): resolve crash when email is empty
-docs(readme): update installation steps
-refactor(api): simplify error handling
-chore: update dependencies
-test(user): add unit tests for user service
-```
-
-```feat	إضافة ميزة جديدة
-fix	إصلاح خلل
-docs	تحديث التوثيق فقط
-style	تغييرات تنسيق (مثل الفراغات، وليس الكود نفسه)
-refactor	تحسين الكود بدون تغيير السلوك
-test	إضافة أو تعديل اختبارات
-chore	أشياء أخرى (تحديث أدوات، إعدادات CI، إلخ)
-```
-
-### notes
-
-* استخدم المضارع (e.g. add, fix) وليس الماضي.
-* اجعل الرسالة قصيرة وواضحة (50 حرف كحد أقصى للعنوان).
-* استخدم سطرًا ثانيًا فارغًا، ثم وصف تفصيلي إن لزم.
-* لا تكتب "WIP" (work in progress) إلا مؤقتًا.
-
-
-### Exmpeale
-```
-<type>(<scope>): <short summary>
-
-# وصف تفصيلي (اختياري)
-# سطر واحد أو أكثر يشرح التعديل بشكل أوسع، ولماذا تم.
-
-# Tickets أو مراجع (اختياري)
-# Closes #123 أو Related to #456
-```
-```
-feat(auth): add login with Google support
-
-Added OAuth2 integration with Google to allow users to log in using their Gmail accounts.
-This helps improve user convenience and reduces login friction.
-
-Closes #42
-```
-
-### tempalte 
-```
-type(scope): short summary
-
-Optional detailed explanation of what and why.
-
-Related issues: #...
-```
-### creat template
-```
-nano ~/.gitmessage.txt
-
-git config --global commit.template ~/.gitmessage.txt
-
-```
-* Ctrl + O → O stands for Output (save)
-
-* Ctrl + X → eXit
-
-### open commit messag in editor
-git config --global core.editor "code --wait"

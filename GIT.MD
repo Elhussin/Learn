@@ -14,7 +14,7 @@ cat ~/.ssh/id_ed25519.pub : capy it
 ```
 ### Create new repo and remote it to github
 1. create new repo on github
-2. init repo local
+2. init repo l  ocal
 ```bash
 git init
 git add .

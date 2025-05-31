@@ -25,9 +25,13 @@ python manage.py startapp accounts
 
 ### create database
 ```bash
-CREATE DATABASE tenant_db;
-CREATE USER tenant_user WITH PASSWORD 'tenant_pass';
-GRANT ALL PRIVILEGES ON DATABASE tenant_db TO tenant_user;
+CREATE DATABASE optics_tenant;
+CREATE USER taha WITH PASSWORD '3112';
+GRANT ALL PRIVILEGES ON DATABASE optics_tenant TO taha;
+GRANT USAGE ON SCHEMA public TO taha;
+GRANT CREATE ON SCHEMA public TO taha;
+ALTER DEFAULT PRIVILEGES IN SCHEMA public GRANT ALL ON TABLES TO taha;
+
 ```
 
 ### create .env file
@@ -74,23 +78,58 @@ DATABASES = {
 INSTALLED_APPS = [
     'django_tenants',
     'customers',
-    'django.contrib.admin',
-    'django.contrib.auth',
-    'django.contrib.contenttypes',
-    'django.contrib.sessions',
-    'django.contrib.messages',
-    'django.contrib.staticfiles',
+    'django apps..',
+    'another app',
 ]
 ```
 > add middleware
-
-
-python manage.py makemigrations customers
-python manage.py migrate_schemas --shared
-
-
-### create tenant
+```bash
+MIDDLEWARE = [
+    'django_tenants.middleware.main.TenantMainMiddleware',
+    ... another middleware
+]
 ```
+
+> add tenant model for apps
+
+># create shared database
+```bash
+python manage.py makemigrations customers
+python manage.py migrate_schemas --shared  # create shared database
+```
+
+
+
+### create main admin from shell
+
+```bash
+python manage.py shell
+from django_tenants.utils import get_tenant_model,get_tenant_domain_model
+
+TenantModel = get_tenant_model()
+DomainModel = get_tenant_domain_model()
+
+# إنشاء التينانت الرئيسي (العام) لو مش موجود
+tenant, created = TenantModel.objects.get_or_create(
+    schema_name='public',
+    defaults={
+        'name': 'Main Site',
+        'paid_until': '2030-12-31',
+        'on_trial': False
+    }
+)
+
+# ربط التينانت بالدومين 127.0.0.1
+DomainModel.objects.get_or_create(
+    domain='127.0.0.1',
+    tenant=tenant,
+    is_primary=True
+)
+```
+
+### create tenant 
+
+```bash
 python manage.py shell
 from customers.models import Client, Domain
 
@@ -115,5 +154,34 @@ domain.save()
 
 ```bash
 python manage.py makemigrations core orders
-python manage.py migrate_schemas --tenant
+python manage.py migrate_schemas --tenant 
+python manage.py migrate_schemas --shared ## create tenant database
 ```
+
+
+# creat super user for main admin
+```bash
+python manage.py createsuperuser
+```
+
+# craet super user for tenant
+```bash
+from django_tenants.utils import schema_context
+from django.contrib.auth import get_user_model
+
+User = get_user_model()
+
+with schema_context('store1'):
+    User.objects.create_superuser(
+        username='admin',
+        email='admin@store1.com',
+        password='adminpass123'
+    )
+```
+
+### add domain to hosts
+C:\Windows\System32\drivers\etc\hosts
+
+127.0.0.1       store1.localhost
+127.0.0.1       store2.localhost
+127.0.0.1       store3.localhost

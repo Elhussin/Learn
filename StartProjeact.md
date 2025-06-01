@@ -185,3 +185,31 @@ C:\Windows\System32\drivers\etc\hosts
 127.0.0.1       store1.localhost
 127.0.0.1       store2.localhost
 127.0.0.1       store3.localhost
+
+
+
+
+# test email
+```bash
+python manage.py shell
+from django.core.mail import send_mail
+
+send_mail(
+    'Test Email',
+    'This is a test email.',
+    'hasin.taha@yahoo.com',
+    ['hasin.taha@yahoo.com'],
+    fail_silently=False,
+)
+```
+
+
+from django.core.mail import send_mail
+
+send_mail(
+    subject='Test Email',
+    message='Hello, this is a test email from Django.',
+    from_email='hasin.taha@yahoo.com',
+    recipient_list=['hasin3112@gmail.com'],
+    fail_silently=False
+)

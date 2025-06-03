@@ -153,7 +153,7 @@ domain.save()
 
 
 ```bash
-python manage.py makemigrations core orders
+python manage.py makemigrations core orders products
 python manage.py migrate_schemas --tenant 
 python manage.py migrate_schemas --shared ## create tenant database
 ```

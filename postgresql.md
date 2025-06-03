@@ -56,4 +56,17 @@ psql
 GRANT ALL PRIVILEGES ON DATABASE optics TO taha;
 \q
 ```
-
+### connect to database
+```bash
+psql -U postgres -d optics_tenant
+```
+### grant permissions
+```bash
+GRANT USAGE ON SCHEMA public TO taha;
+GRANT CREATE ON SCHEMA public TO taha;
+GRANT ALL PRIVILEGES ON SCHEMA public TO taha;
+```
+### grant permissions to user       
+```bash
+ALTER DEFAULT PRIVILEGES IN SCHEMA public GRANT ALL ON TABLES TO taha;
+```

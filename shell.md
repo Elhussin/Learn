@@ -20,3 +20,7 @@
 ### to remove pyc file and __pycache__
 ```Get-ChildItem -Recurse -Include *.pyc | Remove-Item
 Get-ChildItem -Recurse -Directory -Include __pycache__ | Remove-Item -Recurse```
+
+### to remove migrations file
+```find . -path "*/migrations/*.py" -not -name "__init__.py" -delete
+find . -path "*/migrations/*.pyc"  -delete```

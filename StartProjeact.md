@@ -186,7 +186,10 @@ C:\Windows\System32\drivers\etc\hosts
 127.0.0.1       store2.localhost
 127.0.0.1       store3.localhost
 
+### in luinx
+sudo nano /etc/hosts
 
+127.0.0.1 store1.localhost client1.localhost
 
 
 # test email

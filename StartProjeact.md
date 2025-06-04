@@ -103,6 +103,7 @@ python manage.py migrate_schemas --shared  # create shared database
 ### create main admin from shell
 
 ```bash
+
 python manage.py shell
 from django_tenants.utils import get_tenant_model,get_tenant_domain_model
 

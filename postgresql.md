@@ -70,3 +70,21 @@ GRANT ALL PRIVILEGES ON SCHEMA public TO taha;
 ```bash
 ALTER DEFAULT PRIVILEGES IN SCHEMA public GRANT ALL ON TABLES TO taha;
 ```
+
+### pgadmin4
+```bash
+sudo systemctl status pgadmin4
+```
+
+### install pgadmin4
+```bash
+sudo apt update
+sudo apt install pgadmin4
+sudo apt install pgadmin4-apache2
+```
+
+### run pgadmin4
+```bash
+sudo systemctl start pgadmin4
+sudo systemctl enable pgadmin4
+```

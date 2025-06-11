@@ -98,3 +98,9 @@ python manage.py migrate
 ```
 pip install psycopg2-binary
 ```
+
+
+### collect static
+```shell
+python manage.py collectstatic
+```

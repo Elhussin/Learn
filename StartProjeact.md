@@ -21,6 +21,8 @@ python manage.py startapp customers
 python manage.py startapp orders
 python manage.py startapp core
 python manage.py startapp accounts
+python manage.py startapp CRM
+python manage.py startapp HRM
 ```
 
 ### create database
@@ -157,6 +159,8 @@ domain.save()
 python manage.py makemigrations core orders products
 python manage.py migrate_schemas --tenant 
 python manage.py migrate_schemas --shared ## create tenant database
+
+ python manage.py migrate --schema=store1  
 ```
 
 

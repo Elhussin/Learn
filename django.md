@@ -109,3 +109,11 @@ rm -rf */migrations/*
 
 
 rm -rf CRM/migrations/* CRM/migrations/__pycache__
+del orders\migrations\0004_auto_20250613_1948.py
+
+
+### update api docs
+python manage.py spectacular --color
+
+
+

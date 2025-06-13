@@ -15,12 +15,48 @@
 ```code file.html```
 
 ### to open new trmnanl VS 
-``` crt + shift + ` ```
+```shell
+crt + shift +`
+```
 
 ### to remove pyc file and __pycache__
-```Get-ChildItem -Recurse -Include *.pyc | Remove-Item
-Get-ChildItem -Recurse -Directory -Include __pycache__ | Remove-Item -Recurse```
+```shell
+Get-ChildItem -Recurse -Include *.pyc | Remove-Item
+Get-ChildItem -Recurse -Directory -Include __pycache__ | Remove-Item -Recurse
+```
 
 ### to remove migrations file
-```find . -path "*/migrations/*.py" -not -name "__init__.py" -delete
-find . -path "*/migrations/*.pyc"  -delete```
+```shell
+find . -path "*/migrations/*.py" -not -name "__init__.py" -delete
+find . -path "*/migrations/*.pyc"  -delete
+```
+
+
+
+### to remove pyc file and __pycache__
+```shell
+find . -name "__pycache__" -type d -exec rm -r {} +  # (Linux/macOS)
+Get-ChildItem -Path . -Recurse -Directory -Filter "__pycache__" | Remove-Item -Recurse -Force  # (Windows PowerShell)
+```
+
+### to remove migrations file
+```shell
+find . -path "*/migrations/*.py" -not -name "__init__.py" -delete
+find . -path "*/migrations/*.pyc"  -delete
+```
+
+
+### 2.Active 
+```shell
+dism.exe /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linux /all /norestart
+dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /norestart
+```
+
+### 3. تعيين WSL 2 كإصدار الافتراضي
+```shell
+wsl --set-default-version 2
+
+###معرفة نوع المعالج 64- 32
+ wmic cpu get caption
+
+###

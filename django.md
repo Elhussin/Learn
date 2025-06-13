@@ -104,3 +104,8 @@ pip install psycopg2-binary
 ```shell
 python manage.py collectstatic
 ```
+
+rm -rf */migrations/*
+
+
+rm -rf CRM/migrations/* CRM/migrations/__pycache__

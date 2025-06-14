@@ -221,3 +221,19 @@ send_mail(
     recipient_list=['hasin3112@gmail.com'],
     fail_silently=False
 )
+
+
+<!-- install django-extensions bulis data base desing -->
+pip install django-extensions
+pip install pygraphviz
+
+sudo apt install graphviz   # أو على ويندوز: choco install graphviz
+
+python manage.py graph_models -a -o my_project_erd.png
+python manage.py graph_models myapp -o myapp_erd.png
+
+
+https://graphviz.org/download/
+dot -V
+dot - graphviz version 2.44.1 (20200629.0846)
+python manage.py graph_models -a -o my_project_erd.png

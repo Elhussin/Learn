@@ -4,6 +4,7 @@
 ## 🛠️ Create a Next.js App
 ```bash
 npx create-next-app@latest
+npx create-next-app@latest optics_tenant_next --typescript
 ```
 
 ## ▶️ Run the App

@@ -224,6 +224,8 @@ send_mail(
 
 
 <!-- install django-extensions bulis data base desing -->
+
+```bash
 pip install django-extensions
 pip install pygraphviz
 
@@ -231,9 +233,29 @@ sudo apt install graphviz   # أو على ويندوز: choco install graphviz
 
 python manage.py graph_models -a -o my_project_erd.png
 python manage.py graph_models myapp -o myapp_erd.png
+```
 
-
+```bash
 https://graphviz.org/download/
 dot -V
 dot - graphviz version 2.44.1 (20200629.0846)
 python manage.py graph_models -a -o my_project_erd.png
+```
+
+### start next and bulid app
+
+```bash
+npm install -g pnpm
+pnpm install
+pnpm run build
+```
+### genrate typescript for api
+```bash
+pnpm install -D openapi-typescript
+npx openapi-typescript http://localhost:8000/api/schema/ --output lib/api-types.ts
+
+# Use @rjsf/core To creat ui
+npm install @rjsf/core
+npx openapi2jsonschema http://localhost:8000/api/schema/ -o schemas/
+# npx openapi-typescript https://your-api-endpoint.com/openapi.json > src/api/types.ts
+```

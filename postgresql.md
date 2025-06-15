@@ -62,13 +62,13 @@ psql -U postgres -d optics_tenant
 ```
 ### grant permissions
 ```bash
-GRANT USAGE ON SCHEMA public TO taha;
-GRANT CREATE ON SCHEMA public TO taha;
-GRANT ALL PRIVILEGES ON SCHEMA public TO taha;
+GRANT USAGE ON SCHEMA public TO taha1;
+GRANT CREATE ON SCHEMA public TO taha1;
+GRANT ALL PRIVILEGES ON SCHEMA public TO taha1;
 ```
 ### grant permissions to user       
 ```bash
-ALTER DEFAULT PRIVILEGES IN SCHEMA public GRANT ALL ON TABLES TO taha;
+ALTER DEFAULT PRIVILEGES IN SCHEMA public GRANT ALL ON TABLES TO taha1;
 ```
 
 ### pgadmin4

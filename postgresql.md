@@ -88,3 +88,8 @@ sudo apt install pgadmin4-apache2
 sudo systemctl start pgadmin4
 sudo systemctl enable pgadmin4
 ```
+# GRANT ALL PRIVILEGES ON SCHEMA public TO taha
+# GRANT ALL PRIVILEGES ON SCHEMA public TO taha
+# GRANT ALL PRIVILEGES ON SCHEMA public TO taha
+# GRANT ALL PRIVILEGES ON ALL TABLES IN SCHEMA public TO taha
+# GRANT ALL PRIVILEGES ON ALL SEQUENCES IN SCHEMA public TO taha

@@ -117,3 +117,23 @@ python manage.py spectacular --color
 
 
 
+
+
+###
+find . -name "*.pyc" -delete
+
+###
+python manage.py help
+
+
+ls core/management/commands/
+
+
+python manage.py help | grep delete_tenant
+python manage.py delete_tenant store1 --force
+
+
+
+
+sudo snap install tree  
+tree core/

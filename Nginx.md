@@ -97,3 +97,61 @@ cd /home/hussin/Desktop/learning/optics_tenant
 source ../venv/bin/activate
 
 gunicorn optics_tenant.wsgi:application --bind 127.0.0.1:8000
+
+
+Stop gunicorn
+sudo systemctl stop gunicorn
+
+Start gunicorn
+sudo systemctl start gunicorn
+
+Restart gunicorn
+sudo systemctl restart gunicorn
+
+### enable gunicorn
+sudo systemctl enable gunicorn
+
+### check status
+sudo systemctl status gunicorn
+
+### check logs
+sudo journalctl -u gunicorn
+
+### stop nginx
+sudo systemctl stop nginx
+
+### start nginx
+sudo systemctl start nginx
+
+### restart nginx
+sudo systemctl restart nginx
+
+### enable nginx
+sudo systemctl enable nginx
+
+### check status
+sudo systemctl status nginx
+
+### check logs
+sudo journalctl -u nginx
+
+
+sudo systemctl stop apache2
+sudo systemctl disable apache2
+
+sudo systemctl stop mysql
+sudo systemctl disable mysql
+
+sudo systemctl stop postgresql
+sudo systemctl disable postgresql
+### runpostgresql
+sudo -u postgres psql
+### run postgresql web admin 
+sudo -u postgres pgweb
+
+### stop chrome
+sudo systemctl stop chrome
+sudo systemctl disable chrome
+sudo kill <PID>
+
+

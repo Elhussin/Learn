@@ -41,10 +41,12 @@ Get-ChildItem -Path . -Recurse -Directory -Filter "__pycache__" | Remove-Item -R
 
 ### to remove migrations file
 ```shell
-find . -path "*/migrations/*.py" -not -name "__init__.py" -delete
-find . -path "*/migrations/*.pyc"  -delete
+rm . "*/migrations/*.py" -not -name "__init__.py" -delete
+rm . "*/migrations/*.pyc"  -delete
 ```
 
+rm -r */migrations/*.py
+rm -r */migrations/*.pyc
 
 ### 2.Active 
 ```shell

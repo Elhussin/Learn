@@ -5,7 +5,7 @@ sudo apt install python3.12-venv
 python3 -m venv venv
 source venv/bin/activate
 ```
-
+l
 ```shell
 py -m venv venv
 venv\Scripts\activate

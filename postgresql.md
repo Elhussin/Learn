@@ -93,3 +93,31 @@ sudo systemctl enable pgadmin4
 # GRANT ALL PRIVILEGES ON SCHEMA public TO taha
 # GRANT ALL PRIVILEGES ON ALL TABLES IN SCHEMA public TO taha
 # GRANT ALL PRIVILEGES ON ALL SEQUENCES IN SCHEMA public TO taha
+
+
+### coneact  postgress with pgadmin4 in luinx
+```bash
+sudo -u postgres psql
+why 
+```
+
+### connect to database
+```bash
+psql -U postgres -d optics_tenant
+```
+
+### grant permissions to user       
+```bash
+ALTER DEFAULT PRIVILEGES IN SCHEMA public GRANT ALL ON TABLES TO taha1;
+```
+
+### grant permissions to user       
+```bash
+GRANT ALL PRIVILEGES ON SCHEMA public TO taha1;
+GRANT ALL PRIVILEGES ON ALL TABLES IN SCHEMA public TO taha1;
+GRANT ALL PRIVILEGES ON ALL SEQUENCES IN SCHEMA public TO taha1;
+```
+
+### gran pgadmin4 to user
+```bash
+

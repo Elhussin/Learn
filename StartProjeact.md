@@ -259,3 +259,6 @@ npm install @rjsf/core
 npx openapi2jsonschema http://localhost:8000/api/schema/ -o schemas/
 # npx openapi-typescript https://your-api-endpoint.com/openapi.json > src/api/types.ts
 ```
+
+
+python manage.py runserver 0.0.0.0:8000

@@ -4,6 +4,11 @@ npx openapi-typescript http://store1.localhost:8000/api/schema/ -o lib/api-types
 # generate api types
 npx openapi-typescript-codegen --input http://store1.localhost:8000/api/schema/ --output src/api --client axios
 
+# generate api zod
+
+npx openapi-zod-client "http://store1.localhost:8000/api/schema/" -o src/api-zod
+
+
 # Use react-hook-form To creat ui
 pnpm install react-hook-form zod @hookform/resolvers
 

@@ -45,3 +45,16 @@ npm install @mui/x-data-grid
 # Use @mui/x-date-pickers To creat ui
 npm install @mui/x-date-pickers
 
+
+
+// npx ts-node scripts/generate-zod-form.ts UserRequest
+// install ts-node typescript --save-dev
+// pnpm install --save-dev ts-node typescript
+// npx ts-node --loader ts-node/esm scripts/generate-zod-form.ts UserRequest
+
+
+
+# clean cash
+```shell
+rm  .next && rm  node_modules/.cache/turbopack
+```

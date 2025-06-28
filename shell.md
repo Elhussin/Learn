@@ -62,3 +62,16 @@ wsl --set-default-version 2
  wmic cpu get caption
 
 ###
+
+
+### open port 
+New-NetFirewallRule -DisplayName "Allow Port 8000" -Direction Inbound -Protocol TCP -LocalPort 8000 -Action Allow
+
+### 
+ netstat -ano | findstr :8000
+
+ Set-NetFirewallRule -DisplayName "Allow Port 8000" -EdgeTraversalPolicy Allow
+
+# chek domain
+ nslookup optical-systeam.zapto.org
+

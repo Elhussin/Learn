@@ -137,3 +137,8 @@ python manage.py delete_tenant store1 --force
 
 sudo snap install tree  
 tree core/
+
+# to show all url in projeact
+python manage.py show_urls
+
+# save url in text file

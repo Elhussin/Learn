@@ -56,5 +56,8 @@ npm install @mui/x-date-pickers
 
 # clean cash
 ```shell
-rm  .next && rm  node_modules/.cache/turbopack
+rm -rf .next && rm -rf node_modules/.cache/turbopack
 ```
+
+
+rm -rf .next

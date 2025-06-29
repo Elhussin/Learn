@@ -61,3 +61,4 @@ rm -rf .next && rm -rf node_modules/.cache/turbopack
 
 
 rm -rf .next
+rm -rf node_modules

@@ -4,8 +4,18 @@
 ## 🛠️ Create a Next.js App
 ```bash
 npx create-next-app@latest
-npx create-next-app@latest optics_tenant_next --typescript
+npx create-next-app@latest optics_next --typescript
+pnpm dlx create-next-app@latest optics_next --typescript
 ```
+# تثبيت الحزم الأساسية
+pnpm add next react react-dom
+
+# تثبيت تبعيات التطوير
+pnpm add -D typescript @types/react @types/node
+
+# تثبيت حزم إضافية
+pnpm add axios date-fns
+
 
 ## ▶️ Run the App
 ```bash

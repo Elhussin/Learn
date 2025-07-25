@@ -180,7 +180,7 @@ git branch <branch-name>             # Create branch
 git checkout -b <branch-name>        # Create and switch
 git branch -m <old> <new>            # Rename branch
 git branch -m <new>                  # Rename current branch
-git branch -d <branch-name>          # Delete branch
+git branch -D <branch-name>          # Delete branch
 ```
 
 ## Merging

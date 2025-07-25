@@ -142,3 +142,23 @@ tree core/
 python manage.py show_urls
 
 # save url in text file
+
+
+# Language
+```
+django-admin makemessages -l ar
+```
+# compile messages
+```
+django-admin compilemessages
+```
+#  add GNU gettext tools
+```
+sudo apt-get install gettext
+sudo apt update
+sudo apt install gettext
+
+```
+```wind
+[Download](https://github.com/mlocati/gettext-iconv-windows/releases/tag/v0.25-v1.17)
+```

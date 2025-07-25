@@ -75,3 +75,4 @@ New-NetFirewallRule -DisplayName "Allow Port 8000" -Direction Inbound -Protocol 
 # chek domain
  nslookup optical-systeam.zapto.org
 
+grep -rnw './src' -e 'toast('

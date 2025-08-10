@@ -5,7 +5,7 @@
 ```bash
 npx create-next-app@latest
 npx create-next-app@latest optics_next --typescript
-pnpm dlx create-next-app@latest optics_next --typescript
+788
 ```
 # تثبيت الحزم الأساسية
 pnpm add next react react-dom
@@ -18,10 +18,10 @@ pnpm add axios date-fns
 
 
 ## ▶️ Run the App
-```bash
+```bash888
 npm run dev
 ```
-
+5
 ---
 
 ## 📄 Create Pages (App Router)

@@ -43,6 +43,7 @@ Get-ChildItem -Path . -Recurse -Directory -Filter "__pycache__" | Remove-Item -R
 ```shell
 rm . "*/migrations/*.py" -not -name "__init__.py" -delete
 rm . "*/migrations/*.pyc"  -delete
+Get-ChildItem -Path . -Recurse -Directory -Filter "migrations" | Remove-Item -Recurse -Force 
 ```
 
 rm -r */migrations/*.py

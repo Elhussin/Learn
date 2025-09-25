@@ -77,3 +77,11 @@ New-NetFirewallRule -DisplayName "Allow Port 8000" -Direction Inbound -Protocol 
  nslookup optical-systeam.zapto.org
 
 grep -rnw './src' -e 'toast('
+
+
+
+# creat tree
+#  tree > tree.txt
+ tree /f /a > tree_output.txt
+
+ tree -I 'node_modules|build|.git' > app_structure_filtered.txt

@@ -85,3 +85,15 @@ grep -rnw './src' -e 'toast('
  tree /f /a > tree_output.txt
 
  tree -I 'node_modules|build|.git' > app_structure_filtered.txt
+
+# create tree 
+tree > tree.txt
+
+# create tree file  in luinx
+```bash
+tree > tree.txt
+```
+
+
+#  creat requirements.txt
+pip freeze > requirements.txt

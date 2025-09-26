@@ -9,7 +9,7 @@ l
 ```shell
 py -m venv venv
 venv\Scripts\activate
-```
+```git add
 ### If can not active
 ```shell
 Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy Unrestricted

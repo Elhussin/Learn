@@ -1,0 +1,11 @@
+@import "tailwindcss";
+
+.artical {
+  @apply text-2xl text-center text-gray-700 dark:text-gray-200 border-b-2 border-gray-300 dark:border-gray-700;
+}
+@media (prefers-color-scheme: dark) {
+  .artical {
+    @apply text-gray-200;
+  }
+}
+

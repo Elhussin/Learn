@@ -1,0 +1,23 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+ </head>
+ <body>
+    
+    <h1>Artical View </h1>
+
+    <% for( artical of data) { %>
+        <div style="background-color: beige;">
+        <h2 style="background-color: darkcyan ;">Title: <%= artical.title %></h2>
+        <p>Content: <%= artical.body %></p>
+        <p>date: <%= artical.date %></p>
+        <hr>
+    </div>
+    <% } %>
+
+
+ </body>
+ </html>

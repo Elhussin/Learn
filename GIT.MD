@@ -311,3 +311,23 @@ Related issues: #...
 nano ~/.gitmessage.txt
 git config --global commit.template ~/.gitmessage.txt
 ```
+
+## remove cash
+```bash
+git rm --cached <file-name>
+```
+
+## remove all cash
+```bash
+git rm --cached .
+```
+
+## remove all cash and files
+```bash
+git rm --cached -r .
+```
+## remove all cash and files
+
+```bash
+rm -rf .git
+```

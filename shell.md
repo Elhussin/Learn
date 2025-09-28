@@ -96,4 +96,12 @@ tree > tree.txt
 
 
 #  creat requirements.txt
+```bash
 pip freeze > requirements.txt
+```
+
+# install requirements.txt
+```bash
+pip install -r requirements.txt
+```
+

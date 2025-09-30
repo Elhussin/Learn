@@ -113,7 +113,7 @@ git config --global user.name "UserName"
 ## SSH Authentication
 
 ```bash
-ssh-keygen -t ed25519 -C "<email>"  # Create SSH key
+ssh-keygen -t ed25519 -C "hasin3112@gmail.com"  # Create SSH key
 cat ~/.ssh/id_ed25519.pub                       # Copy key content
 ssh -T git@github.com                           # Confirm it's working
 ```

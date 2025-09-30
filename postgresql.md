@@ -33,12 +33,12 @@ sudo -u postgres psql
 CREATE DATABASE optics_tenant;
 CREATE USER taha1 WITH ENCRYPTED PASSWORD '3112';
 
-ALTER ROLE taha1 SET client_encoding TO 'utf8';
-ALTER ROLE taha1 SET default_transaction_isolation TO 'read committed';
-ALTER ROLE taha1 SET timezone TO 'UTC';
-GRANT ALL PRIVILEGES ON DATABASE optics_tenant TO taha1;
+ALTER ROLE taha SET client_encoding TO 'utf8';
+ALTER ROLE taha SET default_transaction_isolation TO 'read committed';
+ALTER ROLE taha SET timezone TO 'UTC';
+GRANT ALL PRIVILEGES ON DATABASE optics_tenant TO taha;
 \q
-```
+```|q
 
 ### windows\
 ```bash

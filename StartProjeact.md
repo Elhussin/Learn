@@ -262,3 +262,12 @@ npx openapi2jsonschema http://localhost:8000/api/schema/ -o schemas/
 
 
 python manage.py runserver 0.0.0.0:8000
+ENV_FILE=.env.development python manage.py runserver 0.0.0.0:8000(s): accounting, admin, admin_interface, auth, authtoken, branches, contenttypes, crm, hrm, prescriptions, products, sales, sessions, sites, tenants, users.
+Run 'python manage.py migrate' to apply them.
+September 30, 2025 - 01:43:42
+Django version 5.2.6, using settings 'optics_tenant.settings'
+Starting development server at http://0.0.0.0:8000/
+Quit the server with CONTROL-C.
+
+WARNING: This is a development server. Do not use it in a production setting. Use a production WSGI or ASGI server instead.
+For more information on production servers see: https://docs.djangoproject.com/en/5.2

@@ -147,7 +147,7 @@ sudo docker-compose down -v
 
 # start docker compose
 ```bash
-sudo docker-compose up --build -d
+sudo docker compose up --build -d
 
 docker compose -f docker-compose.dev.yml up
 

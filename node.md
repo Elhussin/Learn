@@ -34,3 +34,20 @@ render :can render
 
     * use mangoose : `pnpm install mongoose`
     * bulid schem
+
+
+
+##  clean up
+rm -rf node_modules
+rm -f package-lock.json
+rm -f pnpm-lock.yaml
+rm -f bun.lockb
+
+## 
+npm cache clean --force
+pnpm store prune
+bun pm cache rm
+
+    // "dev": "bun next dev",
+    // "build": "bun next build",
+    // "start": "bun next start"

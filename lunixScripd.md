@@ -3,7 +3,7 @@
 nano setup_django_nginx.sh
 
 # make script executable
-chmod +x setup_django_nginx.sh
+chmod +x find_and_remove.sh
 
 # run script
 ./setup_django_nginx.sh

@@ -1,0 +1,7 @@
+[
+    {
+        "column": "transferid",
+        "type": "int",
+        "nullable": "NO"
+    }
+]

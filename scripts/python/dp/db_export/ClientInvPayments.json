@@ -1,0 +1,32 @@
+[
+    {
+        "column": "StoreID",
+        "type": "smallint",
+        "nullable": "NO"
+    },
+    {
+        "column": "ClientID",
+        "type": "smallint",
+        "nullable": "NO"
+    },
+    {
+        "column": "PaymentID",
+        "type": "int",
+        "nullable": "NO"
+    },
+    {
+        "column": "OrderID",
+        "type": "int",
+        "nullable": "NO"
+    },
+    {
+        "column": "Amount",
+        "type": "decimal",
+        "nullable": "YES"
+    },
+    {
+        "column": "LinkDate",
+        "type": "smalldatetime",
+        "nullable": "YES"
+    }
+]

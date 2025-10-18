@@ -1,0 +1,17 @@
+[
+    {
+        "column": "MainGroupID",
+        "type": "int",
+        "nullable": "NO"
+    },
+    {
+        "column": "InsuranceID",
+        "type": "smallint",
+        "nullable": "NO"
+    },
+    {
+        "column": "Discount",
+        "type": "decimal",
+        "nullable": "YES"
+    }
+]

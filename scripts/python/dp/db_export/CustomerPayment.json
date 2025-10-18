@@ -1,0 +1,82 @@
+[
+    {
+        "column": "intPaymentID",
+        "type": "int",
+        "nullable": "NO"
+    },
+    {
+        "column": "intTrans_Year",
+        "type": "int",
+        "nullable": "YES"
+    },
+    {
+        "column": "intSerial",
+        "type": "int",
+        "nullable": "YES"
+    },
+    {
+        "column": "intCustomerID",
+        "type": "int",
+        "nullable": "YES"
+    },
+    {
+        "column": "intEmployeeID",
+        "type": "int",
+        "nullable": "YES"
+    },
+    {
+        "column": "sinPaymentType",
+        "type": "smallint",
+        "nullable": "YES"
+    },
+    {
+        "column": "sinCreditCardID",
+        "type": "smallint",
+        "nullable": "YES"
+    },
+    {
+        "column": "vchCardNumber",
+        "type": "varchar(50)",
+        "nullable": "YES"
+    },
+    {
+        "column": "vchBatchNumber",
+        "type": "varchar(50)",
+        "nullable": "YES"
+    },
+    {
+        "column": "decPaymentAmount",
+        "type": "decimal",
+        "nullable": "YES"
+    },
+    {
+        "column": "sdtPaymentDate",
+        "type": "smalldatetime",
+        "nullable": "YES"
+    },
+    {
+        "column": "intCustomerOrderID",
+        "type": "int",
+        "nullable": "YES"
+    },
+    {
+        "column": "vchComment",
+        "type": "nvarchar(200)",
+        "nullable": "YES"
+    },
+    {
+        "column": "GalleryID",
+        "type": "smallint",
+        "nullable": "YES"
+    },
+    {
+        "column": "FreeSerial",
+        "type": "nvarchar(20)",
+        "nullable": "YES"
+    },
+    {
+        "column": "posted",
+        "type": "int",
+        "nullable": "YES"
+    }
+]

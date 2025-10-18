@@ -1,0 +1,247 @@
+[
+    {
+        "column": "CustomerOrderID",
+        "type": "int",
+        "nullable": "NO"
+    },
+    {
+        "column": "Trans_Year",
+        "type": "int",
+        "nullable": "YES"
+    },
+    {
+        "column": "Serial",
+        "type": "int",
+        "nullable": "YES"
+    },
+    {
+        "column": "GalleryID",
+        "type": "smallint",
+        "nullable": "YES"
+    },
+    {
+        "column": "EmployeeID",
+        "type": "smallint",
+        "nullable": "NO"
+    },
+    {
+        "column": "PaymentType",
+        "type": "nvarchar(12)",
+        "nullable": "YES"
+    },
+    {
+        "column": "CreditCardID",
+        "type": "smallint",
+        "nullable": "YES"
+    },
+    {
+        "column": "NoteSerial",
+        "type": "nvarchar(20)",
+        "nullable": "YES"
+    },
+    {
+        "column": "ReceiptNo",
+        "type": "int",
+        "nullable": "NO"
+    },
+    {
+        "column": "Paid",
+        "type": "smallint",
+        "nullable": "NO"
+    },
+    {
+        "column": "Printed",
+        "type": "tinyint",
+        "nullable": "YES"
+    },
+    {
+        "column": "OrderDate",
+        "type": "smalldatetime",
+        "nullable": "NO"
+    },
+    {
+        "column": "TotalPriceBeforeDiscount",
+        "type": "decimal",
+        "nullable": "YES"
+    },
+    {
+        "column": "TotalPrice",
+        "type": "decimal",
+        "nullable": "NO"
+    },
+    {
+        "column": "CashAmount",
+        "type": "decimal",
+        "nullable": "NO"
+    },
+    {
+        "column": "CouponAMount",
+        "type": "decimal",
+        "nullable": "YES"
+    },
+    {
+        "column": "CreditAmount",
+        "type": "decimal",
+        "nullable": "NO"
+    },
+    {
+        "column": "DiscountAmount",
+        "type": "decimal",
+        "nullable": "NO"
+    },
+    {
+        "column": "RevokeAmount",
+        "type": "decimal",
+        "nullable": "NO"
+    },
+    {
+        "column": "TotalDiscount",
+        "type": "decimal",
+        "nullable": "NO"
+    },
+    {
+        "column": "CardNumber",
+        "type": "varchar(20)",
+        "nullable": "YES"
+    },
+    {
+        "column": "PatchNumber",
+        "type": "varchar(50)",
+        "nullable": "YES"
+    },
+    {
+        "column": "Excluded",
+        "type": "char(1)",
+        "nullable": "YES"
+    },
+    {
+        "column": "CustomerID",
+        "type": "int",
+        "nullable": "YES"
+    },
+    {
+        "column": "InsuranceCompanyId",
+        "type": "smallint",
+        "nullable": "YES"
+    },
+    {
+        "column": "CreatedBy",
+        "type": "smallint",
+        "nullable": "YES"
+    },
+    {
+        "column": "CustomerOrderMasterID",
+        "type": "varchar(25)",
+        "nullable": "YES"
+    },
+    {
+        "column": "DownPaymentID",
+        "type": "int",
+        "nullable": "YES"
+    },
+    {
+        "column": "SpecialOffers",
+        "type": "bit",
+        "nullable": "YES"
+    },
+    {
+        "column": "SpecialOfferID",
+        "type": "int",
+        "nullable": "YES"
+    },
+    {
+        "column": "NoOfSpecialOffers",
+        "type": "int",
+        "nullable": "YES"
+    },
+    {
+        "column": "dtFinishDate",
+        "type": "datetime",
+        "nullable": "YES"
+    },
+    {
+        "column": "Comment",
+        "type": "nvarchar(4000)",
+        "nullable": "YES"
+    },
+    {
+        "column": "Posted",
+        "type": "bit",
+        "nullable": "YES"
+    },
+    {
+        "column": "Canceled",
+        "type": "bit",
+        "nullable": "YES"
+    },
+    {
+        "column": "InsuredNo",
+        "type": "nvarchar(20)",
+        "nullable": "YES"
+    },
+    {
+        "column": "InsuranceDiscount",
+        "type": "decimal",
+        "nullable": "YES"
+    },
+    {
+        "column": "Deductible",
+        "type": "decimal",
+        "nullable": "YES"
+    },
+    {
+        "column": "approveamount",
+        "type": "decimal",
+        "nullable": "YES"
+    },
+    {
+        "column": "TransNo",
+        "type": "nvarchar(20)",
+        "nullable": "YES"
+    },
+    {
+        "column": "insurranceCustomerName",
+        "type": "nvarchar(200)",
+        "nullable": "YES"
+    },
+    {
+        "column": "InsurranceCustomerMobile",
+        "type": "nvarchar(50)",
+        "nullable": "YES"
+    },
+    {
+        "column": "PolicyNo",
+        "type": "nvarchar(50)",
+        "nullable": "YES"
+    },
+    {
+        "column": "ApprovedNO",
+        "type": "nvarchar(50)",
+        "nullable": "YES"
+    },
+    {
+        "column": "ClaimDate",
+        "type": "smalldatetime",
+        "nullable": "YES"
+    },
+    {
+        "column": "OpTransfer",
+        "type": "smallint",
+        "nullable": "YES"
+    },
+    {
+        "column": "PolicyHolder",
+        "type": "nvarchar(250)",
+        "nullable": "YES"
+    },
+    {
+        "column": "subHolder",
+        "type": "nvarchar(50)",
+        "nullable": "YES"
+    },
+    {
+        "column": "IDeqama",
+        "type": "nvarchar(50)",
+        "nullable": "YES"
+    }
+]

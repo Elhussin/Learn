@@ -1,0 +1,92 @@
+[
+    {
+        "column": "Id",
+        "type": "int",
+        "nullable": "NO"
+    },
+    {
+        "column": "ProductID",
+        "type": "int",
+        "nullable": "YES"
+    },
+    {
+        "column": "CreationDate",
+        "type": "datetime",
+        "nullable": "YES"
+    },
+    {
+        "column": "OldPrice",
+        "type": "decimal",
+        "nullable": "YES"
+    },
+    {
+        "column": "NewPrice",
+        "type": "decimal",
+        "nullable": "YES"
+    },
+    {
+        "column": "OldStoreDiscount",
+        "type": "decimal",
+        "nullable": "YES"
+    },
+    {
+        "column": "NewStoreDiscount",
+        "type": "decimal",
+        "nullable": "YES"
+    },
+    {
+        "column": "OldStoreSaleDiscount",
+        "type": "decimal",
+        "nullable": "YES"
+    },
+    {
+        "column": "NewStoreSaleDiscount",
+        "type": "decimal",
+        "nullable": "YES"
+    },
+    {
+        "column": "OldGalleryDiscount",
+        "type": "decimal",
+        "nullable": "YES"
+    },
+    {
+        "column": "NewGalleryDiscount",
+        "type": "decimal",
+        "nullable": "YES"
+    },
+    {
+        "column": "OldGallerySaleDiscount",
+        "type": "decimal",
+        "nullable": "YES"
+    },
+    {
+        "column": "NewGallerySaleDiscount",
+        "type": "decimal",
+        "nullable": "YES"
+    },
+    {
+        "column": "OldDescription",
+        "type": "nvarchar(4000)",
+        "nullable": "YES"
+    },
+    {
+        "column": "NewDescription",
+        "type": "nvarchar(4000)",
+        "nullable": "YES"
+    },
+    {
+        "column": "UserId",
+        "type": "int",
+        "nullable": "YES"
+    },
+    {
+        "column": "OldWhalePrice",
+        "type": "decimal",
+        "nullable": "YES"
+    },
+    {
+        "column": "NewWhalePrice",
+        "type": "decimal",
+        "nullable": "YES"
+    }
+]

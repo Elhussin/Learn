@@ -1,0 +1,107 @@
+[
+    {
+        "column": "Year",
+        "type": "int",
+        "nullable": "NO"
+    },
+    {
+        "column": "StoreID",
+        "type": "smallint",
+        "nullable": "NO"
+    },
+    {
+        "column": "AdjustmentSerial",
+        "type": "int",
+        "nullable": "YES"
+    },
+    {
+        "column": "StoreRevokeSerial",
+        "type": "int",
+        "nullable": "YES"
+    },
+    {
+        "column": "GalleriesOrderSerial",
+        "type": "int",
+        "nullable": "YES"
+    },
+    {
+        "column": "GalleriesRevokeSerial",
+        "type": "int",
+        "nullable": "YES"
+    },
+    {
+        "column": "ClientRequestSerial",
+        "type": "int",
+        "nullable": "YES"
+    },
+    {
+        "column": "ClientOrderSerial",
+        "type": "int",
+        "nullable": "YES"
+    },
+    {
+        "column": "ClientRevokeSerial",
+        "type": "int",
+        "nullable": "YES"
+    },
+    {
+        "column": "ClientPaymentSerial",
+        "type": "int",
+        "nullable": "YES"
+    },
+    {
+        "column": "ClientRevokePayment",
+        "type": "int",
+        "nullable": "YES"
+    },
+    {
+        "column": "ClientAdjustmentSerial",
+        "type": "int",
+        "nullable": "YES"
+    },
+    {
+        "column": "PurchaseOrderSerial",
+        "type": "int",
+        "nullable": "YES"
+    },
+    {
+        "column": "SupplierInvoiceSerial",
+        "type": "int",
+        "nullable": "YES"
+    },
+    {
+        "column": "SupplierRevokeSerial",
+        "type": "int",
+        "nullable": "YES"
+    },
+    {
+        "column": "ExchangeProductsSerial",
+        "type": "int",
+        "nullable": "YES"
+    },
+    {
+        "column": "RequestProductSerial",
+        "type": "int",
+        "nullable": "YES"
+    },
+    {
+        "column": "TransferSerial",
+        "type": "int",
+        "nullable": "YES"
+    },
+    {
+        "column": "SpoiledProductsSerial",
+        "type": "int",
+        "nullable": "YES"
+    },
+    {
+        "column": "OpeningBalanceSerial",
+        "type": "int",
+        "nullable": "YES"
+    },
+    {
+        "column": "ProductTransferSerial",
+        "type": "int",
+        "nullable": "YES"
+    }
+]

@@ -1,0 +1,22 @@
+CREATE TABLE [CustomerOrderDetails] (
+    [CustomerOrderDetailsID] int NOT NULL,
+    [CustomerOrderID] int NOT NULL,
+    [ProductID] int NOT NULL,
+    [ExpiryDate] datetime NULL,
+    [Quantity] decimal NULL,
+    [TotalRevokes] decimal NULL,
+    [TotalExchange] decimal NULL,
+    [Discount] decimal NOT NULL,
+    [UnitPrice] decimal NULL,
+    [NetPrice] decimal NOT NULL,
+    [SupplierInvoiceDetailsID] int NULL,
+    [SPH] varchar(10) NULL,
+    [CYL] varchar(10) NULL,
+    [AXS] varchar(10) NULL,
+    [ADD] varchar(10) NULL,
+    [InsuranceDiscount] decimal NULL,
+    [ApprovePrice] decimal NULL,
+    [CustomerDe] decimal NULL,
+    [TypeID] int NULL,
+    CONSTRAINT [PK_CustomerOrderDetails] PRIMARY KEY ([CustomerOrderDetailsID])
+);

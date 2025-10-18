@@ -1,0 +1,17 @@
+[
+    {
+        "column": "MainGroupID",
+        "type": "int",
+        "nullable": "NO"
+    },
+    {
+        "column": "ClientID",
+        "type": "smallint",
+        "nullable": "NO"
+    },
+    {
+        "column": "Discount",
+        "type": "decimal",
+        "nullable": "YES"
+    }
+]

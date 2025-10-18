@@ -1,0 +1,37 @@
+[
+    {
+        "column": "ID",
+        "type": "int",
+        "nullable": "NO"
+    },
+    {
+        "column": "CodeSettingMasterID",
+        "type": "int",
+        "nullable": "NO"
+    },
+    {
+        "column": "SegmentType",
+        "type": "smallint",
+        "nullable": "YES"
+    },
+    {
+        "column": "FreeCodeType",
+        "type": "smallint",
+        "nullable": "YES"
+    },
+    {
+        "column": "FreeCodeLength",
+        "type": "smallint",
+        "nullable": "YES"
+    },
+    {
+        "column": "LookupID",
+        "type": "int",
+        "nullable": "YES"
+    },
+    {
+        "column": "FreeCodeName",
+        "type": "varchar(50)",
+        "nullable": "YES"
+    }
+]

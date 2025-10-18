@@ -1,0 +1,47 @@
+[
+    {
+        "column": "CURRENCY_CODE",
+        "type": "smallint",
+        "nullable": "NO"
+    },
+    {
+        "column": "NAME",
+        "type": "varchar(50)",
+        "nullable": "YES"
+    },
+    {
+        "column": "SYMBOL",
+        "type": "varchar(4)",
+        "nullable": "YES"
+    },
+    {
+        "column": "RATE",
+        "type": "float",
+        "nullable": "YES"
+    },
+    {
+        "column": "IsBaseCurrency",
+        "type": "bit",
+        "nullable": "NO"
+    },
+    {
+        "column": "dtCreateDate",
+        "type": "datetime",
+        "nullable": "YES"
+    },
+    {
+        "column": "sinCreateUSerID",
+        "type": "int",
+        "nullable": "YES"
+    },
+    {
+        "column": "dtUpdateDate",
+        "type": "datetime",
+        "nullable": "YES"
+    },
+    {
+        "column": "sinUpdateUserID",
+        "type": "int",
+        "nullable": "YES"
+    }
+]

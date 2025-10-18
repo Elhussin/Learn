@@ -1,0 +1,12 @@
+[
+    {
+        "column": "PaymentTypeID",
+        "type": "smallint",
+        "nullable": "NO"
+    },
+    {
+        "column": "PaymentTypeName",
+        "type": "nvarchar(50)",
+        "nullable": "YES"
+    }
+]

@@ -1,0 +1,42 @@
+[
+    {
+        "column": "ID",
+        "type": "float",
+        "nullable": "YES"
+    },
+    {
+        "column": "systemcode",
+        "type": "nvarchar(255)",
+        "nullable": "YES"
+    },
+    {
+        "column": "systemname",
+        "type": "nvarchar(255)",
+        "nullable": "YES"
+    },
+    {
+        "column": "price",
+        "type": "float",
+        "nullable": "YES"
+    },
+    {
+        "column": "BupaCode",
+        "type": "nvarchar(255)",
+        "nullable": "YES"
+    },
+    {
+        "column": "BupaName",
+        "type": "nvarchar(255)",
+        "nullable": "YES"
+    },
+    {
+        "column": "Left",
+        "type": "nvarchar(255)",
+        "nullable": "YES"
+    },
+    {
+        "column": "Right",
+        "type": "nvarchar(255)",
+        "nullable": "YES"
+    }
+]

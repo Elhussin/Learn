@@ -1,0 +1,22 @@
+[
+    {
+        "column": "ID",
+        "type": "int",
+        "nullable": "NO"
+    },
+    {
+        "column": "Description",
+        "type": "nvarchar(50)",
+        "nullable": "YES"
+    },
+    {
+        "column": "Width",
+        "type": "smallint",
+        "nullable": "YES"
+    },
+    {
+        "column": "Type",
+        "type": "bit",
+        "nullable": "YES"
+    }
+]

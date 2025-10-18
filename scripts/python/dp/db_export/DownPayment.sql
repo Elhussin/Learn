@@ -1,0 +1,22 @@
+CREATE TABLE [DownPayment] (
+    [DownPaymentID] int NOT NULL,
+    [GalleryID] smallint NOT NULL,
+    [CustomerID] int NOT NULL,
+    [EmployeeID] smallint NOT NULL,
+    [Trans_Year] int NOT NULL,
+    [Serial] int NOT NULL,
+    [PaymentType] smallint NULL,
+    [CreditCardID] smallint NULL,
+    [CardNumber] varchar(30) NULL,
+    [PatchNumber] varchar(20) NULL,
+    [PaymentAmount] float NOT NULL,
+    [PaidAmount] float NOT NULL,
+    [TakenAmount] float NOT NULL,
+    [PaymentDate] smalldatetime NOT NULL,
+    [RevokeID] int NULL,
+    [Status] tinyint NOT NULL,
+    [Comment] nvarchar(200) NULL,
+    [Posted] bit NULL,
+    [FreeSerial] bigint NULL,
+    CONSTRAINT [PK_DownPayment] PRIMARY KEY ([DownPaymentID])
+);

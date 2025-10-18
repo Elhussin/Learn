@@ -1,0 +1,97 @@
+[
+    {
+        "column": "DownPaymentID",
+        "type": "int",
+        "nullable": "NO"
+    },
+    {
+        "column": "GalleryID",
+        "type": "smallint",
+        "nullable": "NO"
+    },
+    {
+        "column": "CustomerID",
+        "type": "int",
+        "nullable": "NO"
+    },
+    {
+        "column": "EmployeeID",
+        "type": "smallint",
+        "nullable": "NO"
+    },
+    {
+        "column": "Trans_Year",
+        "type": "int",
+        "nullable": "NO"
+    },
+    {
+        "column": "Serial",
+        "type": "int",
+        "nullable": "NO"
+    },
+    {
+        "column": "PaymentType",
+        "type": "smallint",
+        "nullable": "YES"
+    },
+    {
+        "column": "CreditCardID",
+        "type": "smallint",
+        "nullable": "YES"
+    },
+    {
+        "column": "CardNumber",
+        "type": "varchar(30)",
+        "nullable": "YES"
+    },
+    {
+        "column": "PatchNumber",
+        "type": "varchar(20)",
+        "nullable": "YES"
+    },
+    {
+        "column": "PaymentAmount",
+        "type": "float",
+        "nullable": "NO"
+    },
+    {
+        "column": "PaidAmount",
+        "type": "float",
+        "nullable": "NO"
+    },
+    {
+        "column": "TakenAmount",
+        "type": "float",
+        "nullable": "NO"
+    },
+    {
+        "column": "PaymentDate",
+        "type": "smalldatetime",
+        "nullable": "NO"
+    },
+    {
+        "column": "RevokeID",
+        "type": "int",
+        "nullable": "YES"
+    },
+    {
+        "column": "Status",
+        "type": "tinyint",
+        "nullable": "NO"
+    },
+    {
+        "column": "Comment",
+        "type": "nvarchar(200)",
+        "nullable": "YES"
+    },
+    {
+        "column": "Posted",
+        "type": "bit",
+        "nullable": "YES"
+    },
+    {
+        "column": "FreeSerial",
+        "type": "bigint",
+        "nullable": "YES"
+    }
+]

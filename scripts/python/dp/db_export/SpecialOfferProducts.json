@@ -1,0 +1,17 @@
+[
+    {
+        "column": "SpecialOfferDetailsID",
+        "type": "int",
+        "nullable": "YES"
+    },
+    {
+        "column": "ProductID",
+        "type": "int",
+        "nullable": "YES"
+    },
+    {
+        "column": "dtCreateDate",
+        "type": "datetime",
+        "nullable": "YES"
+    }
+]

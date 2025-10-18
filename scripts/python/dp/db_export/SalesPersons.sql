@@ -1,0 +1,20 @@
+CREATE TABLE [SalesPersons] (
+    [SalesPersonID] smallint NOT NULL,
+    [SalesPersonName] nvarchar(50) NOT NULL,
+    [SystemDepartmentID] smallint NULL,
+    [TargetLimit] decimal NOT NULL,
+    [DiscountLimit] decimal NOT NULL,
+    [Address] nvarchar(50) NULL,
+    [Phones] varchar(13) NULL,
+    [Country] nvarchar(25) NULL,
+    [Mobile] varchar(13) NULL,
+    [Balance] decimal NULL,
+    [dtCreateDate] datetime NULL,
+    [sinCreateUserID] smallint NULL,
+    [dtUpdateDate] datetime NULL,
+    [sinUpdateUserID] smallint NULL,
+    [Balance1] decimal NULL,
+    [SalesPersonCode] nvarchar(10) NULL,
+    [BeginningBalance] decimal NULL,
+    CONSTRAINT [PK_SalesPersons] PRIMARY KEY ([SalesPersonID])
+);

@@ -1,0 +1,17 @@
+[
+    {
+        "column": "SystemDepartmentID",
+        "type": "tinyint",
+        "nullable": "NO"
+    },
+    {
+        "column": "Name",
+        "type": "nvarchar(50)",
+        "nullable": "NO"
+    },
+    {
+        "column": "Admin",
+        "type": "bit",
+        "nullable": "YES"
+    }
+]

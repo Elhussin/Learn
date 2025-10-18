@@ -1,0 +1,37 @@
+[
+    {
+        "column": "ManufacturerID",
+        "type": "smallint",
+        "nullable": "NO"
+    },
+    {
+        "column": "Name",
+        "type": "varchar(50)",
+        "nullable": "NO"
+    },
+    {
+        "column": "Value",
+        "type": "varchar(50)",
+        "nullable": "YES"
+    },
+    {
+        "column": "dtCreateDate",
+        "type": "datetime",
+        "nullable": "YES"
+    },
+    {
+        "column": "sinCreateUserID",
+        "type": "smallint",
+        "nullable": "YES"
+    },
+    {
+        "column": "dtUpdateDate",
+        "type": "datetime",
+        "nullable": "YES"
+    },
+    {
+        "column": "sinUpdateUserID",
+        "type": "smallint",
+        "nullable": "YES"
+    }
+]

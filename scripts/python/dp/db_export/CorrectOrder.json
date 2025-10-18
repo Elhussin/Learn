@@ -1,0 +1,12 @@
+[
+    {
+        "column": "TransID",
+        "type": "int",
+        "nullable": "YES"
+    },
+    {
+        "column": "OrderID",
+        "type": "int",
+        "nullable": "YES"
+    }
+]

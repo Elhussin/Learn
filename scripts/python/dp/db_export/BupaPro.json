@@ -1,0 +1,27 @@
+[
+    {
+        "column": "ID",
+        "type": "float",
+        "nullable": "YES"
+    },
+    {
+        "column": "BUPACode",
+        "type": "nvarchar(255)",
+        "nullable": "YES"
+    },
+    {
+        "column": "Name ",
+        "type": "nvarchar(255)",
+        "nullable": "YES"
+    },
+    {
+        "column": "Left",
+        "type": "nvarchar(255)",
+        "nullable": "YES"
+    },
+    {
+        "column": "Right",
+        "type": "nvarchar(255)",
+        "nullable": "YES"
+    }
+]

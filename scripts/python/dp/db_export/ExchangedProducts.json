@@ -1,0 +1,57 @@
+[
+    {
+        "column": "TransactionID",
+        "type": "int",
+        "nullable": "NO"
+    },
+    {
+        "column": "OrderID",
+        "type": "int",
+        "nullable": "YES"
+    },
+    {
+        "column": "OrderType",
+        "type": "bit",
+        "nullable": "YES"
+    },
+    {
+        "column": "DeptID",
+        "type": "int",
+        "nullable": "YES"
+    },
+    {
+        "column": "EmployeeID",
+        "type": "int",
+        "nullable": "YES"
+    },
+    {
+        "column": "ExchangeDate",
+        "type": "datetime",
+        "nullable": "YES"
+    },
+    {
+        "column": "Trans_Year",
+        "type": "int",
+        "nullable": "YES"
+    },
+    {
+        "column": "Serial",
+        "type": "int",
+        "nullable": "YES"
+    },
+    {
+        "column": "Canceled",
+        "type": "bit",
+        "nullable": "YES"
+    },
+    {
+        "column": "Posted",
+        "type": "int",
+        "nullable": "YES"
+    },
+    {
+        "column": "FreeSerial",
+        "type": "nvarchar(20)",
+        "nullable": "YES"
+    }
+]

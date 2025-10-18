@@ -1,0 +1,22 @@
+CREATE TABLE [PurchaseOrder] (
+    [PurchaseOrderID] int NOT NULL,
+    [OrderDate] smalldatetime NOT NULL,
+    [EmployeeID] smallint NOT NULL,
+    [SupplierID] smallint NOT NULL,
+    [StoreID] int NULL,
+    [DeliveryDate] smalldatetime NULL,
+    [ExpectedDeliveryDate] smalldatetime NULL,
+    [Trans_Year] int NULL,
+    [Serial] int NULL,
+    [Status] smallint NULL,
+    [sinCreateUserId] smallint NULL,
+    [dtCreateDate] datetime NULL,
+    [sinUpdateUserID] smallint NULL,
+    [dtUpdateDate] datetime NULL,
+    [Posted] bit NULL,
+    [dtPostDate] datetime NULL,
+    [sinPostUserID] datetime NULL,
+    [Canceled] bit NULL,
+    [FreeSerial] nvarchar(20) NULL,
+    CONSTRAINT [PK_PurchaseOrder] PRIMARY KEY ([PurchaseOrderID])
+);

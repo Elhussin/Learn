@@ -1,0 +1,27 @@
+[
+    {
+        "column": "IDserial",
+        "type": "int",
+        "nullable": "NO"
+    },
+    {
+        "column": "EmployeeID",
+        "type": "int",
+        "nullable": "YES"
+    },
+    {
+        "column": "SignIN",
+        "type": "datetime",
+        "nullable": "YES"
+    },
+    {
+        "column": "SignOut",
+        "type": "datetime",
+        "nullable": "YES"
+    },
+    {
+        "column": "IPADDRESS",
+        "type": "nvarchar(50)",
+        "nullable": "YES"
+    }
+]

@@ -1,0 +1,62 @@
+[
+    {
+        "column": "StoreID",
+        "type": "int",
+        "nullable": "NO"
+    },
+    {
+        "column": "ClientID",
+        "type": "int",
+        "nullable": "NO"
+    },
+    {
+        "column": "Type",
+        "type": "smallint",
+        "nullable": "NO"
+    },
+    {
+        "column": "LocalSerial",
+        "type": "varchar(100)",
+        "nullable": "NO"
+    },
+    {
+        "column": "MoveDate",
+        "type": "smalldatetime",
+        "nullable": "YES"
+    },
+    {
+        "column": "Amount",
+        "type": "decimal",
+        "nullable": "YES"
+    },
+    {
+        "column": "Balance",
+        "type": "decimal",
+        "nullable": "YES"
+    },
+    {
+        "column": "debit",
+        "type": "decimal",
+        "nullable": "YES"
+    },
+    {
+        "column": "credit",
+        "type": "decimal",
+        "nullable": "YES"
+    },
+    {
+        "column": "TransactionID",
+        "type": "int",
+        "nullable": "YES"
+    },
+    {
+        "column": "Comment",
+        "type": "nvarchar(2000)",
+        "nullable": "YES"
+    },
+    {
+        "column": "Trans_Year",
+        "type": "int",
+        "nullable": "NO"
+    }
+]

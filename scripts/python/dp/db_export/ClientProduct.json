@@ -1,0 +1,32 @@
+[
+    {
+        "column": "ClientID",
+        "type": "smallint",
+        "nullable": "NO"
+    },
+    {
+        "column": "ProductID",
+        "type": "int",
+        "nullable": "NO"
+    },
+    {
+        "column": "ExpiryDate",
+        "type": "datetime",
+        "nullable": "NO"
+    },
+    {
+        "column": "Quantity",
+        "type": "float",
+        "nullable": "NO"
+    },
+    {
+        "column": "Freeze",
+        "type": "float",
+        "nullable": "NO"
+    },
+    {
+        "column": "Pending",
+        "type": "float",
+        "nullable": "NO"
+    }
+]

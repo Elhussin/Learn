@@ -1,0 +1,7 @@
+[
+    {
+        "column": "transactionid",
+        "type": "int",
+        "nullable": "YES"
+    }
+]

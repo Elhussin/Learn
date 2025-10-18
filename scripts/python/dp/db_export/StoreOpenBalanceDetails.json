@@ -1,0 +1,32 @@
+[
+    {
+        "column": "intBalanceDetailsID",
+        "type": "int",
+        "nullable": "NO"
+    },
+    {
+        "column": "intBalanceID",
+        "type": "int",
+        "nullable": "YES"
+    },
+    {
+        "column": "intProductID",
+        "type": "int",
+        "nullable": "NO"
+    },
+    {
+        "column": "dtExpiryDate",
+        "type": "datetime",
+        "nullable": "NO"
+    },
+    {
+        "column": "decOpeningBalance",
+        "type": "decimal",
+        "nullable": "YES"
+    },
+    {
+        "column": "intQuantity",
+        "type": "decimal",
+        "nullable": "YES"
+    }
+]

@@ -1,0 +1,32 @@
+[
+    {
+        "column": "intBalanceID",
+        "type": "int",
+        "nullable": "NO"
+    },
+    {
+        "column": "intTransYear",
+        "type": "int",
+        "nullable": "YES"
+    },
+    {
+        "column": "intSerial",
+        "type": "int",
+        "nullable": "YES"
+    },
+    {
+        "column": "intGalleryID",
+        "type": "int",
+        "nullable": "YES"
+    },
+    {
+        "column": "intEmployeeID",
+        "type": "int",
+        "nullable": "YES"
+    },
+    {
+        "column": "dtCreateDate",
+        "type": "datetime",
+        "nullable": "YES"
+    }
+]

@@ -1,0 +1,22 @@
+[
+    {
+        "column": "TransactionTypeID",
+        "type": "smallint",
+        "nullable": "NO"
+    },
+    {
+        "column": "TransactionType",
+        "type": "varchar(30)",
+        "nullable": "NO"
+    },
+    {
+        "column": "TransactionName",
+        "type": "varchar(30)",
+        "nullable": "NO"
+    },
+    {
+        "column": "TransactionPage",
+        "type": "varchar(50)",
+        "nullable": "YES"
+    }
+]

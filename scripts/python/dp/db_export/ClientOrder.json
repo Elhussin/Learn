@@ -1,0 +1,162 @@
+[
+    {
+        "column": "ClientOrderID",
+        "type": "int",
+        "nullable": "NO"
+    },
+    {
+        "column": "RequestNo",
+        "type": "varchar(12)",
+        "nullable": "YES"
+    },
+    {
+        "column": "ClientID",
+        "type": "smallint",
+        "nullable": "NO"
+    },
+    {
+        "column": "StoreID",
+        "type": "smallint",
+        "nullable": "NO"
+    },
+    {
+        "column": "SalesPersonID",
+        "type": "smallint",
+        "nullable": "YES"
+    },
+    {
+        "column": "Trans_Year",
+        "type": "int",
+        "nullable": "YES"
+    },
+    {
+        "column": "Serial",
+        "type": "int",
+        "nullable": "YES"
+    },
+    {
+        "column": "NoteSerial",
+        "type": "nvarchar(20)",
+        "nullable": "YES"
+    },
+    {
+        "column": "CurrencyID",
+        "type": "int",
+        "nullable": "YES"
+    },
+    {
+        "column": "Rate",
+        "type": "decimal",
+        "nullable": "YES"
+    },
+    {
+        "column": "TotalPrice",
+        "type": "decimal",
+        "nullable": "YES"
+    },
+    {
+        "column": "DiscountAmount",
+        "type": "decimal",
+        "nullable": "YES"
+    },
+    {
+        "column": "TotalDiscount",
+        "type": "decimal",
+        "nullable": "YES"
+    },
+    {
+        "column": "TaxPercentage",
+        "type": "decimal",
+        "nullable": "YES"
+    },
+    {
+        "column": "TaxAmount",
+        "type": "decimal",
+        "nullable": "YES"
+    },
+    {
+        "column": "NetPrice",
+        "type": "decimal",
+        "nullable": "YES"
+    },
+    {
+        "column": "PayedAmount",
+        "type": "decimal",
+        "nullable": "YES"
+    },
+    {
+        "column": "OrderDate",
+        "type": "smalldatetime",
+        "nullable": "NO"
+    },
+    {
+        "column": "DeliveryDate",
+        "type": "smalldatetime",
+        "nullable": "YES"
+    },
+    {
+        "column": "FinishDate",
+        "type": "smalldatetime",
+        "nullable": "NO"
+    },
+    {
+        "column": "Paid",
+        "type": "tinyint",
+        "nullable": "YES"
+    },
+    {
+        "column": "Status",
+        "type": "tinyint",
+        "nullable": "NO"
+    },
+    {
+        "column": "HasInvoice",
+        "type": "smallint",
+        "nullable": "YES"
+    },
+    {
+        "column": "Comment",
+        "type": "nvarchar(200)",
+        "nullable": "YES"
+    },
+    {
+        "column": "SpecialOffers",
+        "type": "bit",
+        "nullable": "YES"
+    },
+    {
+        "column": "SpecialOfferID",
+        "type": "int",
+        "nullable": "YES"
+    },
+    {
+        "column": "SpecialOfferNo",
+        "type": "int",
+        "nullable": "YES"
+    },
+    {
+        "column": "PaymentType",
+        "type": "int",
+        "nullable": "YES"
+    },
+    {
+        "column": "Posted",
+        "type": "bit",
+        "nullable": "YES"
+    },
+    {
+        "column": "Canceled",
+        "type": "bit",
+        "nullable": "YES"
+    },
+    {
+        "column": "TotalSaleDiscount",
+        "type": "decimal",
+        "nullable": "YES"
+    },
+    {
+        "column": "EmployeeID",
+        "type": "smallint",
+        "nullable": "YES"
+    }
+]

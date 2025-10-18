@@ -1,0 +1,32 @@
+[
+    {
+        "column": "TransactionDetailsID",
+        "type": "int",
+        "nullable": "NO"
+    },
+    {
+        "column": "TransactionMasterID",
+        "type": "int",
+        "nullable": "YES"
+    },
+    {
+        "column": "ProductID",
+        "type": "int",
+        "nullable": "YES"
+    },
+    {
+        "column": "ExpiryDate",
+        "type": "datetime",
+        "nullable": "YES"
+    },
+    {
+        "column": "Incoming",
+        "type": "decimal",
+        "nullable": "YES"
+    },
+    {
+        "column": "Outgoing",
+        "type": "decimal",
+        "nullable": "YES"
+    }
+]

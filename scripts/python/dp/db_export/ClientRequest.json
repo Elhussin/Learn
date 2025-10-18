@@ -1,0 +1,97 @@
+[
+    {
+        "column": "ClientRequestID",
+        "type": "int",
+        "nullable": "NO"
+    },
+    {
+        "column": "ClientID",
+        "type": "smallint",
+        "nullable": "NO"
+    },
+    {
+        "column": "StoreID",
+        "type": "smallint",
+        "nullable": "NO"
+    },
+    {
+        "column": "SalesPersonID",
+        "type": "smallint",
+        "nullable": "YES"
+    },
+    {
+        "column": "Trans_Year",
+        "type": "int",
+        "nullable": "YES"
+    },
+    {
+        "column": "Serial",
+        "type": "int",
+        "nullable": "YES"
+    },
+    {
+        "column": "CurrencyID",
+        "type": "int",
+        "nullable": "YES"
+    },
+    {
+        "column": "Rate",
+        "type": "float",
+        "nullable": "YES"
+    },
+    {
+        "column": "TotalPrice",
+        "type": "float",
+        "nullable": "YES"
+    },
+    {
+        "column": "DiscountAmount",
+        "type": "float",
+        "nullable": "YES"
+    },
+    {
+        "column": "TotalDiscount",
+        "type": "float",
+        "nullable": "YES"
+    },
+    {
+        "column": "TaxPercentage",
+        "type": "float",
+        "nullable": "YES"
+    },
+    {
+        "column": "TaxAmount",
+        "type": "float",
+        "nullable": "YES"
+    },
+    {
+        "column": "NetPrice",
+        "type": "float",
+        "nullable": "YES"
+    },
+    {
+        "column": "OrderDate",
+        "type": "smalldatetime",
+        "nullable": "NO"
+    },
+    {
+        "column": "DeliveryDate",
+        "type": "smalldatetime",
+        "nullable": "YES"
+    },
+    {
+        "column": "FinishDate",
+        "type": "smalldatetime",
+        "nullable": "NO"
+    },
+    {
+        "column": "Status",
+        "type": "tinyint",
+        "nullable": "NO"
+    },
+    {
+        "column": "Comment",
+        "type": "varchar(200)",
+        "nullable": "YES"
+    }
+]

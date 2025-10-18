@@ -1,0 +1,32 @@
+[
+    {
+        "column": "CategoryID",
+        "type": "int",
+        "nullable": "NO"
+    },
+    {
+        "column": "StoreID",
+        "type": "int",
+        "nullable": "NO"
+    },
+    {
+        "column": "PurchaseAccountNo",
+        "type": "nvarchar(50)",
+        "nullable": "YES"
+    },
+    {
+        "column": "PurchaseReturnsNo",
+        "type": "nvarchar(50)",
+        "nullable": "YES"
+    },
+    {
+        "column": "salesAccountNo",
+        "type": "nvarchar(50)",
+        "nullable": "YES"
+    },
+    {
+        "column": "salesReturnsNo",
+        "type": "nvarchar(50)",
+        "nullable": "YES"
+    }
+]

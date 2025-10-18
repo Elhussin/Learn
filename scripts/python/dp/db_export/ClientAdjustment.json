@@ -1,0 +1,57 @@
+[
+    {
+        "column": "ClientAdjustmentID",
+        "type": "int",
+        "nullable": "NO"
+    },
+    {
+        "column": "ClientID",
+        "type": "smallint",
+        "nullable": "NO"
+    },
+    {
+        "column": "Amount",
+        "type": "float",
+        "nullable": "NO"
+    },
+    {
+        "column": "AdjustmentType",
+        "type": "tinyint",
+        "nullable": "NO"
+    },
+    {
+        "column": "AdjustmentDate",
+        "type": "smalldatetime",
+        "nullable": "NO"
+    },
+    {
+        "column": "Comment",
+        "type": "nvarchar(200)",
+        "nullable": "YES"
+    },
+    {
+        "column": "Trans_Year",
+        "type": "int",
+        "nullable": "YES"
+    },
+    {
+        "column": "Serial",
+        "type": "int",
+        "nullable": "YES"
+    },
+    {
+        "column": "StoreID",
+        "type": "int",
+        "nullable": "YES"
+    },
+    {
+        "column": "Posted",
+        "type": "bit",
+        "nullable": "YES"
+    },
+    {
+        "column": "ClientBalance",
+        "type": "decimal",
+        "nullable": "YES"
+    }
+]

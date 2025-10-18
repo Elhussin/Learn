@@ -1,0 +1,92 @@
+[
+    {
+        "column": "ClientRevokeID",
+        "type": "int",
+        "nullable": "NO"
+    },
+    {
+        "column": "ClientOrderID",
+        "type": "int",
+        "nullable": "YES"
+    },
+    {
+        "column": "RevokePaymentID",
+        "type": "int",
+        "nullable": "YES"
+    },
+    {
+        "column": "ClientID",
+        "type": "smallint",
+        "nullable": "NO"
+    },
+    {
+        "column": "StoreID",
+        "type": "smallint",
+        "nullable": "NO"
+    },
+    {
+        "column": "RevokeAmount",
+        "type": "decimal",
+        "nullable": "YES"
+    },
+    {
+        "column": "RevokeAmountBeforeDiscount",
+        "type": "decimal",
+        "nullable": "YES"
+    },
+    {
+        "column": "Discount",
+        "type": "decimal",
+        "nullable": "YES"
+    },
+    {
+        "column": "Trans_Year",
+        "type": "int",
+        "nullable": "YES"
+    },
+    {
+        "column": "Serial",
+        "type": "int",
+        "nullable": "YES"
+    },
+    {
+        "column": "RevokeDate",
+        "type": "smalldatetime",
+        "nullable": "NO"
+    },
+    {
+        "column": "DeliveryDate",
+        "type": "smalldatetime",
+        "nullable": "YES"
+    },
+    {
+        "column": "EmployeeID",
+        "type": "smallint",
+        "nullable": "YES"
+    },
+    {
+        "column": "Status",
+        "type": "tinyint",
+        "nullable": "NO"
+    },
+    {
+        "column": "Comment",
+        "type": "nvarchar(200)",
+        "nullable": "YES"
+    },
+    {
+        "column": "Canceled",
+        "type": "bit",
+        "nullable": "YES"
+    },
+    {
+        "column": "Posted",
+        "type": "bit",
+        "nullable": "YES"
+    },
+    {
+        "column": "FreeSerial",
+        "type": "nvarchar(20)",
+        "nullable": "YES"
+    }
+]

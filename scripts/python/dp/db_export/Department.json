@@ -1,0 +1,17 @@
+[
+    {
+        "column": "DepartmentID",
+        "type": "tinyint",
+        "nullable": "NO"
+    },
+    {
+        "column": "Name",
+        "type": "varchar(50)",
+        "nullable": "NO"
+    },
+    {
+        "column": "Order",
+        "type": "smallint",
+        "nullable": "YES"
+    }
+]

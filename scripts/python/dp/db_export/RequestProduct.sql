@@ -1,0 +1,21 @@
+CREATE TABLE [RequestProduct] (
+    [RequestID] int NOT NULL,
+    [Trans_Year] int NULL,
+    [Serial] int NULL,
+    [DeptIDFrom] int NULL,
+    [DeptTypeFrom] smallint NULL,
+    [DeptIDTo] int NULL,
+    [DeptTypeTo] tinyint NULL,
+    [RequestDate] datetime NULL,
+    [Status] tinyint NULL,
+    [dtCreateDate] datetime NULL,
+    [sinCreateUserID] smallint NULL,
+    [Posted] bit NULL,
+    [dtPostDate] datetime NULL,
+    [sinPostUserID] smallint NULL,
+    [PostReferenceID] smallint NULL,
+    [Canceled] bit NULL,
+    [Comments] nvarchar(4000) NULL,
+    [FreeSerial] nvarchar(20) NULL,
+    CONSTRAINT [PK_RequestProduct] PRIMARY KEY ([RequestID])
+);

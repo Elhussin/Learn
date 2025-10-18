@@ -1,0 +1,122 @@
+[
+    {
+        "column": "SupplierInvoiceID",
+        "type": "int",
+        "nullable": "NO"
+    },
+    {
+        "column": "Serial",
+        "type": "int",
+        "nullable": "YES"
+    },
+    {
+        "column": "Trans_Year",
+        "type": "int",
+        "nullable": "YES"
+    },
+    {
+        "column": "StoreID",
+        "type": "smallint",
+        "nullable": "NO"
+    },
+    {
+        "column": "OriginalInvoiceNo",
+        "type": "nvarchar(50)",
+        "nullable": "YES"
+    },
+    {
+        "column": "SupplierID",
+        "type": "smallint",
+        "nullable": "NO"
+    },
+    {
+        "column": "EmployeeID",
+        "type": "smallint",
+        "nullable": "NO"
+    },
+    {
+        "column": "InvoiceDate",
+        "type": "smalldatetime",
+        "nullable": "NO"
+    },
+    {
+        "column": "Status",
+        "type": "tinyint",
+        "nullable": "NO"
+    },
+    {
+        "column": "CurrencyRate",
+        "type": "decimal",
+        "nullable": "YES"
+    },
+    {
+        "column": "CurrencyID",
+        "type": "int",
+        "nullable": "YES"
+    },
+    {
+        "column": "TotalBasePrice",
+        "type": "decimal",
+        "nullable": "YES"
+    },
+    {
+        "column": "TotalPrice",
+        "type": "decimal",
+        "nullable": "YES"
+    },
+    {
+        "column": "TotalBaseDiscount",
+        "type": "decimal",
+        "nullable": "YES"
+    },
+    {
+        "column": "TotalDiscount",
+        "type": "decimal",
+        "nullable": "YES"
+    },
+    {
+        "column": "Posted",
+        "type": "bit",
+        "nullable": "NO"
+    },
+    {
+        "column": "Canceled",
+        "type": "bit",
+        "nullable": "YES"
+    },
+    {
+        "column": "dtCreateDate",
+        "type": "datetime",
+        "nullable": "YES"
+    },
+    {
+        "column": "sinCreateUserID",
+        "type": "smallint",
+        "nullable": "YES"
+    },
+    {
+        "column": "dtUpdateDate",
+        "type": "datetime",
+        "nullable": "YES"
+    },
+    {
+        "column": "sinUpdateUserID",
+        "type": "smallint",
+        "nullable": "YES"
+    },
+    {
+        "column": "dtPostDate",
+        "type": "datetime",
+        "nullable": "YES"
+    },
+    {
+        "column": "sinPostUserID",
+        "type": "smallint",
+        "nullable": "YES"
+    },
+    {
+        "column": "FreeSerial",
+        "type": "bigint",
+        "nullable": "YES"
+    }
+]

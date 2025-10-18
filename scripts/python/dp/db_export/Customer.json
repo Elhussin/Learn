@@ -1,0 +1,222 @@
+[
+    {
+        "column": "CustomerID",
+        "type": "int",
+        "nullable": "NO"
+    },
+    {
+        "column": "CustomerType",
+        "type": "tinyint",
+        "nullable": "YES"
+    },
+    {
+        "column": "Active",
+        "type": "smallint",
+        "nullable": "YES"
+    },
+    {
+        "column": "CustomerName",
+        "type": "nvarchar(100)",
+        "nullable": "NO"
+    },
+    {
+        "column": "Phones",
+        "type": "nvarchar(100)",
+        "nullable": "YES"
+    },
+    {
+        "column": "Phone2",
+        "type": "nvarchar(100)",
+        "nullable": "YES"
+    },
+    {
+        "column": "Address",
+        "type": "nvarchar(100)",
+        "nullable": "YES"
+    },
+    {
+        "column": "Email",
+        "type": "varchar(100)",
+        "nullable": "YES"
+    },
+    {
+        "column": "Mobile",
+        "type": "nvarchar(20)",
+        "nullable": "YES"
+    },
+    {
+        "column": "Fax",
+        "type": "nvarchar(50)",
+        "nullable": "YES"
+    },
+    {
+        "column": "ContactPerson",
+        "type": "nvarchar(100)",
+        "nullable": "YES"
+    },
+    {
+        "column": "BeginingBalance",
+        "type": "decimal",
+        "nullable": "YES"
+    },
+    {
+        "column": "Balance",
+        "type": "decimal",
+        "nullable": "NO"
+    },
+    {
+        "column": "GenderID",
+        "type": "smallint",
+        "nullable": "YES"
+    },
+    {
+        "column": "AgeGroupID",
+        "type": "smallint",
+        "nullable": "YES"
+    },
+    {
+        "column": "CountryID",
+        "type": "smallint",
+        "nullable": "YES"
+    },
+    {
+        "column": "ClassID",
+        "type": "smallint",
+        "nullable": "YES"
+    },
+    {
+        "column": "DiscountCardNumber",
+        "type": "nvarchar(200)",
+        "nullable": "YES"
+    },
+    {
+        "column": "dtCreateDate",
+        "type": "datetime",
+        "nullable": "YES"
+    },
+    {
+        "column": "sinCreateUserID",
+        "type": "smallint",
+        "nullable": "YES"
+    },
+    {
+        "column": "dtUpdateDate",
+        "type": "datetime",
+        "nullable": "YES"
+    },
+    {
+        "column": "sinUpdateUserID",
+        "type": "smallint",
+        "nullable": "YES"
+    },
+    {
+        "column": "CreateGalleryID",
+        "type": "smallint",
+        "nullable": "YES"
+    },
+    {
+        "column": "CustomerCode",
+        "type": "nvarchar(10)",
+        "nullable": "YES"
+    },
+    {
+        "column": "PD",
+        "type": "nvarchar(10)",
+        "nullable": "YES"
+    },
+    {
+        "column": "R.Sph.Dist.",
+        "type": "nvarchar(10)",
+        "nullable": "YES"
+    },
+    {
+        "column": "R.Sph.Read",
+        "type": "nvarchar(10)",
+        "nullable": "YES"
+    },
+    {
+        "column": "R.Sph.CLens",
+        "type": "nvarchar(10)",
+        "nullable": "YES"
+    },
+    {
+        "column": "R.Cyl.Dist.",
+        "type": "nvarchar(10)",
+        "nullable": "YES"
+    },
+    {
+        "column": "R.Cyl.Read",
+        "type": "nvarchar(10)",
+        "nullable": "YES"
+    },
+    {
+        "column": "R.Cyl.CLens",
+        "type": "nvarchar(10)",
+        "nullable": "YES"
+    },
+    {
+        "column": "R.Ax.Dist.",
+        "type": "nvarchar(10)",
+        "nullable": "YES"
+    },
+    {
+        "column": "R.Ax.Read",
+        "type": "nvarchar(10)",
+        "nullable": "YES"
+    },
+    {
+        "column": "R.Ax.CLens",
+        "type": "nvarchar(10)",
+        "nullable": "YES"
+    },
+    {
+        "column": "L.Sph.Dist.",
+        "type": "nvarchar(10)",
+        "nullable": "YES"
+    },
+    {
+        "column": "L.Sph.Read",
+        "type": "nvarchar(10)",
+        "nullable": "YES"
+    },
+    {
+        "column": "L.Sph.CLens",
+        "type": "nvarchar(10)",
+        "nullable": "YES"
+    },
+    {
+        "column": "L.Cyl.Dist.",
+        "type": "nvarchar(10)",
+        "nullable": "YES"
+    },
+    {
+        "column": "L.Cyl.Read",
+        "type": "nvarchar(10)",
+        "nullable": "YES"
+    },
+    {
+        "column": "L.Cyl.CLens",
+        "type": "nvarchar(10)",
+        "nullable": "YES"
+    },
+    {
+        "column": "L.Ax.Dist.",
+        "type": "nvarchar(10)",
+        "nullable": "YES"
+    },
+    {
+        "column": "L.Ax.Read",
+        "type": "nvarchar(10)",
+        "nullable": "YES"
+    },
+    {
+        "column": "L.Ax.CLens",
+        "type": "nvarchar(10)",
+        "nullable": "YES"
+    },
+    {
+        "column": "CheckDate",
+        "type": "datetime",
+        "nullable": "YES"
+    }
+]

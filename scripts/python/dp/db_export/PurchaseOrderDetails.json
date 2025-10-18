@@ -1,0 +1,42 @@
+[
+    {
+        "column": "PurchaseOrderDetailsID",
+        "type": "int",
+        "nullable": "NO"
+    },
+    {
+        "column": "PurchaseOrderID",
+        "type": "int",
+        "nullable": "NO"
+    },
+    {
+        "column": "ProductID",
+        "type": "int",
+        "nullable": "YES"
+    },
+    {
+        "column": "Quantity",
+        "type": "decimal",
+        "nullable": "NO"
+    },
+    {
+        "column": "DeliveredQuantity",
+        "type": "smallint",
+        "nullable": "YES"
+    },
+    {
+        "column": "Description",
+        "type": "nvarchar(50)",
+        "nullable": "YES"
+    },
+    {
+        "column": "Status",
+        "type": "smallint",
+        "nullable": "YES"
+    },
+    {
+        "column": "Finished",
+        "type": "int",
+        "nullable": "YES"
+    }
+]

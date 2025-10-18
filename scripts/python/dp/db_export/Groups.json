@@ -1,0 +1,17 @@
+[
+    {
+        "column": "GroupID",
+        "type": "int",
+        "nullable": "NO"
+    },
+    {
+        "column": "GroupName",
+        "type": "nvarchar(50)",
+        "nullable": "YES"
+    },
+    {
+        "column": "DepartmentID",
+        "type": "tinyint",
+        "nullable": "YES"
+    }
+]

@@ -1,0 +1,37 @@
+[
+    {
+        "column": "InsurranceOrderDetailsID",
+        "type": "int",
+        "nullable": "NO"
+    },
+    {
+        "column": "CustomerOrderID",
+        "type": "int",
+        "nullable": "YES"
+    },
+    {
+        "column": "ItemID",
+        "type": "int",
+        "nullable": "YES"
+    },
+    {
+        "column": "Quantity",
+        "type": "float",
+        "nullable": "YES"
+    },
+    {
+        "column": "UnitPrice",
+        "type": "float",
+        "nullable": "YES"
+    },
+    {
+        "column": "Approvedprice",
+        "type": "float",
+        "nullable": "YES"
+    },
+    {
+        "column": "DiscountINS",
+        "type": "float",
+        "nullable": "YES"
+    }
+]

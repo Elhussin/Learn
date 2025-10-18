@@ -1,0 +1,67 @@
+[
+    {
+        "column": "EmployeeID",
+        "type": "smallint",
+        "nullable": "NO"
+    },
+    {
+        "column": "Name",
+        "type": "nvarchar(50)",
+        "nullable": "NO"
+    },
+    {
+        "column": "UserName",
+        "type": "nvarchar(50)",
+        "nullable": "NO"
+    },
+    {
+        "column": "Password",
+        "type": "nvarchar(50)",
+        "nullable": "NO"
+    },
+    {
+        "column": "DepartmentID",
+        "type": "tinyint",
+        "nullable": "NO"
+    },
+    {
+        "column": "GroupID",
+        "type": "int",
+        "nullable": "YES"
+    },
+    {
+        "column": "Email",
+        "type": "varchar(50)",
+        "nullable": "YES"
+    },
+    {
+        "column": "Status",
+        "type": "tinyint",
+        "nullable": "NO"
+    },
+    {
+        "column": "dtCreateDate",
+        "type": "datetime",
+        "nullable": "YES"
+    },
+    {
+        "column": "sinCreateUserID",
+        "type": "smallint",
+        "nullable": "YES"
+    },
+    {
+        "column": "dtUpdateDate",
+        "type": "datetime",
+        "nullable": "YES"
+    },
+    {
+        "column": "sinUpdateUserID",
+        "type": "smallint",
+        "nullable": "YES"
+    },
+    {
+        "column": "SystemDepartmentID",
+        "type": "tinyint",
+        "nullable": "YES"
+    }
+]

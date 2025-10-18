@@ -1,0 +1,32 @@
+[
+    {
+        "column": "CancelSerialID",
+        "type": "int",
+        "nullable": "NO"
+    },
+    {
+        "column": "TransactionType",
+        "type": "int",
+        "nullable": "YES"
+    },
+    {
+        "column": "Type",
+        "type": "bit",
+        "nullable": "YES"
+    },
+    {
+        "column": "ID",
+        "type": "smallint",
+        "nullable": "YES"
+    },
+    {
+        "column": "Year",
+        "type": "smallint",
+        "nullable": "YES"
+    },
+    {
+        "column": "Serial",
+        "type": "int",
+        "nullable": "YES"
+    }
+]

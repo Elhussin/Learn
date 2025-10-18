@@ -1,0 +1,12 @@
+[
+    {
+        "column": "productid",
+        "type": "int",
+        "nullable": "NO"
+    },
+    {
+        "column": "cost",
+        "type": "decimal",
+        "nullable": "YES"
+    }
+]

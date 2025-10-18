@@ -1,0 +1,62 @@
+[
+    {
+        "column": "RevokePaymentID",
+        "type": "int",
+        "nullable": "NO"
+    },
+    {
+        "column": "GalleryID",
+        "type": "smallint",
+        "nullable": "YES"
+    },
+    {
+        "column": "CustomerID",
+        "type": "int",
+        "nullable": "NO"
+    },
+    {
+        "column": "Trans_Year",
+        "type": "int",
+        "nullable": "YES"
+    },
+    {
+        "column": "Serial",
+        "type": "int",
+        "nullable": "YES"
+    },
+    {
+        "column": "RevokePaymentAmount",
+        "type": "float",
+        "nullable": "NO"
+    },
+    {
+        "column": "EmployeeID",
+        "type": "smallint",
+        "nullable": "NO"
+    },
+    {
+        "column": "RevokePaymentDate",
+        "type": "smalldatetime",
+        "nullable": "YES"
+    },
+    {
+        "column": "Comment",
+        "type": "varchar(250)",
+        "nullable": "YES"
+    },
+    {
+        "column": "Posted",
+        "type": "bit",
+        "nullable": "YES"
+    },
+    {
+        "column": "RelatedDownPayment",
+        "type": "int",
+        "nullable": "YES"
+    },
+    {
+        "column": "FreeSerial",
+        "type": "nvarchar(20)",
+        "nullable": "YES"
+    }
+]

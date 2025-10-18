@@ -1,0 +1,37 @@
+[
+    {
+        "column": "RegionID",
+        "type": "int",
+        "nullable": "NO"
+    },
+    {
+        "column": "RegionName",
+        "type": "nvarchar(50)",
+        "nullable": "YES"
+    },
+    {
+        "column": "ResponsibleName",
+        "type": "nvarchar(50)",
+        "nullable": "YES"
+    },
+    {
+        "column": "ResponsibleAddress",
+        "type": "nvarchar(50)",
+        "nullable": "YES"
+    },
+    {
+        "column": "ResponsibleMobile",
+        "type": "nvarchar(50)",
+        "nullable": "YES"
+    },
+    {
+        "column": "ResponsiblePhone",
+        "type": "nvarchar(50)",
+        "nullable": "YES"
+    },
+    {
+        "column": "ResponsibleEmail",
+        "type": "nvarchar(50)",
+        "nullable": "YES"
+    }
+]

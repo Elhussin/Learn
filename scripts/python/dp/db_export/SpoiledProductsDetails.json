@@ -1,0 +1,32 @@
+[
+    {
+        "column": "TransactionMasterID",
+        "type": "int",
+        "nullable": "YES"
+    },
+    {
+        "column": "DetailsID",
+        "type": "int",
+        "nullable": "NO"
+    },
+    {
+        "column": "ProductID",
+        "type": "int",
+        "nullable": "YES"
+    },
+    {
+        "column": "Quantity",
+        "type": "decimal",
+        "nullable": "YES"
+    },
+    {
+        "column": "WhalePrice",
+        "type": "decimal",
+        "nullable": "YES"
+    },
+    {
+        "column": "ExpiryDate",
+        "type": "datetime",
+        "nullable": "YES"
+    }
+]

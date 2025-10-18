@@ -1,0 +1,57 @@
+[
+    {
+        "column": "GalleryID",
+        "type": "int",
+        "nullable": "NO"
+    },
+    {
+        "column": "CustomerID",
+        "type": "int",
+        "nullable": "NO"
+    },
+    {
+        "column": "Type",
+        "type": "smallint",
+        "nullable": "NO"
+    },
+    {
+        "column": "LocalSerial",
+        "type": "varchar(12)",
+        "nullable": "NO"
+    },
+    {
+        "column": "MoveDate",
+        "type": "smalldatetime",
+        "nullable": "YES"
+    },
+    {
+        "column": "Amount",
+        "type": "float",
+        "nullable": "YES"
+    },
+    {
+        "column": "Balance",
+        "type": "float",
+        "nullable": "YES"
+    },
+    {
+        "column": "TransactionID",
+        "type": "int",
+        "nullable": "YES"
+    },
+    {
+        "column": "Debit",
+        "type": "decimal",
+        "nullable": "YES"
+    },
+    {
+        "column": "Credit",
+        "type": "decimal",
+        "nullable": "YES"
+    },
+    {
+        "column": "Comment",
+        "type": "varchar(2000)",
+        "nullable": "YES"
+    }
+]

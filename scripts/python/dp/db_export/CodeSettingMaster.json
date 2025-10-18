@@ -1,0 +1,22 @@
+[
+    {
+        "column": "TemplateID",
+        "type": "int",
+        "nullable": "NO"
+    },
+    {
+        "column": "TemplateName",
+        "type": "nvarchar(50)",
+        "nullable": "YES"
+    },
+    {
+        "column": "SegmentCount",
+        "type": "smallint",
+        "nullable": "YES"
+    },
+    {
+        "column": "FreeCodeName",
+        "type": "nvarchar(50)",
+        "nullable": "YES"
+    }
+]

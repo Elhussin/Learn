@@ -1,0 +1,72 @@
+[
+    {
+        "column": "ProductID",
+        "type": "int",
+        "nullable": "NO"
+    },
+    {
+        "column": "GalleryID",
+        "type": "smallint",
+        "nullable": "NO"
+    },
+    {
+        "column": "ExpiryDate",
+        "type": "datetime",
+        "nullable": "NO"
+    },
+    {
+        "column": "Quantity",
+        "type": "decimal",
+        "nullable": "NO"
+    },
+    {
+        "column": "Freeze",
+        "type": "decimal",
+        "nullable": "NO"
+    },
+    {
+        "column": "Pending",
+        "type": "decimal",
+        "nullable": "NO"
+    },
+    {
+        "column": "GallerySaleDateFrom",
+        "type": "smalldatetime",
+        "nullable": "YES"
+    },
+    {
+        "column": "GallerySaleDateTo",
+        "type": "smalldatetime",
+        "nullable": "YES"
+    },
+    {
+        "column": "GalleryDiscount",
+        "type": "decimal",
+        "nullable": "YES"
+    },
+    {
+        "column": "GallerySaleDiscount",
+        "type": "decimal",
+        "nullable": "YES"
+    },
+    {
+        "column": "RetailPrice",
+        "type": "decimal",
+        "nullable": "YES"
+    },
+    {
+        "column": "WhalePrice",
+        "type": "decimal",
+        "nullable": "YES"
+    },
+    {
+        "column": "CostPrice",
+        "type": "decimal",
+        "nullable": "YES"
+    },
+    {
+        "column": "EvaluationPrice",
+        "type": "decimal",
+        "nullable": "YES"
+    }
+]

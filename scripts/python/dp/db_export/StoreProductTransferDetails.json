@@ -1,0 +1,37 @@
+[
+    {
+        "column": "StoreProductTransferDetailsID",
+        "type": "int",
+        "nullable": "NO"
+    },
+    {
+        "column": "StoreProductTransferID",
+        "type": "int",
+        "nullable": "NO"
+    },
+    {
+        "column": "FromProductID",
+        "type": "int",
+        "nullable": "NO"
+    },
+    {
+        "column": "FromExpiryDate",
+        "type": "datetime",
+        "nullable": "YES"
+    },
+    {
+        "column": "ToProductID",
+        "type": "int",
+        "nullable": "YES"
+    },
+    {
+        "column": "ToExpiryDate",
+        "type": "datetime",
+        "nullable": "YES"
+    },
+    {
+        "column": "Quantity",
+        "type": "float",
+        "nullable": "NO"
+    }
+]

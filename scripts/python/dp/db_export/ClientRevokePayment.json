@@ -1,0 +1,62 @@
+[
+    {
+        "column": "ClientRevokePaymentID",
+        "type": "int",
+        "nullable": "NO"
+    },
+    {
+        "column": "ClientID",
+        "type": "smallint",
+        "nullable": "NO"
+    },
+    {
+        "column": "StoreID",
+        "type": "smallint",
+        "nullable": "NO"
+    },
+    {
+        "column": "SalesPersonID",
+        "type": "smallint",
+        "nullable": "YES"
+    },
+    {
+        "column": "Trans_Year",
+        "type": "int",
+        "nullable": "NO"
+    },
+    {
+        "column": "Serial",
+        "type": "int",
+        "nullable": "NO"
+    },
+    {
+        "column": "CurrencyID",
+        "type": "int",
+        "nullable": "NO"
+    },
+    {
+        "column": "Rate",
+        "type": "float",
+        "nullable": "NO"
+    },
+    {
+        "column": "Amount",
+        "type": "float",
+        "nullable": "NO"
+    },
+    {
+        "column": "RevokePaymentDate",
+        "type": "smalldatetime",
+        "nullable": "NO"
+    },
+    {
+        "column": "RevokePaymentType",
+        "type": "tinyint",
+        "nullable": "NO"
+    },
+    {
+        "column": "Comment",
+        "type": "nvarchar(200)",
+        "nullable": "YES"
+    }
+]

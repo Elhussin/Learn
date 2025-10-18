@@ -1,0 +1,27 @@
+[
+    {
+        "column": "branch_id",
+        "type": "int",
+        "nullable": "YES"
+    },
+    {
+        "column": "branch_name",
+        "type": "nvarchar(50)",
+        "nullable": "YES"
+    },
+    {
+        "column": "branch_type",
+        "type": "nvarchar(50)",
+        "nullable": "YES"
+    },
+    {
+        "column": "premotime_id",
+        "type": "int",
+        "nullable": "YES"
+    },
+    {
+        "column": "CustomerIP",
+        "type": "nvarchar(50)",
+        "nullable": "YES"
+    }
+]

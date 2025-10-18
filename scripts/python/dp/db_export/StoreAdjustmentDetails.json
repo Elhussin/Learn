@@ -1,0 +1,32 @@
+[
+    {
+        "column": "StoreAdjustmentDetailsID",
+        "type": "int",
+        "nullable": "NO"
+    },
+    {
+        "column": "StoreAdjustmentID",
+        "type": "int",
+        "nullable": "NO"
+    },
+    {
+        "column": "ProductID",
+        "type": "int",
+        "nullable": "NO"
+    },
+    {
+        "column": "ExpiryDate",
+        "type": "datetime",
+        "nullable": "YES"
+    },
+    {
+        "column": "Quantity",
+        "type": "decimal",
+        "nullable": "YES"
+    },
+    {
+        "column": "AdjustmentType",
+        "type": "varchar(50)",
+        "nullable": "YES"
+    }
+]

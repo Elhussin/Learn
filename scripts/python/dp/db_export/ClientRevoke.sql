@@ -1,0 +1,21 @@
+CREATE TABLE [ClientRevoke] (
+    [ClientRevokeID] int NOT NULL,
+    [ClientOrderID] int NULL,
+    [RevokePaymentID] int NULL,
+    [ClientID] smallint NOT NULL,
+    [StoreID] smallint NOT NULL,
+    [RevokeAmount] decimal NULL,
+    [RevokeAmountBeforeDiscount] decimal NULL,
+    [Discount] decimal NULL,
+    [Trans_Year] int NULL,
+    [Serial] int NULL,
+    [RevokeDate] smalldatetime NOT NULL,
+    [DeliveryDate] smalldatetime NULL,
+    [EmployeeID] smallint NULL,
+    [Status] tinyint NOT NULL,
+    [Comment] nvarchar(200) NULL,
+    [Canceled] bit NULL,
+    [Posted] bit NULL,
+    [FreeSerial] nvarchar(20) NULL,
+    CONSTRAINT [PK_ClientRevoke] PRIMARY KEY ([ClientRevokeID])
+);

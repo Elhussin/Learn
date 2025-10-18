@@ -1,0 +1,22 @@
+[
+    {
+        "column": "ClientStoreBalanceID",
+        "type": "int",
+        "nullable": "NO"
+    },
+    {
+        "column": "ClientID",
+        "type": "int",
+        "nullable": "YES"
+    },
+    {
+        "column": "StoreID",
+        "type": "int",
+        "nullable": "YES"
+    },
+    {
+        "column": "Amount",
+        "type": "float",
+        "nullable": "YES"
+    }
+]

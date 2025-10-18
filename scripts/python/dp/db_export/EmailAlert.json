@@ -1,0 +1,32 @@
+[
+    {
+        "column": "EmailAlertID",
+        "type": "int",
+        "nullable": "NO"
+    },
+    {
+        "column": "EmailDate",
+        "type": "smalldatetime",
+        "nullable": "NO"
+    },
+    {
+        "column": "AlertID",
+        "type": "smallint",
+        "nullable": "NO"
+    },
+    {
+        "column": "GalleryID",
+        "type": "smallint",
+        "nullable": "YES"
+    },
+    {
+        "column": "TransactionTypeID",
+        "type": "smallint",
+        "nullable": "YES"
+    },
+    {
+        "column": "TransactionID",
+        "type": "int",
+        "nullable": "YES"
+    }
+]

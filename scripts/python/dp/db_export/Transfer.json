@@ -1,0 +1,142 @@
+[
+    {
+        "column": "TransferID",
+        "type": "int",
+        "nullable": "NO"
+    },
+    {
+        "column": "EmployeeID",
+        "type": "smallint",
+        "nullable": "NO"
+    },
+    {
+        "column": "Trans_Year",
+        "type": "int",
+        "nullable": "YES"
+    },
+    {
+        "column": "Serial",
+        "type": "int",
+        "nullable": "YES"
+    },
+    {
+        "column": "FreeSerial",
+        "type": "bigint",
+        "nullable": "YES"
+    },
+    {
+        "column": "TransferFrom",
+        "type": "smallint",
+        "nullable": "NO"
+    },
+    {
+        "column": "TransferTypeFrom",
+        "type": "smallint",
+        "nullable": "YES"
+    },
+    {
+        "column": "TransferTo",
+        "type": "smallint",
+        "nullable": "NO"
+    },
+    {
+        "column": "TransferTypeTo",
+        "type": "smallint",
+        "nullable": "YES"
+    },
+    {
+        "column": "TransferDate",
+        "type": "smalldatetime",
+        "nullable": "NO"
+    },
+    {
+        "column": "DeliveryDate",
+        "type": "smalldatetime",
+        "nullable": "YES"
+    },
+    {
+        "column": "SendReceipt",
+        "type": "int",
+        "nullable": "YES"
+    },
+    {
+        "column": "ReceiveReceipt",
+        "type": "int",
+        "nullable": "YES"
+    },
+    {
+        "column": "Status",
+        "type": "tinyint",
+        "nullable": "NO"
+    },
+    {
+        "column": "TotalQuantity",
+        "type": "decimal",
+        "nullable": "YES"
+    },
+    {
+        "column": "TotalValue",
+        "type": "decimal",
+        "nullable": "YES"
+    },
+    {
+        "column": "RequestProductID",
+        "type": "int",
+        "nullable": "YES"
+    },
+    {
+        "column": "dtCreateDate",
+        "type": "datetime",
+        "nullable": "YES"
+    },
+    {
+        "column": "sinCreateUserID",
+        "type": "smallint",
+        "nullable": "YES"
+    },
+    {
+        "column": "dtUpdateDate",
+        "type": "datetime",
+        "nullable": "YES"
+    },
+    {
+        "column": "sinUpdateUserID",
+        "type": "smallint",
+        "nullable": "YES"
+    },
+    {
+        "column": "Posted",
+        "type": "bit",
+        "nullable": "YES"
+    },
+    {
+        "column": "dtPostDate",
+        "type": "datetime",
+        "nullable": "YES"
+    },
+    {
+        "column": "sinPostUserID",
+        "type": "smallint",
+        "nullable": "YES"
+    },
+    {
+        "column": "PostRefrenceID",
+        "type": "smallint",
+        "nullable": "YES"
+    },
+    {
+        "column": "Canceled",
+        "type": "bit",
+        "nullable": "YES"
+    },
+    {
+        "column": "bolDeleted",
+        "type": "bit",
+        "nullable": "YES"
+    },
+    {
+        "column": "Comment",
+        "type": "nvarchar(2000)",
+        "nullable": "YES"
+    }
+]

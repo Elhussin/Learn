@@ -1,0 +1,23 @@
+CREATE TABLE [SpoiledProducts] (
+    [TransactionID] int NOT NULL,
+    [StoreID] int NULL,
+    [DeptID] smallint NULL,
+    [DeptType] smallint NULL,
+    [EmployeeID] smallint NULL,
+    [Date] datetime NULL,
+    [CreatorEmployeeID] int NULL,
+    [Trans_Year] int NULL,
+    [Serial] int NULL,
+    [RelatedTransfer] nvarchar(50) NULL,
+    [dtCreateDate] datetime NULL,
+    [sinCreateUserID] smallint NULL,
+    [dtUpdateDate] datetime NULL,
+    [sinUpdateUserID] smallint NULL,
+    [Posted] bit NULL,
+    [dtPostDate] datetime NULL,
+    [sinPostUserID] smallint NULL,
+    [PostRefrenceID] smallint NULL,
+    [Canceled] bit NULL,
+    [FreeSerial] nvarchar(20) NULL,
+    CONSTRAINT [PK_SpoiledProducts] PRIMARY KEY ([TransactionID])
+);

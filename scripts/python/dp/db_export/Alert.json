@@ -1,0 +1,22 @@
+[
+    {
+        "column": "AlertID",
+        "type": "smallint",
+        "nullable": "NO"
+    },
+    {
+        "column": "AlertName",
+        "type": "nvarchar(50)",
+        "nullable": "NO"
+    },
+    {
+        "column": "AlertType",
+        "type": "varchar(50)",
+        "nullable": "NO"
+    },
+    {
+        "column": "AlertBody",
+        "type": "nvarchar(400)",
+        "nullable": "NO"
+    }
+]

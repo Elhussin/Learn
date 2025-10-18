@@ -1,0 +1,57 @@
+[
+    {
+        "column": "SupplierRevokeDetailsID",
+        "type": "int",
+        "nullable": "NO"
+    },
+    {
+        "column": "SupplierRevokeID",
+        "type": "int",
+        "nullable": "NO"
+    },
+    {
+        "column": "SupplierInvoiceDetailsID",
+        "type": "int",
+        "nullable": "YES"
+    },
+    {
+        "column": "ProductID",
+        "type": "int",
+        "nullable": "NO"
+    },
+    {
+        "column": "ExpiryDate",
+        "type": "datetime",
+        "nullable": "NO"
+    },
+    {
+        "column": "Quantity",
+        "type": "decimal",
+        "nullable": "NO"
+    },
+    {
+        "column": "RevokeBaseAmount",
+        "type": "decimal",
+        "nullable": "YES"
+    },
+    {
+        "column": "RevokeAmount",
+        "type": "decimal",
+        "nullable": "YES"
+    },
+    {
+        "column": "UnitRevokeBasePrice",
+        "type": "decimal",
+        "nullable": "YES"
+    },
+    {
+        "column": "UnitPrice",
+        "type": "decimal",
+        "nullable": "YES"
+    },
+    {
+        "column": "QuantityDelivered",
+        "type": "int",
+        "nullable": "YES"
+    }
+]

@@ -1,0 +1,77 @@
+[
+    {
+        "column": "TransactionMasterID",
+        "type": "int",
+        "nullable": "NO"
+    },
+    {
+        "column": "DepID",
+        "type": "smallint",
+        "nullable": "YES"
+    },
+    {
+        "column": "TransactionTypeID",
+        "type": "smallint",
+        "nullable": "YES"
+    },
+    {
+        "column": "TransactionID",
+        "type": "int",
+        "nullable": "YES"
+    },
+    {
+        "column": "SerialNo",
+        "type": "nvarchar(20)",
+        "nullable": "YES"
+    },
+    {
+        "column": "OrderDate",
+        "type": "datetime",
+        "nullable": "YES"
+    },
+    {
+        "column": "FinishDate",
+        "type": "datetime",
+        "nullable": "YES"
+    },
+    {
+        "column": "FromToPlaceID",
+        "type": "smallint",
+        "nullable": "YES"
+    },
+    {
+        "column": "FromToPlaceType",
+        "type": "smallint",
+        "nullable": "YES"
+    },
+    {
+        "column": "OrderToID",
+        "type": "int",
+        "nullable": "YES"
+    },
+    {
+        "column": "ReceiveReceipt",
+        "type": "smallint",
+        "nullable": "YES"
+    },
+    {
+        "column": "Move",
+        "type": "varchar(5)",
+        "nullable": "YES"
+    },
+    {
+        "column": "TotalIncoming",
+        "type": "decimal",
+        "nullable": "YES"
+    },
+    {
+        "column": "TotalOutgoing",
+        "type": "decimal",
+        "nullable": "YES"
+    },
+    {
+        "column": "Status",
+        "type": "smallint",
+        "nullable": "YES"
+    }
+]

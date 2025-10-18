@@ -1,0 +1,37 @@
+[
+    {
+        "column": "DetailsID",
+        "type": "int",
+        "nullable": "NO"
+    },
+    {
+        "column": "ExchangedProductsID",
+        "type": "int",
+        "nullable": "YES"
+    },
+    {
+        "column": "ProductID",
+        "type": "int",
+        "nullable": "YES"
+    },
+    {
+        "column": "Quantity",
+        "type": "decimal",
+        "nullable": "YES"
+    },
+    {
+        "column": "ExpiryDate",
+        "type": "datetime",
+        "nullable": "YES"
+    },
+    {
+        "column": "UnitPrice",
+        "type": "decimal",
+        "nullable": "YES"
+    },
+    {
+        "column": "TotalPrice",
+        "type": "decimal",
+        "nullable": "YES"
+    }
+]

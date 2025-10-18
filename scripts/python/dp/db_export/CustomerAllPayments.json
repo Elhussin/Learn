@@ -1,0 +1,62 @@
+[
+    {
+        "column": "GalleryID",
+        "type": "smallint",
+        "nullable": "NO"
+    },
+    {
+        "column": "CustomerID",
+        "type": "smallint",
+        "nullable": "NO"
+    },
+    {
+        "column": "Type",
+        "type": "char(10)",
+        "nullable": "NO"
+    },
+    {
+        "column": "PaymentID",
+        "type": "int",
+        "nullable": "NO"
+    },
+    {
+        "column": "LocalSerial",
+        "type": "varchar(50)",
+        "nullable": "YES"
+    },
+    {
+        "column": "Debit",
+        "type": "decimal",
+        "nullable": "YES"
+    },
+    {
+        "column": "Credit",
+        "type": "decimal",
+        "nullable": "YES"
+    },
+    {
+        "column": "DownPayment",
+        "type": "decimal",
+        "nullable": "YES"
+    },
+    {
+        "column": "Payment",
+        "type": "decimal",
+        "nullable": "YES"
+    },
+    {
+        "column": "RevokePayment",
+        "type": "decimal",
+        "nullable": "YES"
+    },
+    {
+        "column": "PayDate",
+        "type": "smalldatetime",
+        "nullable": "YES"
+    },
+    {
+        "column": "Comment",
+        "type": "varchar(2000)",
+        "nullable": "YES"
+    }
+]

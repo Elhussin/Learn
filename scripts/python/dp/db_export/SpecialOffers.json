@@ -1,0 +1,52 @@
+[
+    {
+        "column": "OfferID",
+        "type": "smallint",
+        "nullable": "NO"
+    },
+    {
+        "column": "Description",
+        "type": "nvarchar(100)",
+        "nullable": "YES"
+    },
+    {
+        "column": "Type",
+        "type": "bit",
+        "nullable": "YES"
+    },
+    {
+        "column": "EmployeeID",
+        "type": "smallint",
+        "nullable": "YES"
+    },
+    {
+        "column": "Active",
+        "type": "bit",
+        "nullable": "YES"
+    },
+    {
+        "column": "SystemDepartmentID",
+        "type": "tinyint",
+        "nullable": "YES"
+    },
+    {
+        "column": "dtCreateDate",
+        "type": "datetime",
+        "nullable": "YES"
+    },
+    {
+        "column": "sinCreateUserID",
+        "type": "smallint",
+        "nullable": "YES"
+    },
+    {
+        "column": "dtUpdateDate",
+        "type": "datetime",
+        "nullable": "YES"
+    },
+    {
+        "column": "sinUpdateUserID",
+        "type": "smallint",
+        "nullable": "YES"
+    }
+]

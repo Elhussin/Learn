@@ -1,0 +1,32 @@
+[
+    {
+        "column": "StoreRevokeDetailsID",
+        "type": "int",
+        "nullable": "NO"
+    },
+    {
+        "column": "StoreRevokeID",
+        "type": "int",
+        "nullable": "NO"
+    },
+    {
+        "column": "ProductID",
+        "type": "int",
+        "nullable": "NO"
+    },
+    {
+        "column": "ExpiryDate",
+        "type": "datetime",
+        "nullable": "YES"
+    },
+    {
+        "column": "Quantity",
+        "type": "decimal",
+        "nullable": "NO"
+    },
+    {
+        "column": "DQuantity",
+        "type": "decimal",
+        "nullable": "YES"
+    }
+]

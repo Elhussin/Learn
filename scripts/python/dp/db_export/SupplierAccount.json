@@ -1,0 +1,17 @@
+[
+    {
+        "column": "SupplierID",
+        "type": "int",
+        "nullable": "NO"
+    },
+    {
+        "column": "StoreID",
+        "type": "int",
+        "nullable": "NO"
+    },
+    {
+        "column": "AccountNo",
+        "type": "nvarchar(50)",
+        "nullable": "YES"
+    }
+]

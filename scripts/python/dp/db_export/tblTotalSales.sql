@@ -1,0 +1,22 @@
+CREATE TABLE [tblTotalSales] (
+    [intID] int NOT NULL,
+    [intMasterDepID] int NULL,
+    [nvcharMasterDepName] nvarchar(50) NULL,
+    [intDepID] int NULL,
+    [nvcharDepName] nvarchar(50) NULL,
+    [tintType] tinyint NULL,
+    [decClientOrders] decimal NULL,
+    [decClientRevokes] decimal NULL,
+    [decClientPaymentCredit] decimal NULL,
+    [decClientPaymentCash] decimal NULL,
+    [decClientRevokePayment] decimal NULL,
+    [decCustomerOrders] decimal NULL,
+    [decCustomerRevokes] decimal NULL,
+    [decCustomerDownPayment] decimal NULL,
+    [decCustomerPaymentCredit] decimal NULL,
+    [decCustomerPaymentCoupon] decimal NULL,
+    [decCustomerPaymentCash] decimal NULL,
+    [decCustomerRevokePayment] decimal NULL,
+    [Fromdate] datetime NULL,
+    [todate] datetime NULL
+);

@@ -1,0 +1,62 @@
+[
+    {
+        "column": "GalleryID",
+        "type": "int",
+        "nullable": "NO"
+    },
+    {
+        "column": "Year",
+        "type": "int",
+        "nullable": "NO"
+    },
+    {
+        "column": "CustomerOrderSerial",
+        "type": "int",
+        "nullable": "YES"
+    },
+    {
+        "column": "CustomerRevokeSerial",
+        "type": "int",
+        "nullable": "YES"
+    },
+    {
+        "column": "ExchangeProductsSerial",
+        "type": "int",
+        "nullable": "YES"
+    },
+    {
+        "column": "DownPaymentSerial",
+        "type": "int",
+        "nullable": "YES"
+    },
+    {
+        "column": "RevokePaymentSerial",
+        "type": "int",
+        "nullable": "YES"
+    },
+    {
+        "column": "TransferSerial",
+        "type": "int",
+        "nullable": "YES"
+    },
+    {
+        "column": "RequestProductSerial",
+        "type": "int",
+        "nullable": "YES"
+    },
+    {
+        "column": "OpeningBalanceSerial",
+        "type": "int",
+        "nullable": "YES"
+    },
+    {
+        "column": "PaymentSerial",
+        "type": "int",
+        "nullable": "YES"
+    },
+    {
+        "column": "AdjustmentSerial",
+        "type": "int",
+        "nullable": "YES"
+    }
+]

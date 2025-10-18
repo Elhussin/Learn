@@ -1,0 +1,32 @@
+[
+    {
+        "column": "MainGroupsID",
+        "type": "int",
+        "nullable": "NO"
+    },
+    {
+        "column": "Name",
+        "type": "nvarchar(100)",
+        "nullable": "YES"
+    },
+    {
+        "column": "Value",
+        "type": "nvarchar(5)",
+        "nullable": "YES"
+    },
+    {
+        "column": "TemplateID",
+        "type": "int",
+        "nullable": "YES"
+    },
+    {
+        "column": "Type",
+        "type": "smallint",
+        "nullable": "YES"
+    },
+    {
+        "column": "MainValue",
+        "type": "nvarchar(200)",
+        "nullable": "YES"
+    }
+]

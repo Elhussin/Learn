@@ -1,0 +1,87 @@
+[
+    {
+        "column": "SalesPersonID",
+        "type": "smallint",
+        "nullable": "NO"
+    },
+    {
+        "column": "SalesPersonName",
+        "type": "nvarchar(50)",
+        "nullable": "NO"
+    },
+    {
+        "column": "SystemDepartmentID",
+        "type": "smallint",
+        "nullable": "YES"
+    },
+    {
+        "column": "TargetLimit",
+        "type": "decimal",
+        "nullable": "NO"
+    },
+    {
+        "column": "DiscountLimit",
+        "type": "decimal",
+        "nullable": "NO"
+    },
+    {
+        "column": "Address",
+        "type": "nvarchar(50)",
+        "nullable": "YES"
+    },
+    {
+        "column": "Phones",
+        "type": "varchar(13)",
+        "nullable": "YES"
+    },
+    {
+        "column": "Country",
+        "type": "nvarchar(25)",
+        "nullable": "YES"
+    },
+    {
+        "column": "Mobile",
+        "type": "varchar(13)",
+        "nullable": "YES"
+    },
+    {
+        "column": "Balance",
+        "type": "decimal",
+        "nullable": "YES"
+    },
+    {
+        "column": "dtCreateDate",
+        "type": "datetime",
+        "nullable": "YES"
+    },
+    {
+        "column": "sinCreateUserID",
+        "type": "smallint",
+        "nullable": "YES"
+    },
+    {
+        "column": "dtUpdateDate",
+        "type": "datetime",
+        "nullable": "YES"
+    },
+    {
+        "column": "sinUpdateUserID",
+        "type": "smallint",
+        "nullable": "YES"
+    },
+    {
+        "column": "Balance1",
+        "type": "decimal",
+        "nullable": "YES"
+    },
+    {
+        "column": "SalesPersonCode",
+        "type": "nvarchar(10)",
+        "nullable": "YES"
+    },
+    {
+        "column": "BeginningBalance",
+        "type": "decimal",
+        "nullable": "YES"
+    }
+]

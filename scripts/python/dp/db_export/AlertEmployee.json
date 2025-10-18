@@ -1,0 +1,12 @@
+[
+    {
+        "column": "AlertID",
+        "type": "smallint",
+        "nullable": "NO"
+    },
+    {
+        "column": "EmployeeID",
+        "type": "smallint",
+        "nullable": "NO"
+    }
+]

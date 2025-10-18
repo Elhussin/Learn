@@ -1,0 +1,27 @@
+[
+    {
+        "column": "RequestProductDetailsID",
+        "type": "int",
+        "nullable": "NO"
+    },
+    {
+        "column": "RequestProductID",
+        "type": "int",
+        "nullable": "YES"
+    },
+    {
+        "column": "ProductID",
+        "type": "int",
+        "nullable": "YES"
+    },
+    {
+        "column": "ExpiryDate",
+        "type": "datetime",
+        "nullable": "YES"
+    },
+    {
+        "column": "Quantity",
+        "type": "int",
+        "nullable": "YES"
+    }
+]

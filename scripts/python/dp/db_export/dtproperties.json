@@ -1,0 +1,37 @@
+[
+    {
+        "column": "id",
+        "type": "int",
+        "nullable": "NO"
+    },
+    {
+        "column": "objectid",
+        "type": "int",
+        "nullable": "YES"
+    },
+    {
+        "column": "property",
+        "type": "varchar(64)",
+        "nullable": "NO"
+    },
+    {
+        "column": "value",
+        "type": "varchar(255)",
+        "nullable": "YES"
+    },
+    {
+        "column": "uvalue",
+        "type": "nvarchar(255)",
+        "nullable": "YES"
+    },
+    {
+        "column": "lvalue",
+        "type": "image",
+        "nullable": "YES"
+    },
+    {
+        "column": "version",
+        "type": "int",
+        "nullable": "NO"
+    }
+]

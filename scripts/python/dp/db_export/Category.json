@@ -1,0 +1,47 @@
+[
+    {
+        "column": "CategoryID",
+        "type": "smallint",
+        "nullable": "NO"
+    },
+    {
+        "column": "MaingroupID",
+        "type": "int",
+        "nullable": "YES"
+    },
+    {
+        "column": "Name",
+        "type": "varchar(50)",
+        "nullable": "NO"
+    },
+    {
+        "column": "Value",
+        "type": "varchar(50)",
+        "nullable": "YES"
+    },
+    {
+        "column": "dtCreateDate",
+        "type": "datetime",
+        "nullable": "YES"
+    },
+    {
+        "column": "sinCreateUserID",
+        "type": "smallint",
+        "nullable": "YES"
+    },
+    {
+        "column": "dtUpdateDate",
+        "type": "datetime",
+        "nullable": "YES"
+    },
+    {
+        "column": "sinUpdateUserID",
+        "type": "smallint",
+        "nullable": "YES"
+    },
+    {
+        "column": "AccountNo",
+        "type": "nvarchar(50)",
+        "nullable": "YES"
+    }
+]

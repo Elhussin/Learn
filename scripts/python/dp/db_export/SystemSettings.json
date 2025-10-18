@@ -1,0 +1,107 @@
+[
+    {
+        "column": "inID",
+        "type": "int",
+        "nullable": "NO"
+    },
+    {
+        "column": "bolStoreOption",
+        "type": "bit",
+        "nullable": "YES"
+    },
+    {
+        "column": "bolAllowMinus",
+        "type": "bit",
+        "nullable": "YES"
+    },
+    {
+        "column": "bolEditPendingTransaction",
+        "type": "bit",
+        "nullable": "YES"
+    },
+    {
+        "column": "bolPhysicalDeleteTransaction",
+        "type": "bit",
+        "nullable": "YES"
+    },
+    {
+        "column": "bolPrintedSerial",
+        "type": "bit",
+        "nullable": "YES"
+    },
+    {
+        "column": "bolExcludeInvoices",
+        "type": "bit",
+        "nullable": "YES"
+    },
+    {
+        "column": "nExcludePeriod",
+        "type": "int",
+        "nullable": "YES"
+    },
+    {
+        "column": "bolLogin",
+        "type": "bit",
+        "nullable": "YES"
+    },
+    {
+        "column": "nLoginStart",
+        "type": "int",
+        "nullable": "YES"
+    },
+    {
+        "column": "nLoginEnd",
+        "type": "int",
+        "nullable": "YES"
+    },
+    {
+        "column": "nLoginStart_Shift2",
+        "type": "int",
+        "nullable": "YES"
+    },
+    {
+        "column": "nLoginEnd_Shift2",
+        "type": "int",
+        "nullable": "YES"
+    },
+    {
+        "column": "bolDeleteProcessedTransaction",
+        "type": "bit",
+        "nullable": "YES"
+    },
+    {
+        "column": "bolPrintPendingTransaction",
+        "type": "bit",
+        "nullable": "YES"
+    },
+    {
+        "column": "bolAllowBuiltInOppositeTransaction",
+        "type": "bit",
+        "nullable": "YES"
+    },
+    {
+        "column": "bolEditPrice",
+        "type": "bit",
+        "nullable": "YES"
+    },
+    {
+        "column": "bolEditSalesPerson",
+        "type": "bit",
+        "nullable": "YES"
+    },
+    {
+        "column": "bolIncludeTax",
+        "type": "bit",
+        "nullable": "YES"
+    },
+    {
+        "column": "bolpageSize",
+        "type": "bit",
+        "nullable": "YES"
+    },
+    {
+        "column": "nPageSize",
+        "type": "int",
+        "nullable": "YES"
+    }
+]

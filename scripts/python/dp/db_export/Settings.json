@@ -1,0 +1,17 @@
+[
+    {
+        "column": "SettingsID",
+        "type": "int",
+        "nullable": "NO"
+    },
+    {
+        "column": "Name",
+        "type": "varchar(50)",
+        "nullable": "NO"
+    },
+    {
+        "column": "Value",
+        "type": "varchar(50)",
+        "nullable": "NO"
+    }
+]

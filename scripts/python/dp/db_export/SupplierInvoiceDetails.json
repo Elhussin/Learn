@@ -1,0 +1,72 @@
+[
+    {
+        "column": "SupplierInvoiceDetailsID",
+        "type": "int",
+        "nullable": "NO"
+    },
+    {
+        "column": "SupplierInvoiceID",
+        "type": "int",
+        "nullable": "NO"
+    },
+    {
+        "column": "ProductID",
+        "type": "int",
+        "nullable": "NO"
+    },
+    {
+        "column": "ExpiryDate",
+        "type": "datetime",
+        "nullable": "YES"
+    },
+    {
+        "column": "PurchaseOrderID",
+        "type": "int",
+        "nullable": "YES"
+    },
+    {
+        "column": "Quantity",
+        "type": "decimal",
+        "nullable": "NO"
+    },
+    {
+        "column": "QuantitySold",
+        "type": "smallint",
+        "nullable": "YES"
+    },
+    {
+        "column": "PurchaseBasePrice",
+        "type": "float",
+        "nullable": "YES"
+    },
+    {
+        "column": "PurchasePrice",
+        "type": "float",
+        "nullable": "YES"
+    },
+    {
+        "column": "UnitBasePrice",
+        "type": "float",
+        "nullable": "YES"
+    },
+    {
+        "column": "UnitPrice",
+        "type": "float",
+        "nullable": "YES"
+    },
+    {
+        "column": "DiscountPercentage",
+        "type": "int",
+        "nullable": "YES"
+    },
+    {
+        "column": "NetBasePrice",
+        "type": "float",
+        "nullable": "YES"
+    },
+    {
+        "column": "NetPrice",
+        "type": "float",
+        "nullable": "YES"
+    }
+]

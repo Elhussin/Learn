@@ -1,0 +1,27 @@
+[
+    {
+        "column": "OfferDetailID",
+        "type": "int",
+        "nullable": "NO"
+    },
+    {
+        "column": "OfferID",
+        "type": "smallint",
+        "nullable": "YES"
+    },
+    {
+        "column": "CategoryID",
+        "type": "smallint",
+        "nullable": "YES"
+    },
+    {
+        "column": "NoOfItems",
+        "type": "decimal",
+        "nullable": "YES"
+    },
+    {
+        "column": "Price",
+        "type": "decimal",
+        "nullable": "YES"
+    }
+]

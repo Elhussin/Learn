@@ -1,0 +1,92 @@
+[
+    {
+        "column": "RequestID",
+        "type": "int",
+        "nullable": "NO"
+    },
+    {
+        "column": "Trans_Year",
+        "type": "int",
+        "nullable": "YES"
+    },
+    {
+        "column": "Serial",
+        "type": "int",
+        "nullable": "YES"
+    },
+    {
+        "column": "DeptIDFrom",
+        "type": "int",
+        "nullable": "YES"
+    },
+    {
+        "column": "DeptTypeFrom",
+        "type": "smallint",
+        "nullable": "YES"
+    },
+    {
+        "column": "DeptIDTo",
+        "type": "int",
+        "nullable": "YES"
+    },
+    {
+        "column": "DeptTypeTo",
+        "type": "tinyint",
+        "nullable": "YES"
+    },
+    {
+        "column": "RequestDate",
+        "type": "datetime",
+        "nullable": "YES"
+    },
+    {
+        "column": "Status",
+        "type": "tinyint",
+        "nullable": "YES"
+    },
+    {
+        "column": "dtCreateDate",
+        "type": "datetime",
+        "nullable": "YES"
+    },
+    {
+        "column": "sinCreateUserID",
+        "type": "smallint",
+        "nullable": "YES"
+    },
+    {
+        "column": "Posted",
+        "type": "bit",
+        "nullable": "YES"
+    },
+    {
+        "column": "dtPostDate",
+        "type": "datetime",
+        "nullable": "YES"
+    },
+    {
+        "column": "sinPostUserID",
+        "type": "smallint",
+        "nullable": "YES"
+    },
+    {
+        "column": "PostReferenceID",
+        "type": "smallint",
+        "nullable": "YES"
+    },
+    {
+        "column": "Canceled",
+        "type": "bit",
+        "nullable": "YES"
+    },
+    {
+        "column": "Comments",
+        "type": "nvarchar(4000)",
+        "nullable": "YES"
+    },
+    {
+        "column": "FreeSerial",
+        "type": "nvarchar(20)",
+        "nullable": "YES"
+    }
+]

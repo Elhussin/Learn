@@ -1,0 +1,32 @@
+[
+    {
+        "column": "ItemID",
+        "type": "int",
+        "nullable": "NO"
+    },
+    {
+        "column": "ItemCode",
+        "type": "nvarchar(20)",
+        "nullable": "YES"
+    },
+    {
+        "column": "ItemDescription",
+        "type": "nvarchar(100)",
+        "nullable": "YES"
+    },
+    {
+        "column": "ItemPrice",
+        "type": "float",
+        "nullable": "YES"
+    },
+    {
+        "column": "InsuranceCompanyId",
+        "type": "smallint",
+        "nullable": "YES"
+    },
+    {
+        "column": "MainGroupsID",
+        "type": "int",
+        "nullable": "YES"
+    }
+]

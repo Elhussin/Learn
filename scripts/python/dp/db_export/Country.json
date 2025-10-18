@@ -1,0 +1,37 @@
+[
+    {
+        "column": "CountryID",
+        "type": "smallint",
+        "nullable": "NO"
+    },
+    {
+        "column": "Name",
+        "type": "nvarchar(50)",
+        "nullable": "NO"
+    },
+    {
+        "column": "Value",
+        "type": "nvarchar(10)",
+        "nullable": "NO"
+    },
+    {
+        "column": "dtCreateDate",
+        "type": "datetime",
+        "nullable": "YES"
+    },
+    {
+        "column": "sinCreateUserID",
+        "type": "smallint",
+        "nullable": "YES"
+    },
+    {
+        "column": "dtUpdateDate",
+        "type": "datetime",
+        "nullable": "YES"
+    },
+    {
+        "column": "sinUpdateUserID",
+        "type": "smallint",
+        "nullable": "YES"
+    }
+]

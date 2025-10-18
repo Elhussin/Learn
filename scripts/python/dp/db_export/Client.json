@@ -1,0 +1,127 @@
+[
+    {
+        "column": "ClientID",
+        "type": "smallint",
+        "nullable": "NO"
+    },
+    {
+        "column": "SystemDepartmentID",
+        "type": "smallint",
+        "nullable": "YES"
+    },
+    {
+        "column": "RegionID",
+        "type": "smallint",
+        "nullable": "YES"
+    },
+    {
+        "column": "ClientCode",
+        "type": "nvarchar(10)",
+        "nullable": "YES"
+    },
+    {
+        "column": "Name",
+        "type": "nvarchar(50)",
+        "nullable": "NO"
+    },
+    {
+        "column": "Address",
+        "type": "nvarchar(200)",
+        "nullable": "YES"
+    },
+    {
+        "column": "FirstPhone",
+        "type": "nvarchar(13)",
+        "nullable": "YES"
+    },
+    {
+        "column": "SecondPhone",
+        "type": "nvarchar(20)",
+        "nullable": "YES"
+    },
+    {
+        "column": "Mobile",
+        "type": "nvarchar(13)",
+        "nullable": "YES"
+    },
+    {
+        "column": "Fax",
+        "type": "nvarchar(13)",
+        "nullable": "YES"
+    },
+    {
+        "column": "SalesPersonID",
+        "type": "smallint",
+        "nullable": "YES"
+    },
+    {
+        "column": "Email",
+        "type": "nvarchar(50)",
+        "nullable": "YES"
+    },
+    {
+        "column": "Country",
+        "type": "nvarchar(20)",
+        "nullable": "YES"
+    },
+    {
+        "column": "ClientLimit",
+        "type": "float",
+        "nullable": "YES"
+    },
+    {
+        "column": "Begining Balance",
+        "type": "decimal",
+        "nullable": "YES"
+    },
+    {
+        "column": "ClientBalance",
+        "type": "float",
+        "nullable": "YES"
+    },
+    {
+        "column": "Discount",
+        "type": "float",
+        "nullable": "YES"
+    },
+    {
+        "column": "CurrencyID",
+        "type": "smallint",
+        "nullable": "YES"
+    },
+    {
+        "column": "ContactPerson",
+        "type": "nvarchar(200)",
+        "nullable": "YES"
+    },
+    {
+        "column": "AccountNo",
+        "type": "nvarchar(50)",
+        "nullable": "YES"
+    },
+    {
+        "column": "Active",
+        "type": "tinyint",
+        "nullable": "YES"
+    },
+    {
+        "column": "dtCreateDate",
+        "type": "datetime",
+        "nullable": "YES"
+    },
+    {
+        "column": "sinCreateUserID",
+        "type": "smallint",
+        "nullable": "YES"
+    },
+    {
+        "column": "dtUpdateDate",
+        "type": "datetime",
+        "nullable": "YES"
+    },
+    {
+        "column": "sinUpdateUserID",
+        "type": "smallint",
+        "nullable": "YES"
+    }
+]

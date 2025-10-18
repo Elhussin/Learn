@@ -1,0 +1,22 @@
+[
+    {
+        "column": "ID",
+        "type": "int",
+        "nullable": "NO"
+    },
+    {
+        "column": "MasterType",
+        "type": "int",
+        "nullable": "YES"
+    },
+    {
+        "column": "Code",
+        "type": "nvarchar(20)",
+        "nullable": "YES"
+    },
+    {
+        "column": "Value",
+        "type": "nvarchar(20)",
+        "nullable": "YES"
+    }
+]

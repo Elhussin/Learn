@@ -1,0 +1,67 @@
+[
+    {
+        "column": "intBalanceID",
+        "type": "int",
+        "nullable": "NO"
+    },
+    {
+        "column": "intSerial",
+        "type": "int",
+        "nullable": "YES"
+    },
+    {
+        "column": "intTransYear",
+        "type": "int",
+        "nullable": "YES"
+    },
+    {
+        "column": "intStoreID",
+        "type": "int",
+        "nullable": "YES"
+    },
+    {
+        "column": "intEmployeeID",
+        "type": "int",
+        "nullable": "YES"
+    },
+    {
+        "column": "dtCreateDate",
+        "type": "datetime",
+        "nullable": "YES"
+    },
+    {
+        "column": "sinCreateUserID",
+        "type": "smallint",
+        "nullable": "YES"
+    },
+    {
+        "column": "dtUpdateDate",
+        "type": "datetime",
+        "nullable": "YES"
+    },
+    {
+        "column": "sinUpdateUserID",
+        "type": "smallint",
+        "nullable": "YES"
+    },
+    {
+        "column": "Posted",
+        "type": "bit",
+        "nullable": "YES"
+    },
+    {
+        "column": "dtPostDate",
+        "type": "datetime",
+        "nullable": "YES"
+    },
+    {
+        "column": "sinPostUserID",
+        "type": "smallint",
+        "nullable": "YES"
+    },
+    {
+        "column": "Canceled",
+        "type": "bit",
+        "nullable": "YES"
+    }
+]

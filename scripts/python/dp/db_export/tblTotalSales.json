@@ -1,0 +1,102 @@
+[
+    {
+        "column": "intID",
+        "type": "int",
+        "nullable": "NO"
+    },
+    {
+        "column": "intMasterDepID",
+        "type": "int",
+        "nullable": "YES"
+    },
+    {
+        "column": "nvcharMasterDepName",
+        "type": "nvarchar(50)",
+        "nullable": "YES"
+    },
+    {
+        "column": "intDepID",
+        "type": "int",
+        "nullable": "YES"
+    },
+    {
+        "column": "nvcharDepName",
+        "type": "nvarchar(50)",
+        "nullable": "YES"
+    },
+    {
+        "column": "tintType",
+        "type": "tinyint",
+        "nullable": "YES"
+    },
+    {
+        "column": "decClientOrders",
+        "type": "decimal",
+        "nullable": "YES"
+    },
+    {
+        "column": "decClientRevokes",
+        "type": "decimal",
+        "nullable": "YES"
+    },
+    {
+        "column": "decClientPaymentCredit",
+        "type": "decimal",
+        "nullable": "YES"
+    },
+    {
+        "column": "decClientPaymentCash",
+        "type": "decimal",
+        "nullable": "YES"
+    },
+    {
+        "column": "decClientRevokePayment",
+        "type": "decimal",
+        "nullable": "YES"
+    },
+    {
+        "column": "decCustomerOrders",
+        "type": "decimal",
+        "nullable": "YES"
+    },
+    {
+        "column": "decCustomerRevokes",
+        "type": "decimal",
+        "nullable": "YES"
+    },
+    {
+        "column": "decCustomerDownPayment",
+        "type": "decimal",
+        "nullable": "YES"
+    },
+    {
+        "column": "decCustomerPaymentCredit",
+        "type": "decimal",
+        "nullable": "YES"
+    },
+    {
+        "column": "decCustomerPaymentCoupon",
+        "type": "decimal",
+        "nullable": "YES"
+    },
+    {
+        "column": "decCustomerPaymentCash",
+        "type": "decimal",
+        "nullable": "YES"
+    },
+    {
+        "column": "decCustomerRevokePayment",
+        "type": "decimal",
+        "nullable": "YES"
+    },
+    {
+        "column": "Fromdate",
+        "type": "datetime",
+        "nullable": "YES"
+    },
+    {
+        "column": "todate",
+        "type": "datetime",
+        "nullable": "YES"
+    }
+]

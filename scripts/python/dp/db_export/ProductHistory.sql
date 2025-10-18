@@ -1,0 +1,21 @@
+CREATE TABLE [ProductHistory] (
+    [Id] int NOT NULL,
+    [ProductID] int NULL,
+    [CreationDate] datetime NULL,
+    [OldPrice] decimal NULL,
+    [NewPrice] decimal NULL,
+    [OldStoreDiscount] decimal NULL,
+    [NewStoreDiscount] decimal NULL,
+    [OldStoreSaleDiscount] decimal NULL,
+    [NewStoreSaleDiscount] decimal NULL,
+    [OldGalleryDiscount] decimal NULL,
+    [NewGalleryDiscount] decimal NULL,
+    [OldGallerySaleDiscount] decimal NULL,
+    [NewGallerySaleDiscount] decimal NULL,
+    [OldDescription] nvarchar(4000) NULL,
+    [NewDescription] nvarchar(4000) NULL,
+    [UserId] int NULL,
+    [OldWhalePrice] decimal NULL,
+    [NewWhalePrice] decimal NULL,
+    CONSTRAINT [PK_ProductHistory] PRIMARY KEY ([Id])
+);

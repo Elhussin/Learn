@@ -1,0 +1,37 @@
+[
+    {
+        "column": "id_num",
+        "type": "int",
+        "nullable": "NO"
+    },
+    {
+        "column": "ProductID",
+        "type": "int",
+        "nullable": "YES"
+    },
+    {
+        "column": "ProductCode",
+        "type": "nvarchar(50)",
+        "nullable": "YES"
+    },
+    {
+        "column": "Quantity",
+        "type": "int",
+        "nullable": "YES"
+    },
+    {
+        "column": "Col1",
+        "type": "nvarchar(50)",
+        "nullable": "YES"
+    },
+    {
+        "column": "Col2",
+        "type": "nvarchar(50)",
+        "nullable": "YES"
+    },
+    {
+        "column": "Col3",
+        "type": "nvarchar(50)",
+        "nullable": "YES"
+    }
+]

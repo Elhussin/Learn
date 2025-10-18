@@ -1,0 +1,37 @@
+[
+    {
+        "column": "intCustomerID",
+        "type": "int",
+        "nullable": "NO"
+    },
+    {
+        "column": "intPaymentID",
+        "type": "int",
+        "nullable": "NO"
+    },
+    {
+        "column": "intInvoiceID",
+        "type": "int",
+        "nullable": "NO"
+    },
+    {
+        "column": "intType",
+        "type": "smallint",
+        "nullable": "NO"
+    },
+    {
+        "column": "decAmount",
+        "type": "decimal",
+        "nullable": "YES"
+    },
+    {
+        "column": "sdtPayDate",
+        "type": "smalldatetime",
+        "nullable": "YES"
+    },
+    {
+        "column": "tinFinished",
+        "type": "tinyint",
+        "nullable": "YES"
+    }
+]

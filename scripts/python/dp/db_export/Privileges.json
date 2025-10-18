@@ -1,0 +1,42 @@
+[
+    {
+        "column": "GroupId",
+        "type": "int",
+        "nullable": "NO"
+    },
+    {
+        "column": "FormCode",
+        "type": "nvarchar(50)",
+        "nullable": "NO"
+    },
+    {
+        "column": "Show",
+        "type": "bit",
+        "nullable": "YES"
+    },
+    {
+        "column": "Save",
+        "type": "bit",
+        "nullable": "YES"
+    },
+    {
+        "column": "Process",
+        "type": "bit",
+        "nullable": "YES"
+    },
+    {
+        "column": "Delete",
+        "type": "bit",
+        "nullable": "YES"
+    },
+    {
+        "column": "EditAfterProcess",
+        "type": "bit",
+        "nullable": "YES"
+    },
+    {
+        "column": "DeleteAfterProcess",
+        "type": "bit",
+        "nullable": "YES"
+    }
+]

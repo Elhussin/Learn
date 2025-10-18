@@ -1,0 +1,37 @@
+[
+    {
+        "column": "ClientRevokeDetailsID",
+        "type": "int",
+        "nullable": "NO"
+    },
+    {
+        "column": "ClientRevokeID",
+        "type": "int",
+        "nullable": "NO"
+    },
+    {
+        "column": "ClientOrderDetailsID",
+        "type": "int",
+        "nullable": "YES"
+    },
+    {
+        "column": "ProductID",
+        "type": "int",
+        "nullable": "NO"
+    },
+    {
+        "column": "ExpiryDate",
+        "type": "datetime",
+        "nullable": "YES"
+    },
+    {
+        "column": "Quantity",
+        "type": "float",
+        "nullable": "NO"
+    },
+    {
+        "column": "NetPrice",
+        "type": "float",
+        "nullable": "YES"
+    }
+]

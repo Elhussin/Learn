@@ -1,0 +1,37 @@
+[
+    {
+        "column": "ClientRequestDetailsID",
+        "type": "int",
+        "nullable": "NO"
+    },
+    {
+        "column": "ClientRequestID",
+        "type": "int",
+        "nullable": "NO"
+    },
+    {
+        "column": "ProductID",
+        "type": "int",
+        "nullable": "NO"
+    },
+    {
+        "column": "Quantity",
+        "type": "float",
+        "nullable": "NO"
+    },
+    {
+        "column": "DQuantity",
+        "type": "float",
+        "nullable": "YES"
+    },
+    {
+        "column": "Discount",
+        "type": "float",
+        "nullable": "YES"
+    },
+    {
+        "column": "NetPrice",
+        "type": "float",
+        "nullable": "YES"
+    }
+]

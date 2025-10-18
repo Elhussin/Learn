@@ -1,0 +1,67 @@
+[
+    {
+        "column": "InsuranceCompanyID",
+        "type": "smallint",
+        "nullable": "NO"
+    },
+    {
+        "column": "InsuranceCompanyCode",
+        "type": "nvarchar(50)",
+        "nullable": "YES"
+    },
+    {
+        "column": "Name",
+        "type": "nvarchar(50)",
+        "nullable": "YES"
+    },
+    {
+        "column": "address",
+        "type": "nvarchar(50)",
+        "nullable": "YES"
+    },
+    {
+        "column": "DiscountPercentage",
+        "type": "decimal",
+        "nullable": "YES"
+    },
+    {
+        "column": "Phone",
+        "type": "nvarchar(50)",
+        "nullable": "YES"
+    },
+    {
+        "column": "Fax",
+        "type": "nvarchar(50)",
+        "nullable": "YES"
+    },
+    {
+        "column": "ResponsiblePerson",
+        "type": "nvarchar(50)",
+        "nullable": "YES"
+    },
+    {
+        "column": "Active",
+        "type": "tinyint",
+        "nullable": "YES"
+    },
+    {
+        "column": "Deductible",
+        "type": "tinyint",
+        "nullable": "YES"
+    },
+    {
+        "column": "CanEdit",
+        "type": "tinyint",
+        "nullable": "YES"
+    },
+    {
+        "column": "DiscountForInsurance",
+        "type": "int",
+        "nullable": "YES"
+    },
+    {
+        "column": "DeductibleCal",
+        "type": "tinyint",
+        "nullable": "YES"
+    }
+]

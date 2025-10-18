@@ -1,0 +1,22 @@
+CREATE TABLE [ClientRequest] (
+    [ClientRequestID] int NOT NULL,
+    [ClientID] smallint NOT NULL,
+    [StoreID] smallint NOT NULL,
+    [SalesPersonID] smallint NULL,
+    [Trans_Year] int NULL,
+    [Serial] int NULL,
+    [CurrencyID] int NULL,
+    [Rate] float NULL,
+    [TotalPrice] float NULL,
+    [DiscountAmount] float NULL,
+    [TotalDiscount] float NULL,
+    [TaxPercentage] float NULL,
+    [TaxAmount] float NULL,
+    [NetPrice] float NULL,
+    [OrderDate] smalldatetime NOT NULL,
+    [DeliveryDate] smalldatetime NULL,
+    [FinishDate] smalldatetime NOT NULL,
+    [Status] tinyint NOT NULL,
+    [Comment] varchar(200) NULL,
+    CONSTRAINT [PK_ClientRequest] PRIMARY KEY ([ClientRequestID])
+);

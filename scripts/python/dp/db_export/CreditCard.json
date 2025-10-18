@@ -1,0 +1,37 @@
+[
+    {
+        "column": "CreditCardID",
+        "type": "smallint",
+        "nullable": "NO"
+    },
+    {
+        "column": "Name",
+        "type": "nvarchar(50)",
+        "nullable": "NO"
+    },
+    {
+        "column": "dtCreateDate",
+        "type": "datetime",
+        "nullable": "YES"
+    },
+    {
+        "column": "sinCreateUserID",
+        "type": "smallint",
+        "nullable": "YES"
+    },
+    {
+        "column": "dtUpdateDate",
+        "type": "datetime",
+        "nullable": "YES"
+    },
+    {
+        "column": "sinUpdateUserID",
+        "type": "smallint",
+        "nullable": "YES"
+    },
+    {
+        "column": "Commissionrate",
+        "type": "float",
+        "nullable": "YES"
+    }
+]

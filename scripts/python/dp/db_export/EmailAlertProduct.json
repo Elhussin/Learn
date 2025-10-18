@@ -1,0 +1,17 @@
+[
+    {
+        "column": "EmailAlertID",
+        "type": "int",
+        "nullable": "NO"
+    },
+    {
+        "column": "ProductID",
+        "type": "int",
+        "nullable": "NO"
+    },
+    {
+        "column": "ExpiryDate",
+        "type": "datetime",
+        "nullable": "NO"
+    }
+]

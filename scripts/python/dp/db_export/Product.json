@@ -1,0 +1,277 @@
+[
+    {
+        "column": "ProductID",
+        "type": "int",
+        "nullable": "NO"
+    },
+    {
+        "column": "Code",
+        "type": "nvarchar(50)",
+        "nullable": "NO"
+    },
+    {
+        "column": "MainGroupID",
+        "type": "smallint",
+        "nullable": "YES"
+    },
+    {
+        "column": "CategoryID",
+        "type": "smallint",
+        "nullable": "YES"
+    },
+    {
+        "column": "SubCategoryID",
+        "type": "smallint",
+        "nullable": "YES"
+    },
+    {
+        "column": "Description",
+        "type": "nvarchar(2000)",
+        "nullable": "YES"
+    },
+    {
+        "column": "FreeCode",
+        "type": "nvarchar(20)",
+        "nullable": "YES"
+    },
+    {
+        "column": "Lookup1Value",
+        "type": "smallint",
+        "nullable": "YES"
+    },
+    {
+        "column": "Lookup2Value",
+        "type": "smallint",
+        "nullable": "YES"
+    },
+    {
+        "column": "Lookup3Value",
+        "type": "smallint",
+        "nullable": "YES"
+    },
+    {
+        "column": "Lookup4Value",
+        "type": "smallint",
+        "nullable": "YES"
+    },
+    {
+        "column": "Lookup5Value",
+        "type": "smallint",
+        "nullable": "YES"
+    },
+    {
+        "column": "Lookup6Value",
+        "type": "smallint",
+        "nullable": "YES"
+    },
+    {
+        "column": "Status",
+        "type": "tinyint",
+        "nullable": "NO"
+    },
+    {
+        "column": "GenderID",
+        "type": "smallint",
+        "nullable": "YES"
+    },
+    {
+        "column": "SeasonID",
+        "type": "smallint",
+        "nullable": "YES"
+    },
+    {
+        "column": "ManufacturerID",
+        "type": "smallint",
+        "nullable": "YES"
+    },
+    {
+        "column": "NewCode",
+        "type": "varchar(50)",
+        "nullable": "NO"
+    },
+    {
+        "column": "OriginalCode",
+        "type": "varchar(50)",
+        "nullable": "YES"
+    },
+    {
+        "column": "MaestroCode",
+        "type": "nvarchar(50)",
+        "nullable": "YES"
+    },
+    {
+        "column": "ShipmentNo",
+        "type": "int",
+        "nullable": "YES"
+    },
+    {
+        "column": "Field1",
+        "type": "nvarchar(100)",
+        "nullable": "YES"
+    },
+    {
+        "column": "Field2",
+        "type": "nvarchar(100)",
+        "nullable": "YES"
+    },
+    {
+        "column": "Field3",
+        "type": "nvarchar(100)",
+        "nullable": "YES"
+    },
+    {
+        "column": "Field4",
+        "type": "nvarchar(100)",
+        "nullable": "YES"
+    },
+    {
+        "column": "Image",
+        "type": "varchar(50)",
+        "nullable": "YES"
+    },
+    {
+        "column": "HasExpiryDate",
+        "type": "bit",
+        "nullable": "YES"
+    },
+    {
+        "column": "StoreLimit",
+        "type": "smallint",
+        "nullable": "YES"
+    },
+    {
+        "column": "GalleryLimit",
+        "type": "smallint",
+        "nullable": "YES"
+    },
+    {
+        "column": "RetailPrice",
+        "type": "decimal",
+        "nullable": "YES"
+    },
+    {
+        "column": "GallerySaleDateFrom",
+        "type": "smalldatetime",
+        "nullable": "YES"
+    },
+    {
+        "column": "GallerySaleDateTo",
+        "type": "smalldatetime",
+        "nullable": "YES"
+    },
+    {
+        "column": "GalleryDiscount",
+        "type": "decimal",
+        "nullable": "YES"
+    },
+    {
+        "column": "GallerySaleDiscount",
+        "type": "decimal",
+        "nullable": "YES"
+    },
+    {
+        "column": "WhalePrice",
+        "type": "decimal",
+        "nullable": "YES"
+    },
+    {
+        "column": "StoreSaleDateFrom",
+        "type": "smalldatetime",
+        "nullable": "YES"
+    },
+    {
+        "column": "StoreSaleDateTo",
+        "type": "smalldatetime",
+        "nullable": "YES"
+    },
+    {
+        "column": "StoreDiscount",
+        "type": "decimal",
+        "nullable": "YES"
+    },
+    {
+        "column": "StoreSaleDiscount",
+        "type": "decimal",
+        "nullable": "YES"
+    },
+    {
+        "column": "TotalCost",
+        "type": "decimal",
+        "nullable": "YES"
+    },
+    {
+        "column": "TotalQuantity",
+        "type": "decimal",
+        "nullable": "YES"
+    },
+    {
+        "column": "CostPrice",
+        "type": "decimal",
+        "nullable": "YES"
+    },
+    {
+        "column": "EvaluationPrice",
+        "type": "decimal",
+        "nullable": "YES"
+    },
+    {
+        "column": "StoreLowerLimit",
+        "type": "int",
+        "nullable": "YES"
+    },
+    {
+        "column": "GalleryLowerLimit",
+        "type": "int",
+        "nullable": "YES"
+    },
+    {
+        "column": "StoreUpperLimit",
+        "type": "int",
+        "nullable": "YES"
+    },
+    {
+        "column": "GalleryUpperLimit",
+        "type": "int",
+        "nullable": "YES"
+    },
+    {
+        "column": "ReOrderLimit",
+        "type": "int",
+        "nullable": "YES"
+    },
+    {
+        "column": "RecessLimit",
+        "type": "int",
+        "nullable": "YES"
+    },
+    {
+        "column": "IsPresent",
+        "type": "bit",
+        "nullable": "YES"
+    },
+    {
+        "column": "CreationDate",
+        "type": "smalldatetime",
+        "nullable": "YES"
+    },
+    {
+        "column": "dtCreateDate",
+        "type": "datetime",
+        "nullable": "YES"
+    },
+    {
+        "column": "sinCreateUserID",
+        "type": "smallint",
+        "nullable": "YES"
+    },
+    {
+        "column": "dtUpdateDate",
+        "type": "datetime",
+        "nullable": "YES"
+    },
+    {
+        "column": "sinUpdateUserID",
+        "type": "smallint",
+        "nullable": "YES"
+    }
+]

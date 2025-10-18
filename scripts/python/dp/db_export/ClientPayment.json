@@ -1,0 +1,77 @@
+[
+    {
+        "column": "ClientPaymentID",
+        "type": "int",
+        "nullable": "NO"
+    },
+    {
+        "column": "ClientID",
+        "type": "smallint",
+        "nullable": "NO"
+    },
+    {
+        "column": "StoreID",
+        "type": "smallint",
+        "nullable": "NO"
+    },
+    {
+        "column": "SalesPersonID",
+        "type": "smallint",
+        "nullable": "YES"
+    },
+    {
+        "column": "Trans_Year",
+        "type": "int",
+        "nullable": "NO"
+    },
+    {
+        "column": "Serial",
+        "type": "int",
+        "nullable": "NO"
+    },
+    {
+        "column": "CurrencyID",
+        "type": "int",
+        "nullable": "NO"
+    },
+    {
+        "column": "Rate",
+        "type": "decimal",
+        "nullable": "NO"
+    },
+    {
+        "column": "Amount",
+        "type": "decimal",
+        "nullable": "NO"
+    },
+    {
+        "column": "TakenAmount",
+        "type": "decimal",
+        "nullable": "YES"
+    },
+    {
+        "column": "PaymentDate",
+        "type": "smalldatetime",
+        "nullable": "NO"
+    },
+    {
+        "column": "PaymentType",
+        "type": "tinyint",
+        "nullable": "NO"
+    },
+    {
+        "column": "Comment",
+        "type": "nvarchar(200)",
+        "nullable": "YES"
+    },
+    {
+        "column": "Finished",
+        "type": "tinyint",
+        "nullable": "YES"
+    },
+    {
+        "column": "Posted",
+        "type": "bit",
+        "nullable": "YES"
+    }
+]

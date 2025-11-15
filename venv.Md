@@ -30,7 +30,7 @@ rmdir /s /q venv
 ### install requirements
 ```bash
 pip install -r requirements.txt
-pip install requirements.txt
+
 ```
 
 ### Create requirements file

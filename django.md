@@ -94,6 +94,8 @@ python manage.py migrate
 `python manage.py createsuperuser`
 
 
+
+g
 ### use postgress
 ```
 pip install psycopg2-binary

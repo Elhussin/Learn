@@ -40,3 +40,6 @@ pip freeze > requirements.txt
 ### unistall App
 ```bash
 pip uninstall <appName>
+
+# fix encoding
+Get-Content requirements.txt | Set-Content -Encoding utf8 requirements-utf8.txt

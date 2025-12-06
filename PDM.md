@@ -143,3 +143,14 @@ CMD ["pdm", "run", "python", "main.py"]
 
 ---
 
+### إنشاء ملف `requirements.txt`
+
+```bash
+pdm export -f requirements --without-hashes > requirements.txt
+```
+
+### إنشاء ملف `requirements-dev.txt`
+
+```bash
+pdm export -f requirements > requirements.txt
+```

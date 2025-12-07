@@ -1,20 +1,242 @@
-# run nginx
- ```bash
- docker-compose up -d nginx
- ```
+# SSL
 
-<!-- Important: replace YOUR_DOMAIN.com with your domain -->
-# run certbot
- ```bash
-docker run --rm -it \
-  -v $(pwd)/certbot/conf:/etc/letsencrypt \
-  -v $(pwd)/certbot/www:/var/www/certbot \
-  certbot/certbot certonly \
-  --webroot \
-  --webroot-path=/var/www/certbot \
-  -d YOUR_DOMAIN.com -d www.YOUR_DOMAIN.com
+## أهلاً بك، خطوات تثبيت شهادة Let's Encrypt Wildcard SSL (لتغطية جميع النطاقات الفرعية) على خادمك الخاص (بافتراض أنه يعمل بنظام Linux مثل Debian) تتطلب استخدام أداة Certbot وطريقة التحقق عبر DNS Challenge.
+
+## نظرًا لأنك تستخدم Hostinger لإدارة DNS، يجب أن تكون هذه هي الخطوات:
+
+## متطلبات أساسية
+الوصول إلى الخادم: يجب أن تكون قادرًا على الاتصال بالخادم الخاص بك عبر SSH (مثل ssh go@ip).
+
+أداة Certbot: يجب تثبيت أداة certbot على خادمك.
+
+إضافة API Token (أسهل طريقة): نظرًا لأن Hostinger تدعم التكامل عبر API، فإن استخدام إضافة Certbot الخاصة بـ Hostinger هو أسهل طريقة لإدارة التحدي تلقائيًا.
+
+## الخطوات التفصيلية (باستخدام Certbot و DNS Challenge)
+1. تثبيت Certbot والمكون الإضافي لـ Hostinger (على خادمك)
+أولاً، تأكد من تثبيت Certbot والإضافة اللازمة للتحكم في DNS عبر Hostinger.
+
+### تحديث قائمة الحزم
+```bash
+sudo apt update
+# تثبيت Certbot (إذا لم يكن مثبتاً)
+sudo apt install certbot python3-certbot-dns-hostinger
+
 ```
-# auto renew certbot
- ```bash
-0 2 * * * docker-compose run --rm certbot renew && docker-compose restart nginx
+
+### الحصول على رمز API (API Token) من Hostinger
+تحتاج إلى الحصول على رمز وصول (Token) يسمح لـ Certbot بتحديث سجلات DNS مؤقتًا لإثبات ملكيتك:
+
+سجل الدخول إلى حسابك في Hostinger.
+
+ابحث عن إعدادات API أو Developers.
+
+قم بإنشاء New API Token (رمز API جديد) وتأكد من منحه صلاحيات إدارة DNS.
+
+احتفظ بهذا الرمز سرياً.
+
+
+### إعداد ملف بيانات الاعتماد (Credentials File)
+قم بإنشاء ملف نصي آمن على خادمك يحتوي على رمز API الذي حصلت عليه. هذا الملف يجب أن يكون محمياً ومقروءاً فقط من قبل المستخدم الجذر (Root) أو المستخدم الذي يقوم بتشغيل Certbot.
+
+```bash
+sudo mkdir -p /etc/letsencrypt
+sudo nano /etc/letsencrypt/hostinger-credentials.ini
+# داخل الملف، أضف السطر التالي، مستبدلاً YOUR_HOSTINGER_API_TOKEN بالرمز الذي حصلت عليه:
+dns_hostinger_api_token = YOUR_HOSTINGER_API_TOKEN
+# حفظ الملف   بامان واعطاء الصلاحيات المناسبة
+sudo chmod 600 /etc/letsencrypt/hostinger-credentials.ini
+
+```
+
+
+### تثبيت شهادة SSL
+```bash
+sudo certbot certonly --dns-hostinger \
+  --dns-hostinger-credentials /etc/letsencrypt/hostinger-credentials.ini \
+  -d osmbeta.cloud -d *.osmbeta.cloud
+```
+
+شرح الأمر:
+
+certonly: يطلب الشهادة فقط (لا يقوم بتثبيتها تلقائياً على خادم الويب).
+
+--dns-hostinger: يحدد استخدام الإضافة الخاصة بـ Hostinger للتحقق من DNS.
+
+--dns-hostinger-credentials ...: يشير إلى ملف بيانات الاعتماد.
+
+-d osmbeta.cloud -d *.osmbeta.cloud: يحدد أن الشهادة يجب أن تغطي كلاً من الدومين الرئيسي والنطاق الفرعي الشامل.
+
+ماذا سيحدث؟ سيقوم Certbot بـ:
+
+استخدام رمز API للاتصال بـ Hostinger.
+
+إضافة سجلات TXT اللازمة للتحقق من ملكية النطاق.
+
+الانتظار حتى يكتمل التحقق.
+
+إصدار الشهادة وحفظها في المسار /etc/letsencrypt/live/osmbeta.cloud/.
+
+
+
+. تثبيت الشهادة وتكوين خادم الويب
+بعد الحصول على الشهادة، يجب عليك تعديل ملفات تكوين خادم الويب الخاص بك (مثل Apache أو Nginx) للإشارة إلى ملفات الشهادة الجديدة:
+
+مسار الشهادة الكاملة (Full Chain): /etc/letsencrypt/live/osmbeta.cloud/fullchain.pem
+
+مسار المفتاح الخاص (Private Key): /etc/letsencrypt/live/osmbeta.cloud/privkey.pem
+
+قم بتحديث ملفات الـ Virtual Host في خادم الويب لتستخدم هذه المسارات.
+
+6. إعداد التجديد التلقائي (Auto-Renewal)
+شهادات Let's Encrypt صالحة لمدة 90 يومًا فقط. يجب عليك إعداد مهمة Cron أو Timer لتشغيل أمر التجديد تلقائيًا
+
+
+
+
+## التثبيت من خلال بيئية venv
+
+```bash
+sudo apt install python3-venv
+
+# الانتقال إلى مجلد Certbot (أو أي مجلد آمن)
+cd /opt
+
+# إنشاء البيئة الافتراضية باسم "certbot-venv"
+sudo python3 -m venv certbot-venv
+
+# تفعيل البيئة (للدخول إليها)
+# ملاحظة: سنحتاج إلى تنفيذ هذا الأمر في كل مرة نريد فيها استخدام الإضافة
+source /opt/certbot-venv/bin/activate
+pip install certbot-dns-hostinger
+
+
+# نستخدم المسار الكامل لملف certbot
+# this is 
+sudo /opt/certbot-venv/bin/certbot certonly \
+  --authenticator dns-hostinger \
+  --dns-hostinger-credentials /etc/letsencrypt/hostinger-credentials.ini \
+  -d osmbeta.cloud -d *.osmbeta.cloud
+
+# or use this
+sudo /opt/certbot-venv/bin/certbot certonly \
+  --authenticator dns-hostinger \
+  --dns-hostinger-credentials /etc/letsencrypt/hostinger-credentials.ini \
+  --dns-hostinger-propagation-seconds 90 \
+  -d osmbeta.cloud -d *.osmbeta.cloud
+deactivate
+```
+
+### notes
+ندما تقوم بإعداد التجديد التلقائي لـ Certbot، يجب عليك التأكد من أن مهمة التجديد (Cron Job أو Systemd Timer) تستخدم أيضاً المسار الكامل للأمر داخل البيئة الافتراضية (/opt/certbot-venv/bin/certbot) لكي يعمل التجديد بشكل صحيح كل 90 يومً
+
+
+
+## تثبيت الشهادة على nginx
+
+- 1. ⚙️ تحديد موقع ملفات الشهادة
+ملفات الشهادة التي تحتاج إليها هي:
+```bash
+# ملف الشهادة الكاملة (Certificate/Fullchain):
+/etc/letsencrypt/live/osmbeta.cloud/fullchain.pem
+# ملف المفتاح الخاص (Private Key):
+
+/etc/letsencrypt/live/osmbeta.cloud/privkey.pem
+```
+
+
+
+- 2. 📝 تكوين nginx
+- . إنشاء ملف التكوين الرئيسي (Server Block)
+سنقوم بإنشاء ملف تكوين جديد لكل تطبيق، يوضح لـ Nginx أين يجد هذا التطبيق.
+
+لنفترض أن لديك تطبيقين:
+
+التطبيق الأول (الواجهة الأمامية): يعمل على النطاق الفرعي app1.osmbeta.cloud.
+
+التطبيق الثاني (الواجهة الأمامية): يعمل على النطاق الفرعي app2.osmbeta.cloud.
+
+مثال لتكوين التطبيق الأول (app1.osmbeta.conf)
+أنشئ الملف في المسار المناسب (مثلاً: /etc/nginx/sites-available/app1.conf):
+
+## create file
+sudo nano /etc/nginx/sites-available/app.conf
+
+## add this content
+
+
+## تكوين nginx example
+```bash 
+
+# قم بإعادة توجيه HTTP إلى HTTPS أولاً
+server {
+    listen 80;
+    server_name app1.osmbeta.cloud;
+    return 301 https://$host$request_uri;
+}
+
+# تكوين HTTPS
+server {
+    listen 443 ssl;
+    server_name summary.osmbeta.cloud; # هنا تحدد النطاق الفرعي لهذا التطبيق
+
+    # --- مسارات شهادة Wildcard SSL ---
+    ssl_certificate /etc/letsencrypt/live/osmbeta.cloud/fullchain.pem;
+    ssl_certificate_key /etc/letsencrypt/live/osmbeta.cloud/privkey.pem;
+
+    # --- التوجيه إلى حاوية Docker (Backend أو Frontend) ---
+    location / {
+        # افترض أن حاوية الواجهة الأمامية (Next.js/React) للتطبيق الأول تعمل على منفذ 3001
+        proxy_pass http://localhost:3001; 
+        
+        # إعدادات Header القياسية
+        proxy_set_header Host $host;
+        proxy_set_header X-Real-IP $remote_addr;
+        proxy_set_header X-Forwarded-Proto $scheme;
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+    }
+    
+    # مثال لتوجيه مسار API معين إلى حاوية Django/Gunicorn
+    location /api/ {
+        # افترض أن حاوية Django/Gunicorn للتطبيق الأول تعمل على منفذ 8001
+        proxy_pass http://localhost:8001/api/; 
+    }
+}
+
+```
+
+🔑 ملاحظات هامة حول حاويات Docker
+لتنجح هذه البنية، يجب مراعاة ما يلي عند تشغيل حاوياتك:
+
+تعيين المنافذ (Ports): يجب أن تضمن أن كل حاوية تطبيق (الواجهة الأمامية أو الخلفية) تستخدم منفذاً فريداً على الخادم الأساسي (Host Server). في المثال أعلاه، استخدمنا 3001 للواجهة الأمامية و 8001 للخلفية الخاصة بـ app1.
+
+الاتصال بالـ Proxy: يجب أن يتم ربط المنفذ الداخلي للحاوية بالمنفذ الموجه في Nginx. عند تشغيل حاوية Docker، يجب أن تكون المنافذ مرئية لـ localhost (أو 127.0.0.1) حتى يتمكن Nginx من الوصول إليها.
+
+مثال: عند تشغيل حاوية Next.js الخاصة بـ app1 (التي تستمع داخلياً على 3000)، يجب ربطها على النحو التالي:
+
+
+
+لربط ملف التكوين بنظام Nginx، قم بإنشاء رابط رمزي (Symlink) وتأكد من أن Nginx قادر على تحميله:
+
+```bash
+# إنشاء رابط رمزي
+sudo ln -s /etc/nginx/sites-available/app1.conf /etc/nginx/sites-enabled/app1.conf
+
+# (كرر الخطوة لـ app2.conf إذا قمت بإنشائه)
+
+# اختبار التكوين
+sudo nginx -t
+
+# إعادة تشغيل Nginx لتطبيق التغييرات
+sudo systemctl restart nginx
+```
+
+
+
+
+
+```bash
+# تحقق من صحة تكوين nginx
+sudo nginx -t
+# إعادة تشغيل nginx
+sudo systemctl restart nginx
 ```

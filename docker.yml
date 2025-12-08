@@ -1,0 +1,154 @@
+# ============================================
+# Summary SaaS Application
+# مع Traefik بدلاً من Nginx
+# ============================================
+
+services:
+  # ============================================
+  # PostgreSQL Database
+  # ============================================
+  db:
+    image: postgres:16
+    container_name: summary_postgres
+    restart: unless-stopped
+    env_file:
+      - ./.env
+    environment:
+      POSTGRES_DB: "${DB_NAME}"
+      POSTGRES_USER: "${DB_USER}"
+      POSTGRES_PASSWORD: "${DB_PASSWORD}"
+      PGDATA: /var/lib/postgresql/data/pgdata
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    networks:
+      - app-network
+      - web # 🆕 للتواصل مع Traefik
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U ${DB_USER} -d ${DB_NAME} || exit 1"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+      start_period: 30s
+
+  # ============================================
+  # Django Backend
+  # ============================================
+  backend:
+    build:
+      context: ./back-end
+      dockerfile: Dockerfile
+    container_name: summary_backend
+    restart: unless-stopped
+    env_file:
+      - ./back-end/.env
+    volumes:
+      - static_volume:/app/staticfiles
+      - media_volume:/app/media
+    expose:
+      - "8000"
+    networks:
+      - app-network
+      - web # 🆕 للتواصل مع Traefik
+    depends_on:
+      db:
+        condition: service_healthy
+
+    labels:
+      # تفعيل Traefik
+      - "traefik.enable=true"
+      # ===== API Routes =====
+      # Backend API على: https://summary.osmbeta.cloud/api/
+      - "traefik.http.routers.summary-api.rule=Host(`summary.osmbeta.cloud`) && PathPrefix(`/api`)"
+      - "traefik.http.routers.summary-api.entrypoints=websecure"
+      - "traefik.http.routers.summary-api.tls.certresolver=letsencrypt"
+      - "traefik.http.routers.summary-api.service=summary-api"
+      - "traefik.http.services.summary-api.loadbalancer.server.port=8000"
+
+      # ===== Admin Routes =====
+      # Django Admin على: https://summary.osmbeta.cloud/admin/
+      - "traefik.http.routers.summary-admin.rule=Host(`summary.osmbeta.cloud`) && PathPrefix(`/admin`)"
+      - "traefik.http.routers.summary-admin.entrypoints=websecure"
+      - "traefik.http.routers.summary-admin.tls.certresolver=letsencrypt"
+      - "traefik.http.routers.summary-admin.service=summary-api"
+
+      # ===== Static Files =====
+      # Static files على: https://summary.osmbeta.cloud/static/
+      - "traefik.http.routers.summary-static.rule=Host(`summary.osmbeta.cloud`) && PathPrefix(`/static`)"
+      - "traefik.http.routers.summary-static.entrypoints=websecure"
+      - "traefik.http.routers.summary-static.tls.certresolver=letsencrypt"
+      - "traefik.http.routers.summary-static.service=summary-api"
+      # ===== Media Files =====
+      # Media files على: https://summary.osmbeta.cloud/media/
+      - "traefik.http.routers.summary-media.rule=Host(`summary.osmbeta.cloud`) && PathPrefix(`/media`)"
+      - "traefik.http.routers.summary-media.entrypoints=websecure"
+      - "traefik.http.routers.summary-media.tls.certresolver=letsencrypt"
+      - "traefik.http.routers.summary-media.service=summary-api"
+
+      # ===== Middlewares =====
+      # تطبيق أمان و rate limiting
+      - "**traefik.http.routers.summary-api.middlewares=api-security-headers,api-rate-limit,compression,cors-headers**" # 💡 إضافة cors-headers
+      - "traefik.http.routers.summary-admin.middlewares=security-headers,auth-rate-limit"
+      - "**traefik.http.routers.summary-static.middlewares=security-headers,compression**" # 💡 تعديل لـ Static
+      - "**traefik.http.routers.summary-media.middlewares=security-headers,compression**" # 💡 تعديل لـ Media
+  # ============================================
+  # React/Vite Frontend
+  # ============================================
+  frontend:
+    build:
+      context: ./front-end
+      dockerfile: Dockerfile
+    container_name: summary_frontend
+    restart: unless-stopped
+    expose:
+      - "80"
+    networks:
+      - web # 🆕 للتواصل مع Traefik
+    labels:
+      # تفعيل Traefik
+      - "traefik.enable=true"
+
+      # ===== Frontend Routes =====
+      # Frontend على: https://summary.osmbeta.cloud/
+      - "traefik.http.routers.summary-frontend.rule=Host(`summary.osmbeta.cloud`)"
+      - "traefik.http.routers.summary-frontend.entrypoints=websecure"
+      - "traefik.http.routers.summary-frontend.tls.certresolver=letsencrypt"
+      - "traefik.http.routers.summary-frontend.service=summary-frontend"
+      - "traefik.http.services.summary-frontend.loadbalancer.server.port=80"
+
+      # ===== Wildcard للـ Multi-tenant =====
+      # Tenants على: https://*.osmbeta.cloud/
+      - "traefik.http.routers.summary-tenants.rule=HostRegexp(`^[a-z0-9-]+\\.osmbeta\\.cloud$`)"
+      - "traefik.http.routers.summary-tenants.entrypoints=websecure"
+      - "traefik.http.routers.summary-tenants.tls.certresolver=letsencrypt"
+      - "traefik.http.routers.summary-tenants.service=summary-frontend"
+
+      # ===== Middlewares =====
+      - "traefik.http.routers.summary-frontend.middlewares=security-headers,rate-limit,compression"
+      - "traefik.http.routers.summary-tenants.middlewares=security-headers,rate-limit,compression"
+
+      # ===== Priority =====
+      # Backend routes لها أولوية أعلى من Frontend
+      - "traefik.http.routers.summary-api.priority=100"
+      - "traefik.http.routers.summary-admin.priority=100"
+      - "traefik.http.routers.summary-static.priority=100"
+      - "traefik.http.routers.summary-media.priority=100"
+      - "traefik.http.routers.summary-frontend.priority=1"
+
+volumes:
+  postgres_data:
+    name: summary_postgres_data
+  static_volume:
+    name: summary_static
+  media_volume:
+    name: summary_media
+
+networks:
+  # شبكة داخلية للتواصل بين الخدمات
+  app-network:
+    name: summary_network
+    driver: bridge
+
+  # شبكة خارجية للتواصل مع Traefik
+  web:
+    external: true
+    name: web

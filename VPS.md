@@ -321,7 +321,11 @@ echo "========================================"
 echo "Monitoring completed at $(date)"
 
 ```
-
+# add user to docker group
+```bash
+#sudo usermod -aG docker $USER
+sudo usermod -aG docker go
+```
 
 ## add file
 ```bash

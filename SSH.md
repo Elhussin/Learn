@@ -54,10 +54,8 @@ sudo nano /etc/ssh/sshd_config
 PasswordAuthentication no
 PubkeyAuthentication yes
 ```
-d
-## add ssh key to ssh-agent
+
+## restart ssh service
 ```bash
-# add ssh key to ssh-agent
-# eval "$(ssh-agent -s)"
-ssh-add ~/.ssh/id_rsa
+sudo systemctl restart sshd
 ```

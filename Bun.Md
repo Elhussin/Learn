@@ -16,3 +16,9 @@ bun dev   # أو npm run dev أو pnpm dev
 # serve
 ```shell
 serve -s dist
+```
+## publish in gh-pages
+```shell
+bun run build
+bun run deploy
+```

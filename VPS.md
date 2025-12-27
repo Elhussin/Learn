@@ -134,7 +134,7 @@ sudo fail2ban-client status
 sudo apt install docker.io -y
 
 # Install Docker Compose
-sudo apt install docker-compose -y
+sudo apt install docker compose -y
 
 # Add your user to Docker group (avoids using sudo for docker commands)
 sudo usermod -aG docker $USER

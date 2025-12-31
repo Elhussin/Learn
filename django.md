@@ -83,6 +83,13 @@ python
 ```shell
 python manage.py makemigrations network 
 ```
+python manage.py makemigrations summary --empty
+
+
+docker compose exec backend python manage.py migrate summary --fake
+
+python manage.py migrate --fake summary
+
 ```shell
 python manage.py migrate
 ```

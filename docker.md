@@ -76,7 +76,7 @@ docker compose up -d
 # stop docker image
 docker compose down
 # stop docker image with volumes إيقاف كل شيء
-docker-compose down -v
+docker compose down -v
 
 
 # remove all images حذف الصور القديمة (اختياري)

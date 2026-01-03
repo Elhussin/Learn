@@ -208,11 +208,28 @@ docker run -it --rm \
   -v certbot_certs:/etc/nginx/ssl \
   -p 80:80 \
   certbot/certbot certonly --standalone \
-  -d summary.osmbeta.cloud \
+  -d osmbeta.cloud \
   --email hasin3112@gmail.com \
   --agree-tos \
   --non-interactive
 ```
+
+# First: Stop Nginx (port 80 must be free)
+docker compose stop nginx
+
+# Run Certbot
+docker run -it --rm \
+  -v certbot_certs:/etc/letsencrypt \
+  -v certbot_data:/var/lib/letsencrypt \
+  -p 80:80 \
+  certbot/certbot certonly --standalone \
+  -d osmbeta.cloud \
+  --email hasin3112@gmail.com \
+  --agree-tos \
+  --non-interactive
+
+# Start Nginx
+docker compose start nginx
 
 ### 🔧 Fix Permissions
 Ensure Nginx and Certbot can read the certificates.

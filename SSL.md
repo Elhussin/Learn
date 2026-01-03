@@ -240,3 +240,27 @@ sudo nginx -t
 # إعادة تشغيل nginx
 sudo systemctl restart nginx
 ```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- شهادات wildcard-->
+
+```pash
+sudo apt update
+sudo apt install certbot
+
+sudo certbot certonly --manual --preferred-challenges dns -d "osmbeta.cloud" -d "*.osmbeta.cloud"
+```

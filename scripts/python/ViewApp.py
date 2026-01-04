@@ -37,3 +37,4 @@ while True:
     time.sleep(1)
 
 
+# scripts\python> python ViewApp.py

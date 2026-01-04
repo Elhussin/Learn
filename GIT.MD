@@ -132,7 +132,9 @@ ssh-keygen -t ed25519 -C "hasin3112@gmail.com"  # Create SSH key
 cat ~/.ssh/id_ed25519.pub                       # Copy key content
 ssh -T git@github.com                           # Confirm it's working
 ```
-
+<!-- يجب استخدامsshعند تحميل المستودع  -->
+ git remote set-url origin git@github.com:Elhussin/optics_tenant.git
+ git remote set-url origin  git@github.com:Elhussin/price-list.git
 Add your SSH key to GitHub: [Add SSH Key](https://github.com/settings/ssh/new)
 
 ## Clone Repository

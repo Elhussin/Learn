@@ -33,3 +33,4 @@ sudo nginx -t && sudo systemctl restart nginx
 # Step 5: تشغيل Gunicorn
 echo "🚀 Starting Gunicorn..."
 exec gunicorn optics_tenant.wsgi:application --bind 127.0.0.1:8000
+

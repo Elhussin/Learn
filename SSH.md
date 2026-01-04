@@ -1,61 +1,96 @@
+# How to access with SSH (No Password)
 
-# how acces with ssh no password
-##  generate ssh key
+## 1. Generate SSH key
+
+Run this on your **local machine**:
+
 ```bash
-# generate ssh key in your local machine
-ssh-keygen -t rsa -b 4096
+# Recommended: using ed25519 (faster and secure)
+ssh-keygen -t ed25519 -C "your_email@example.com"
 
-Your identification has been saved in /home/hussin/.ssh/id_rsa
-Your public key has been saved in /home/hussin/.ssh/id_rsa.pub
+# OR using RSA 4096
+ssh-keygen -t rsa -b 4096
 ```
 
-copy public key to remote machine
+_Press Enter to accept defaults. You don't need a passphrase for passwordless login._
+
+## 2. Copy public key to remote machine
+
+### For Linux / Mac / WSL
+
 ```bash
-# copy public key to remote machine
 ssh-copy-id go@72.62.57.24
 ```
 
-## connect to remote machine
+### For Windows (PowerShell)
+
+Since `ssh-copy-id` is not available on Windows, use this command:
+
+```powershell
+# If using ed25519 (Recommended)
+type $env:USERPROFILE\.ssh\id_ed25519.pub | ssh go@72.62.57.24 "mkdir -p .ssh && cat >> .ssh/authorized_keys"
+
+# OR if using RSA
+type $env:USERPROFILE\.ssh\id_rsa.pub | ssh go@72.62.57.24 "mkdir -p .ssh && cat >> .ssh/authorized_keys"
+```
+
+_Note: It will ask for your password one last time._
+
+## 3. Connect to remote machine
+
 ```bash
-# connect to remote machine
 ssh go@72.62.57.24
 ```
 
-## confiarm ssh key add im remote machine
+## 4. Confirm SSH key addition on remote machine
+
+Once logged in, verify permissions (Crucial for security):
+
 ```bash
 cd ~/.ssh
-cat authorized_keys
-# check ssh key
-ls -al ~/.ssh 
-# check ssh key permission 
+# Check permission for folder (should be drwx------ or 700)
 ls -ld ~/.ssh
+
+# Check permission for file (should be -rw------- or 600)
 ls -l ~/.ssh/authorized_keys
-## permission should be 700 for ~/.ssh and 600 for ~/.ssh/authorized_keys
-drwx------ 2 go go 4096 Dec  7 10:48 /home/go/.ssh
--rw------- 1 go go 860 Dec  7 10:48 /home/go/.ssh/authorized_keys
+
+# To view the keys
+cat authorized_keys
 ```
 
-## add another device or re generate public key 
+## 5. Add another device
+
+On the **new device**, simply repeat steps 1 and 2.
+(Do not run this on the first device unless you want to generate a _new_ key pair).
+
+## 6. Remove SSH key from remote machine
+
+**WARNING:** Do not use `rm` unless you want to delete ALL keys.
+To remove a specific key:
 
 ```bash
-ssh-keygen -t rsa -b 4096
-ssh-copy-id go@72.62.57.24
+nano ~/.ssh/authorized_keys
+# Delete the line corresponding to the key you want to remove, then Ctrl+X, Y, Enter.
 ```
 
-## remove ssh key from remote machine
-```bash
-ssh go@72.62.57.24
-rm ~/.ssh/authorized_keys
-```
+## 7. Disable password authentication (Security Hardening)
 
-## disable password authentication and enable public key authentication
+This forces key-only authentication.
+
 ```bash
 sudo nano /etc/ssh/sshd_config
-PasswordAuthentication no
-PubkeyAuthentication yes
 ```
 
-## restart ssh service
+Find and edit these lines:
+
+```text
+PasswordAuthentication no
+PubkeyAuthentication yes
+ChallengeResponseAuthentication no
+```
+
+## 8. Restart SSH service
+
 ```bash
 sudo systemctl restart sshd
 ```

@@ -130,9 +130,9 @@ person[1] = 35;
 > Object is a collection of properties.
 ```ts
 let user: object = { name: "Elhussin", age: 30 };
-```
+````
 
-### Type Alias
+### Type Alias`
 > Type alias is a way to give a name to a type.
 ```ts
 type ID = string | number;

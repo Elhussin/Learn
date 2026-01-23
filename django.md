@@ -161,7 +161,9 @@ django-admin makemessages -l ar
 ```
 django-admin compilemessages
 ```
-#  add GNU gettext tools
+#  add GNU gettext tools use for transelate
+```
+pdm run python manage.py makemessages -l ar -l en
 ```
 sudo apt-get install gettext
 sudo apt update

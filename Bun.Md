@@ -15,6 +15,8 @@ bun dev   # أو npm run dev أو pnpm dev
 
 # serve
 ```shell
+npm install -g serve
+
 serve -s dist
 ```
 ## publish in gh-pages
@@ -22,3 +24,7 @@ serve -s dist
 bun run build
 bun run deploy
 ```
+
+
+cd /home/huss
+in/code/optics_tenant/osmFront && npx tsc --noEmit --skipLibCheck 2>&1 | head -30

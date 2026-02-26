@@ -181,7 +181,7 @@ docker compose logs backend -f
 
 # Restart services
 
-docker compose restart
+   docker compose restart
 
 # Stop everything
 

@@ -92,6 +92,11 @@ docker compose down --rmi all
 
 docker rm -f frontend
 
+# remove all images
+
+docker rmi $(docker images -q)
+
+docker system prune
 <!--حذف كل شيء ما عد البيانات   -->
 
 docker system prune -a

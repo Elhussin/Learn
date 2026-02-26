@@ -65,24 +65,5 @@ def validate_phone_numbers(csv_path, output_path="phone.csv", phone_column="phon
     return df
 
 if __name__ == "__main__":
-    # validate_phone_numbers("phone.csv")
-    # result_df = validate_phone_numbers("main/remal.csv", output_path="vildet/validated_phones_remal.csv", phone_column="phone")
-    # result_df = validate_phone_numbers("main/andals.csv", output_path="vildet/validated_phones_andals.csv", phone_column="phone")
-    # result_df = validate_phone_numbers("main/azizi.csv", output_path="vildet/validated_phones_azizi.csv", phone_column="phone")
-    # result_df = validate_phone_numbers("main/sulm.csv", output_path="vildet/validated_phones_sulm.csv", phone_column="phone")
-    # result_df = validate_phone_numbers("main/60jed.csv", output_path="vildet/validated_phones_60jed.csv", phone_column="phone")
-    # result_df = validate_phone_numbers("main/60mk.csv", output_path="vildet/validated_phones_60mk.csv", phone_column="phone")
-    # result_df = validate_phone_numbers("main/arfat.csv", output_path="vildet/validated_phones_arfat.csv", phone_column="phone")
-    # result_df = validate_phone_numbers("main/cu1.csv", output_path="vildet/validated_phones_cu1.csv", phone_column="phone")
-    # result_df = validate_phone_numbers("main/madina.csv", output_path="vildet/validated_phones_madina.csv", phone_column="phone")
-    # result_df = validate_phone_numbers("main/mans.csv", output_path="vildet/validated_phones_mans.csv", phone_column="phone")
-    # result_df = validate_phone_numbers("main/nahk.csv", output_path="vildet/validated_phones_nahk.csv", phone_column="phone")
-    # result_df = validate_phone_numbers("main/rpgh.csv", output_path="vildet/validated_phones_rpgh.csv", phone_column="phone")
-    # result_df = validate_phone_numbers("main/lulu.csv", output_path="vildet/validated_phones_lulu.csv", phone_column="phone")
-    # result_df = validate_phone_numbers("main/khazan.csv", output_path="vildet/validated_phones_khazan.csv", phone_column="phone")
-    # result_df = validate_phone_numbers("main/tehly.csv", output_path="vildet/validated_phones_tehly.csv", phone_column="phone")
-    # result_df = validate_phone_numbers("main/wazier.csv", output_path="vildet/validated_phones_wazier.csv", phone_column="phone")
-    # result_df = validate_phone_numbers("main/yanbu.csv", output_path="vildet/validated_phones_yanbu.csv", phone_column="phone")
-    result_df = validate_phone_numbers("customerFinal.csv", output_path="vildet/customerFinal.csv", phone_column="phone")
-
-    # print(result_df.head())
+    validate_phone_numbers("lastHussamCustomePhone2026.csv")
+    # result_df = validate_phone_numbers("main/lastHussamCustomePhone2026.csv", output_path="vildet/validated_phones_remal.csv", phone_column="phone")

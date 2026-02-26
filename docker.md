@@ -186,6 +186,7 @@ docker compose down
 
 docker compose ps
 
+docker ps --format "table {{.Names}}\t{{.Status}}\t{{.Ports}}"
 
 
 <!-- خيار --remove-orphans سيقوم بحذف الحاويات القديمة التي كانت باسم db والتي لم نعد بحاجة إليها، وهذا لن يؤثر على البيانات.

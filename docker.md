@@ -151,7 +151,8 @@ docker compose exec backend python manage.py makemigrations
 docker compose exec backend python manage.py createsuperuser
 
 docker compose exec backend python manage.py shell
-
+<!-- got to  inside container   -->
+docker exec -it optics_backend /bin/bash
 docker compose exec backend python manage.py collectstatic --noinput
 
 docker compose exec backend sh

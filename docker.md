@@ -124,11 +124,19 @@ docker system prune -a --volumes -f
 # بناء من جديد
 
 docker compose build --no-cache
-docker compose up -d --build 
+docker compose up -d --build  --no-cache
 
 docker compose up -d
 docker compose -f docker-compose.local.yml up --build
+# Remove unused Docker resources
+docker system prune -a --volumes
 
+# check space used by docker
+sudo docker system df
+
+# Clean apt cache
+sudo apt autoremove -y && sudo apt clean
+```
 #
 
 docker restart backend
